@@ -205,7 +205,7 @@ export default function Assessment() {
       description: 'Test your knowledge of JavaScript basics, ES6+ features, and modern development practices.',
       category: 'skill',
       duration: 30,
-      questions: 50,
+      questions: 20,
       difficulty: 'medium',
       isCompleted: false,
       maxScore: 100,
@@ -223,7 +223,7 @@ export default function Assessment() {
       description: 'Assess your React skills including hooks, components, state management, and best practices.',
       category: 'skill',
       duration: 45,
-      questions: 50,
+      questions: 20,
       difficulty: 'medium',
       isCompleted: false,
       maxScore: 100,
@@ -434,7 +434,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '14',
+      id: '30',
       title: 'Work Style',
       description: 'Understand your preferred work environment and collaboration style.',
       category: 'personality',
@@ -452,7 +452,7 @@ export default function Assessment() {
       exceedScore: 75
     },
     {
-      id: '15',
+      id: '31',
       title: 'Creativity Assessment',
       description: 'Measure your creative thinking and innovative problem-solving abilities.',
       category: 'aptitude',
@@ -470,7 +470,7 @@ export default function Assessment() {
       exceedScore: 85
     },
     {
-      id: '16',
+      id: '32',
       title: 'Stress Management',
       description: 'Evaluate how you handle pressure and stressful situations in the workplace.',
       category: 'personality',
@@ -488,7 +488,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '17',
+      id: '33',
       title: 'Time Management',
       description: 'Assess your ability to prioritize tasks and manage time effectively.',
       category: 'aptitude',
@@ -506,7 +506,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '18',
+      id: '34',
       title: 'Team Collaboration',
       description: 'Test your ability to work effectively in team environments and group projects.',
       category: 'personality',
@@ -524,7 +524,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '19',
+      id: '35',
       title: 'Adaptability',
       description: 'Measure your flexibility and ability to adapt to changing circumstances.',
       category: 'personality',
@@ -626,6 +626,96 @@ export default function Assessment() {
       tags: ['Learning', 'Adaptation'],
       icon: BookOpen,
       color: 'from-blue-500 to-cyan-500',
+      popularity: 88,
+      completionRate: 80,
+      needScore: 70,
+      exceedScore: 85
+    },
+    {
+      id: '25',
+      title: 'Cybersecurity',
+      description: 'Test your knowledge of cybersecurity fundamentals, threats, and protection methods.',
+      category: 'skill',
+      duration: 25,
+      questions: 15,
+      difficulty: 'medium',
+      isCompleted: false,
+      maxScore: 100,
+      tags: ['Security', 'Cybersecurity', 'Protection'],
+      icon: Shield,
+      color: 'from-red-500 to-pink-500',
+      popularity: 92,
+      completionRate: 75,
+      needScore: 70,
+      exceedScore: 85
+    },
+    {
+      id: '26',
+      title: 'Database Management',
+      description: 'Assess your database design, SQL, and data management skills.',
+      category: 'skill',
+      duration: 30,
+      questions: 15,
+      difficulty: 'medium',
+      isCompleted: false,
+      maxScore: 100,
+      tags: ['Database', 'SQL', 'Data Management'],
+      icon: Database,
+      color: 'from-orange-500 to-red-500',
+      popularity: 85,
+      completionRate: 78,
+      needScore: 70,
+      exceedScore: 85
+    },
+    {
+      id: '27',
+      title: 'Cloud Computing',
+      description: 'Test your understanding of cloud platforms, virtualization, and cloud services.',
+      category: 'skill',
+      duration: 25,
+      questions: 15,
+      difficulty: 'medium',
+      isCompleted: false,
+      maxScore: 100,
+      tags: ['Cloud', 'Virtualization', 'Infrastructure'],
+      icon: Cloud,
+      color: 'from-blue-500 to-indigo-500',
+      popularity: 90,
+      completionRate: 72,
+      needScore: 70,
+      exceedScore: 85
+    },
+    {
+      id: '28',
+      title: 'Artificial Intelligence',
+      description: 'Evaluate your AI knowledge including machine learning and neural networks.',
+      category: 'skill',
+      duration: 30,
+      questions: 15,
+      difficulty: 'hard',
+      isCompleted: false,
+      maxScore: 100,
+      tags: ['AI', 'Machine Learning', 'Neural Networks'],
+      icon: Brain,
+      color: 'from-purple-500 to-pink-500',
+      popularity: 94,
+      completionRate: 68,
+      needScore: 75,
+      exceedScore: 90
+    },
+    {
+      id: '29',
+      title: 'Web Development',
+      description: 'Test your web development skills including HTML, CSS, and JavaScript.',
+      category: 'skill',
+      duration: 25,
+      questions: 15,
+      difficulty: 'medium',
+      isCompleted: false,
+      maxScore: 100,
+      tags: ['Web Development', 'HTML', 'CSS', 'JavaScript'],
+      icon: Code,
+      color: 'from-green-500 to-emerald-500',
       popularity: 88,
       completionRate: 80,
       needScore: 70,
@@ -1335,9 +1425,9 @@ export default function Assessment() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                  20
+                  Varies
                 </div>
-                <div className="text-gray-600 dark:text-gray-400">Questions Each</div>
+                <div className="text-gray-600 dark:text-gray-400">Questions Range</div>
               </div>
             </div>
           </motion.div>
