@@ -260,6 +260,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Asynchronous Programming',
       tags: ['Performance', 'Execution Model']
+    },
+    {
+      id: '1-16',
+      question: 'What is the purpose of the async/await syntax?',
+      options: [
+        'To make code run faster',
+        'To write asynchronous code in a synchronous style',
+        'To create new functions',
+        'To improve browser compatibility'
+      ],
+      correctAnswer: 1,
+      explanation: 'async/await provides a more readable and synchronous-looking way to work with promises and asynchronous operations.',
+      category: 'JavaScript',
+      difficulty: 'medium',
+      skill: 'Async/Await',
+      tags: ['ES8', 'Promises']
+    },
+    {
+      id: '1-17',
+      question: 'What is the event bubbling in JavaScript?',
+      options: [
+        'A way to create events',
+        'The process where an event triggers on the deepest element and bubbles up',
+        'A method to stop events',
+        'A type of event listener'
+      ],
+      correctAnswer: 1,
+      explanation: 'Event bubbling is the process where an event triggers on the deepest element and then bubbles up through its parent elements.',
+      category: 'JavaScript',
+      difficulty: 'medium',
+      skill: 'Event Handling',
+      tags: ['DOM', 'Events']
+    },
+    {
+      id: '1-18',
+      question: 'What is the purpose of the localStorage API?',
+      options: [
+        'To store data in a database',
+        'To store data locally in the browser',
+        'To create local variables',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'localStorage allows web applications to store data locally within the user\'s browser with no expiration date.',
+      category: 'JavaScript',
+      difficulty: 'easy',
+      skill: 'Web Storage',
+      tags: ['Browser API', 'Data Persistence']
+    },
+    {
+      id: '1-19',
+      question: 'What is the difference between call() and apply()?',
+      options: [
+        'They are the same',
+        'call() takes arguments separately, apply() takes an array',
+        'apply() is faster than call()',
+        'call() is deprecated'
+      ],
+      correctAnswer: 1,
+      explanation: 'call() takes arguments separately, while apply() takes arguments as an array. Both methods allow you to set the this context.',
+      category: 'JavaScript',
+      difficulty: 'hard',
+      skill: 'Function Methods',
+      tags: ['Functions', 'this Context']
+    },
+    {
+      id: '1-20',
+      question: 'What is the purpose of the bind() method?',
+      options: [
+        'To bind events',
+        'To create a new function with a fixed this context',
+        'To connect functions',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'The bind() method creates a new function that, when called, has its this keyword set to the provided value.',
+      category: 'JavaScript',
+      difficulty: 'hard',
+      skill: 'Function Methods',
+      tags: ['Functions', 'this Context']
     }
   ],
 
@@ -503,6 +583,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'hard',
       skill: 'Effects',
       tags: ['DOM Mutations', 'Synchronous Effects']
+    },
+    {
+      id: '2-16',
+      question: 'What is the difference between useEffect and useLayoutEffect?',
+      options: [
+        'They are the same',
+        'useEffect fires asynchronously, useLayoutEffect fires synchronously',
+        'useLayoutEffect is always better',
+        'useEffect is deprecated'
+      ],
+      correctAnswer: 1,
+      explanation: 'useEffect fires asynchronously after the browser has painted, while useLayoutEffect fires synchronously after all DOM mutations.',
+      category: 'React',
+      difficulty: 'hard',
+      skill: 'Effects',
+      tags: ['Timing', 'DOM Updates']
+    },
+    {
+      id: '2-17',
+      question: 'What is the purpose of the useDebugValue hook?',
+      options: [
+        'To debug values',
+        'To display custom labels in React DevTools',
+        'To improve performance',
+        'To create new debug tools'
+      ],
+      correctAnswer: 1,
+      explanation: 'useDebugValue can be used to display a label for custom hooks in React DevTools.',
+      category: 'React',
+      difficulty: 'hard',
+      skill: 'Debugging',
+      tags: ['DevTools', 'Custom Hooks']
+    },
+    {
+      id: '2-18',
+      question: 'What is the difference between React.Fragment and div?',
+      options: [
+        'They are the same',
+        'Fragment doesn\'t create a DOM node, div does',
+        'div is always better',
+        'Fragment is deprecated'
+      ],
+      correctAnswer: 1,
+      explanation: 'React.Fragment allows you to group elements without adding extra nodes to the DOM, while div creates an actual DOM element.',
+      category: 'React',
+      difficulty: 'medium',
+      skill: 'JSX',
+      tags: ['DOM Nodes', 'Grouping Elements']
+    },
+    {
+      id: '2-19',
+      question: 'What is the purpose of the React.StrictMode?',
+      options: [
+        'To make code strict',
+        'To identify potential problems in your application during development',
+        'To improve performance',
+        'To create strict rules'
+      ],
+      correctAnswer: 1,
+      explanation: 'React.StrictMode is a development mode that helps identify potential problems in your application by highlighting deprecated lifecycle methods.',
+      category: 'React',
+      difficulty: 'medium',
+      skill: 'Development Tools',
+      tags: ['Development', 'Best Practices']
+    },
+    {
+      id: '2-20',
+      question: 'What is the difference between class components and functional components?',
+      options: [
+        'They are the same',
+        'Class components use classes, functional components use functions and hooks',
+        'Functional components are always better',
+        'Class components are deprecated'
+      ],
+      correctAnswer: 1,
+      explanation: 'Class components use ES6 classes and lifecycle methods, while functional components use functions and React hooks for state and effects.',
+      category: 'React',
+      difficulty: 'medium',
+      skill: 'Component Types',
+      tags: ['Classes vs Functions', 'Hooks']
     }
   ],
 
@@ -746,6 +906,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'hard',
       skill: 'Method Types',
       tags: ['Python', 'Class Methods', 'Static Methods', 'OOP']
+    },
+    {
+      id: '3-16',
+      question: 'What is the purpose of the __enter__ and __exit__ methods?',
+      options: [
+        'To enter and exit functions',
+        'To implement context manager protocol for the with statement',
+        'To create new objects',
+        'To handle errors'
+      ],
+      correctAnswer: 1,
+      explanation: 'These methods implement the context manager protocol, allowing objects to be used with the with statement.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Context Managers',
+      tags: ['Python', 'Context Managers', 'with Statement']
+    },
+    {
+      id: '3-17',
+      question: 'What is the difference between a list comprehension and a generator expression?',
+      options: [
+        'They are the same',
+        'List comprehension creates a list, generator expression creates an iterator',
+        'Generator expressions are deprecated',
+        'List comprehensions are only for numbers'
+      ],
+      correctAnswer: 1,
+      explanation: 'List comprehension creates a list in memory, while generator expression creates an iterator that yields values on demand.',
+      category: 'Python',
+      difficulty: 'medium',
+      skill: 'Comprehensions',
+      tags: ['Python', 'List Comprehension', 'Generators']
+    },
+    {
+      id: '3-18',
+      question: 'What is the purpose of the @classmethod decorator?',
+      options: [
+        'To create classes',
+        'To define methods that operate on the class rather than instances',
+        'To improve performance',
+        'To handle errors'
+      ],
+      correctAnswer: 1,
+      explanation: 'The @classmethod decorator defines methods that operate on the class rather than instances, receiving the class as the first argument.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Decorators',
+      tags: ['Python', 'Class Methods', 'Decorators']
+    },
+    {
+      id: '3-19',
+      question: 'What is the difference between __new__ and __init__?',
+      options: [
+        'They are the same',
+        '__new__ creates the object, __init__ initializes it',
+        '__init__ is deprecated',
+        '__new__ is only for inheritance'
+      ],
+      correctAnswer: 1,
+      explanation: '__new__ is a static method that creates and returns the object, while __init__ initializes the created object.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Object Creation',
+      tags: ['Python', 'Object Creation', 'Lifecycle']
+    },
+    {
+      id: '3-20',
+      question: 'What is the purpose of the @staticmethod decorator?',
+      options: [
+        'To create static methods',
+        'To define methods that don\'t receive implicit first arguments',
+        'To improve performance',
+        'To handle errors'
+      ],
+      correctAnswer: 1,
+      explanation: 'The @staticmethod decorator defines methods that don\'t receive implicit first arguments (self or cls).',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Static Methods',
+      tags: ['Python', 'Static Methods', 'Decorators']
     }
   ],
 
@@ -909,6 +1149,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Journey Mapping',
       tags: ['UX', 'Journey Mapping', 'User Experience']
+    },
+    {
+      id: '4-11',
+      question: 'What is the purpose of usability testing?',
+      options: [
+        'To test usability',
+        'To evaluate how easy a product is to use with real users',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Usability testing evaluates how easy a product is to use by observing real users interacting with it.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Usability Testing',
+      tags: ['UX', 'Testing', 'User Evaluation']
+    },
+    {
+      id: '4-12',
+      question: 'What is the difference between UX and UI design?',
+      options: [
+        'There is no difference',
+        'UX focuses on user experience, UI focuses on visual design',
+        'UI is more important than UX',
+        'UX is only for research'
+      ],
+      correctAnswer: 1,
+      explanation: 'UX design focuses on the overall user experience and journey, while UI design focuses on the visual and interactive elements.',
+      category: 'Design',
+      difficulty: 'easy',
+      skill: 'Design Concepts',
+      tags: ['UX', 'UI', 'Design Differences']
+    },
+    {
+      id: '4-13',
+      question: 'What is the purpose of design systems?',
+      options: [
+        'To design systems',
+        'To create consistent design patterns and components',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Design systems create consistent design patterns and components for better user experience and development efficiency.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Design Systems',
+      tags: ['UX', 'Design Systems', 'Consistency']
+    },
+    {
+      id: '4-14',
+      question: 'What is the difference between qualitative and quantitative research?',
+      options: [
+        'There is no difference',
+        'Qualitative explores why, quantitative measures how much',
+        'Quantitative is deprecated',
+        'Qualitative is only for interviews'
+      ],
+      correctAnswer: 1,
+      explanation: 'Qualitative research explores why users behave certain ways, while quantitative research measures how much or how often.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Research Methods',
+      tags: ['UX', 'Research', 'Qualitative vs Quantitative']
+    },
+    {
+      id: '4-15',
+      question: 'What is the purpose of heuristic evaluation?',
+      options: [
+        'To evaluate heuristics',
+        'To assess usability using established design principles',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Heuristic evaluation assesses usability by examining interfaces against established design principles and guidelines.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Heuristic Evaluation',
+      tags: ['UX', 'Evaluation', 'Design Principles']
     }
   ],
 
@@ -1152,6 +1472,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'hard',
       skill: 'Model Types',
       tags: ['ML', 'Parametric', 'Non-parametric', 'Models']
+    },
+    {
+      id: '5-16',
+      question: 'What is the purpose of cross-entropy loss?',
+      options: [
+        'To make models faster',
+        'To measure the difference between predicted and actual probabilities',
+        'To reduce data size',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cross-entropy loss measures the difference between predicted and actual probability distributions, commonly used in classification.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Loss Functions',
+      tags: ['ML', 'Loss Functions', 'Classification']
+    },
+    {
+      id: '5-17',
+      question: 'What is the difference between L1 and L2 regularization?',
+      options: [
+        'They are the same',
+        'L1 adds absolute values, L2 adds squared values to the loss function',
+        'L2 is deprecated',
+        'L1 is only for regression'
+      ],
+      correctAnswer: 1,
+      explanation: 'L1 regularization adds absolute values of weights, while L2 adds squared values, leading to different sparsity patterns.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Regularization',
+      tags: ['ML', 'L1 Regularization', 'L2 Regularization']
+    },
+    {
+      id: '5-18',
+      question: 'What is the purpose of k-fold cross-validation?',
+      options: [
+        'To fold data',
+        'To divide data into k subsets for robust model evaluation',
+        'To reduce data size',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'K-fold cross-validation divides data into k subsets, training on k-1 folds and validating on the remaining fold.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Cross-validation',
+      tags: ['ML', 'Cross-validation', 'Model Evaluation']
+    },
+    {
+      id: '5-19',
+      question: 'What is the difference between supervised and reinforcement learning?',
+      options: [
+        'They are the same',
+        'Supervised uses labeled data, reinforcement learning uses rewards and actions',
+        'Reinforcement learning is deprecated',
+        'Supervised learning is only for classification'
+      ],
+      correctAnswer: 1,
+      explanation: 'Supervised learning uses labeled training data, while reinforcement learning learns through interaction with an environment.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Learning Types',
+      tags: ['ML', 'Supervised Learning', 'Reinforcement Learning']
+    },
+    {
+      id: '5-20',
+      question: 'What is the purpose of feature scaling?',
+      options: [
+        'To scale features',
+        'To normalize features to the same scale for better model performance',
+        'To reduce data size',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Feature scaling normalizes features to the same scale, preventing some features from dominating the learning process.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Feature Engineering',
+      tags: ['ML', 'Feature Scaling', 'Normalization']
     }
   ],
 
@@ -1395,6 +1795,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'hard',
       skill: 'GitOps',
       tags: ['DevOps', 'GitOps', 'Version Control']
+    },
+    {
+      id: '6-16',
+      question: 'What is the difference between blue-green and canary deployments?',
+      options: [
+        'They are the same',
+        'Blue-green switches entire environments, canary gradually shifts traffic',
+        'Canary deployments are deprecated',
+        'Blue-green is only for testing'
+      ],
+      correctAnswer: 1,
+      explanation: 'Blue-green switches between entire environments, while canary gradually shifts traffic from old to new versions.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Deployment Strategies',
+      tags: ['DevOps', 'Blue-Green', 'Canary', 'Deployment']
+    },
+    {
+      id: '6-17',
+      question: 'What is the purpose of infrastructure monitoring?',
+      options: [
+        'To monitor infrastructure',
+        'To track system health, performance, and availability',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Infrastructure monitoring tracks system health, performance, and availability to ensure reliable service delivery.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Monitoring',
+      tags: ['DevOps', 'Monitoring', 'System Health']
+    },
+    {
+      id: '6-18',
+      question: 'What is the difference between Docker and Kubernetes?',
+      options: [
+        'They are the same',
+        'Docker creates containers, Kubernetes orchestrates them',
+        'Kubernetes is deprecated',
+        'Docker is only for development'
+      ],
+      correctAnswer: 1,
+      explanation: 'Docker creates and runs containers, while Kubernetes orchestrates and manages containerized applications at scale.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Containerization',
+      tags: ['DevOps', 'Docker', 'Kubernetes', 'Containers']
+    },
+    {
+      id: '6-19',
+      question: 'What is the purpose of continuous monitoring?',
+      options: [
+        'To monitor continuously',
+        'To provide real-time insights into application and infrastructure performance',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Continuous monitoring provides real-time insights into application and infrastructure performance for proactive issue resolution.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Continuous Monitoring',
+      tags: ['DevOps', 'Monitoring', 'Real-time Insights']
+    },
+    {
+      id: '6-20',
+      question: 'What is the difference between monitoring and observability?',
+      options: [
+        'They are the same',
+        'Monitoring tracks metrics, observability provides deeper system understanding',
+        'Observability is deprecated',
+        'Monitoring is only for metrics'
+      ],
+      correctAnswer: 1,
+      explanation: 'Monitoring tracks specific metrics, while observability provides deeper understanding of system behavior and internal state.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Observability',
+      tags: ['DevOps', 'Monitoring', 'Observability', 'System Understanding']
     }
   ],
 
@@ -1638,6 +2118,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Frameworks',
       tags: ['Mobile', 'Frameworks', 'Development Tools']
+    },
+    {
+      id: '7-16',
+      question: 'What is the purpose of mobile app testing automation?',
+      options: [
+        'To automate testing',
+        'To reduce manual testing effort and improve test coverage',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app testing automation reduces manual testing effort and improves test coverage for better quality assurance.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Test Automation',
+      tags: ['Mobile', 'Test Automation', 'Quality Assurance']
+    },
+    {
+      id: '7-17',
+      question: 'What is the difference between native and hybrid mobile apps?',
+      options: [
+        'They are the same',
+        'Native apps use platform-specific code, hybrid apps use web technologies',
+        'Hybrid apps are deprecated',
+        'Native apps are only for iOS'
+      ],
+      correctAnswer: 1,
+      explanation: 'Native apps use platform-specific programming languages and APIs, while hybrid apps use web technologies wrapped in native containers.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'App Types',
+      tags: ['Mobile', 'Native Apps', 'Hybrid Apps']
+    },
+    {
+      id: '7-18',
+      question: 'What is the purpose of mobile app performance profiling?',
+      options: [
+        'To profile performance',
+        'To identify performance bottlenecks and optimize app speed',
+        'To improve security',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app performance profiling identifies performance bottlenecks and helps optimize app speed and responsiveness.',
+      category: 'Mobile Development',
+      difficulty: 'hard',
+      skill: 'Performance Profiling',
+      tags: ['Mobile', 'Performance', 'Optimization']
+    },
+    {
+      id: '7-19',
+      question: 'What is the difference between mobile app stores and enterprise distribution?',
+      options: [
+        'They are the same',
+        'App stores are public, enterprise distribution is for internal company use',
+        'Enterprise distribution is deprecated',
+        'App stores are only for consumers'
+      ],
+      correctAnswer: 1,
+      explanation: 'App stores are public platforms for consumer apps, while enterprise distribution is for internal company app deployment.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Distribution',
+      tags: ['Mobile', 'App Stores', 'Enterprise']
+    },
+    {
+      id: '7-20',
+      question: 'What is the purpose of mobile app analytics?',
+      options: [
+        'To analyze apps',
+        'To track user behavior and app performance for insights',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app analytics track user behavior and app performance to provide insights for improvement and optimization.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Analytics',
+      tags: ['Mobile', 'Analytics', 'User Behavior']
     }
   ],
 
@@ -1801,6 +2361,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'easy',
       skill: 'Goal Setting',
       tags: ['Leadership', 'Goal Setting', 'Motivation']
+    },
+    {
+      id: '9-11',
+      question: 'When team members need help, I typically:',
+      options: [
+        'Let them figure it out themselves',
+        'Provide guidance while encouraging independence',
+        'Take over the task completely',
+        'Refer them to someone else'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to mentoring and developing team members.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Mentoring',
+      tags: ['Leadership', 'Mentoring', 'Team Development']
+    },
+    {
+      id: '9-12',
+      question: 'In team meetings, I prefer to:',
+      options: [
+        'Control the agenda completely',
+        'Facilitate discussion and encourage participation',
+        'Let others lead the discussion',
+        'Keep meetings as short as possible'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your meeting facilitation style and leadership approach.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Meeting Facilitation',
+      tags: ['Leadership', 'Meetings', 'Facilitation']
+    },
+    {
+      id: '9-13',
+      question: 'When recognizing team achievements, I:',
+      options: [
+        'Focus on individual accomplishments',
+        'Recognize both individual and team contributions',
+        'Keep recognition minimal',
+        'Let others handle recognition'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to team recognition and motivation.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Recognition',
+      tags: ['Leadership', 'Recognition', 'Motivation']
+    },
+    {
+      id: '9-14',
+      question: 'My approach to team development is:',
+      options: [
+        'To focus on immediate results',
+        'To invest in long-term growth and skill development',
+        'To let team members develop on their own',
+        'To avoid development activities'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your commitment to team growth and development.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Team Development',
+      tags: ['Leadership', 'Development', 'Growth']
+    },
+    {
+      id: '9-15',
+      question: 'When making unpopular decisions, I:',
+      options: [
+        'Make the decision and move forward',
+        'Explain the reasoning and address concerns',
+        'Avoid making unpopular decisions',
+        'Let the team decide'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to difficult decisions and communication.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Decision Making',
+      tags: ['Leadership', 'Decisions', 'Communication']
     }
   ],
 
@@ -1964,6 +2604,86 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'easy',
       skill: 'Geometry',
       tags: ['Math', 'Geometry', 'Angles', 'Triangles']
+    },
+    {
+      id: '11-11',
+      question: 'What is the next number: 2, 6, 12, 20, 30, ?',
+      options: [
+        '40',
+        '42',
+        '44',
+        '46'
+      ],
+      correctAnswer: 1,
+      explanation: 'The difference increases by 2: +4, +6, +8, +10, +12. So 30 + 12 = 42',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Number Sequences',
+      tags: ['Math', 'Sequences', 'Patterns']
+    },
+    {
+      id: '11-12',
+      question: 'If 5 workers can build a wall in 8 days, how many days would 10 workers take?',
+      options: [
+        '2 days',
+        '4 days',
+        '6 days',
+        '8 days'
+      ],
+      correctAnswer: 1,
+      explanation: 'More workers = fewer days. 5 workers × 8 days = 40 worker-days. 40 ÷ 10 workers = 4 days',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Work Rate Problems',
+      tags: ['Math', 'Work Rate', 'Proportions']
+    },
+    {
+      id: '11-13',
+      question: 'What is the area of a circle with radius 7 units?',
+      options: [
+        '49π square units',
+        '98π square units',
+        '147π square units',
+        '196π square units'
+      ],
+      correctAnswer: 0,
+      explanation: 'Area of circle = πr² = π × 7² = π × 49 = 49π square units',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Geometry',
+      tags: ['Math', 'Geometry', 'Circles', 'Area']
+    },
+    {
+      id: '11-14',
+      question: 'What is the sum of the first 15 odd numbers?',
+      options: [
+        '200',
+        '225',
+        '250',
+        '275'
+      ],
+      correctAnswer: 1,
+      explanation: 'First 15 odd numbers: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29. Sum = 225',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Number Series',
+      tags: ['Math', 'Series', 'Odd Numbers']
+    },
+    {
+      id: '11-15',
+      question: 'A rectangle has a perimeter of 30 units and an area of 50 square units. What are its dimensions?',
+      options: [
+        '5 × 10',
+        '6 × 9',
+        '7 × 8',
+        '4 × 11'
+      ],
+      correctAnswer: 0,
+      explanation: 'Perimeter = 2(l+w) = 30, so l+w = 15. Area = l×w = 50. 5×10 = 50 and 5+10 = 15',
+      category: 'Problem Solving',
+      difficulty: 'hard',
+      skill: 'Geometry',
+      tags: ['Math', 'Geometry', 'Rectangles', 'Algebra']
     }
   ],
 
@@ -2127,6 +2847,501 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'easy',
       skill: 'Job Satisfaction',
       tags: ['Career', 'Satisfaction', 'Fulfillment']
+    },
+    {
+      id: '13-11',
+      question: 'When faced with a difficult challenge at work, I:',
+      options: [
+        'Avoid it if possible',
+        'Break it down into manageable steps',
+        'Ask someone else to handle it',
+        'Wait for it to resolve itself'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your problem-solving approach and resilience in the workplace.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Problem Solving',
+      tags: ['Career', 'Problem Solving', 'Resilience']
+    },
+    {
+      id: '13-12',
+      question: 'I prefer work environments that offer:',
+      options: [
+        'High salaries only',
+        'Opportunities for growth and learning',
+        'Minimal stress',
+        'Flexible schedules only'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your priorities in a work environment and career development goals.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Work Environment',
+      tags: ['Career', 'Growth', 'Learning']
+    },
+    {
+      id: '13-13',
+      question: 'When working on team projects, I typically:',
+      options: [
+        'Prefer to work alone',
+        'Collaborate and contribute to team success',
+        'Let others do most of the work',
+        'Focus only on my assigned tasks'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your teamwork style and collaboration preferences.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Teamwork',
+      tags: ['Career', 'Teamwork', 'Collaboration']
+    },
+    {
+      id: '13-14',
+      question: 'My approach to professional development is:',
+      options: [
+        'To wait for employer training',
+        'To actively seek learning opportunities',
+        'To focus only on current skills',
+        'To avoid additional training'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your commitment to continuous learning and professional growth.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Professional Development',
+      tags: ['Career', 'Development', 'Learning']
+    },
+    {
+      id: '13-15',
+      question: 'I see my ideal career path as:',
+      options: [
+        'Staying in one role',
+        'Progressive advancement and skill development',
+        'Minimal change and stability',
+        'Frequent job changes'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your career aspirations and long-term professional goals.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Career Path',
+      tags: ['Career', 'Advancement', 'Goals']
+    }
+  ],
+
+  '14': [ // Cybersecurity Assessment
+    {
+      id: '14-1',
+      question: 'What is the primary goal of cybersecurity?',
+      options: [
+        'To make systems faster',
+        'To protect information systems from theft, damage, or unauthorized access',
+        'To reduce costs',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cybersecurity aims to protect information systems, networks, and data from cyber threats and unauthorized access.',
+      category: 'Cybersecurity',
+      difficulty: 'easy',
+      skill: 'Security Fundamentals',
+      tags: ['Security', 'Protection', 'Cyber Threats']
+    },
+    {
+      id: '14-2',
+      question: 'What is a vulnerability in cybersecurity?',
+      options: [
+        'A type of virus',
+        'A weakness in a system that can be exploited by attackers',
+        'A security tool',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'A vulnerability is a weakness or flaw in a system that can be exploited by attackers to gain unauthorized access.',
+      category: 'Cybersecurity',
+      difficulty: 'easy',
+      skill: 'Vulnerability Management',
+      tags: ['Security', 'Vulnerabilities', 'Risk Assessment']
+    },
+    {
+      id: '14-3',
+      question: 'What is the purpose of encryption?',
+      options: [
+        'To make data faster',
+        'To convert data into a format that cannot be read without a key',
+        'To compress data',
+        'To backup data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Encryption converts data into an unreadable format that can only be decrypted with the appropriate key.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Cryptography',
+      tags: ['Security', 'Encryption', 'Data Protection']
+    },
+    {
+      id: '14-4',
+      question: 'What is a firewall?',
+      options: [
+        'A type of virus',
+        'A network security device that monitors and controls incoming/outgoing traffic',
+        'A backup system',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'A firewall is a network security device that monitors and controls network traffic based on security rules.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Network Security',
+      tags: ['Security', 'Firewalls', 'Network Protection']
+    },
+    {
+      id: '14-5',
+      question: 'What is social engineering?',
+      options: [
+        'A type of software engineering',
+        'Manipulating people into revealing confidential information',
+        'A security protocol',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'Social engineering manipulates human psychology to trick people into revealing sensitive information or performing actions.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Social Engineering',
+      tags: ['Security', 'Human Factors', 'Social Manipulation']
+    }
+  ],
+
+  '15': [ // Database Management Assessment
+    {
+      id: '15-1',
+      question: 'What is a database?',
+      options: [
+        'A type of computer',
+        'An organized collection of structured information or data',
+        'A programming language',
+        'A type of software'
+      ],
+      correctAnswer: 1,
+      explanation: 'A database is an organized collection of structured information or data, typically stored electronically.',
+      category: 'Database Management',
+      difficulty: 'easy',
+      skill: 'Database Fundamentals',
+      tags: ['Database', 'Data Storage', 'Information Management']
+    },
+    {
+      id: '15-2',
+      question: 'What is SQL?',
+      options: [
+        'A programming language',
+        'Structured Query Language used to manage and manipulate databases',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'SQL (Structured Query Language) is used to manage and manipulate relational databases.',
+      category: 'Database Management',
+      difficulty: 'easy',
+      skill: 'SQL',
+      tags: ['Database', 'SQL', 'Query Language']
+    },
+    {
+      id: '15-3',
+      question: 'What is normalization in database design?',
+      options: [
+        'Making databases normal',
+        'Organizing data to reduce redundancy and improve data integrity',
+        'Backing up data',
+        'Encrypting data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Normalization organizes data to reduce redundancy and improve data integrity in relational databases.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Design',
+      tags: ['Database', 'Normalization', 'Data Integrity']
+    },
+    {
+      id: '15-4',
+      question: 'What is a primary key?',
+      options: [
+        'A type of encryption key',
+        'A unique identifier for each record in a database table',
+        'A backup key',
+        'A security key'
+      ],
+      correctAnswer: 1,
+      explanation: 'A primary key is a unique identifier for each record in a database table, ensuring data integrity.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Design',
+      tags: ['Database', 'Primary Keys', 'Data Integrity']
+    },
+    {
+      id: '15-5',
+      question: 'What is the purpose of indexing in databases?',
+      options: [
+        'To make databases smaller',
+        'To improve query performance by creating data access paths',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Indexing improves query performance by creating efficient data access paths for faster data retrieval.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Performance',
+      tags: ['Database', 'Indexing', 'Performance Optimization']
+    }
+  ],
+
+  '16': [ // Cloud Computing Assessment
+    {
+      id: '16-1',
+      question: 'What is cloud computing?',
+      options: [
+        'Computing in the clouds',
+        'Delivery of computing services over the internet on-demand',
+        'A type of computer',
+        'A programming language'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud computing delivers computing services over the internet on-demand, including storage, processing, and applications.',
+      category: 'Cloud Computing',
+      difficulty: 'easy',
+      skill: 'Cloud Fundamentals',
+      tags: ['Cloud', 'Internet Services', 'On-demand Computing']
+    },
+    {
+      id: '16-2',
+      question: 'What is virtualization in cloud computing?',
+      options: [
+        'Making things virtual',
+        'Creating virtual versions of computing resources',
+        'A type of cloud service',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Virtualization creates virtual versions of computing resources, allowing multiple systems to run on one physical machine.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Virtualization',
+      tags: ['Cloud', 'Virtualization', 'Resource Management']
+    },
+    {
+      id: '16-3',
+      question: 'What is auto-scaling in cloud computing?',
+      options: [
+        'Making things scale automatically',
+        'Automatically adjusting resources based on demand',
+        'A type of cloud service',
+        'A security feature'
+      ],
+      correctAnswer: 1,
+      explanation: 'Auto-scaling automatically adjusts computing resources based on demand, ensuring optimal performance and cost efficiency.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Auto-scaling',
+      tags: ['Cloud', 'Auto-scaling', 'Resource Management']
+    },
+    {
+      id: '16-4',
+      question: 'What is a load balancer in cloud computing?',
+      options: [
+        'A type of database',
+        'A device that distributes network traffic across multiple servers',
+        'A security tool',
+        'A backup system'
+      ],
+      correctAnswer: 1,
+      explanation: 'A load balancer distributes network traffic across multiple servers to ensure no single server becomes overwhelmed.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Load Balancing',
+      tags: ['Cloud', 'Load Balancing', 'Traffic Distribution']
+    },
+    {
+      id: '16-5',
+      question: 'What is the purpose of cloud storage?',
+      options: [
+        'To store clouds',
+        'To provide scalable and accessible data storage over the internet',
+        'To make data faster',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud storage provides scalable and accessible data storage over the internet, eliminating the need for local storage.',
+      category: 'Cloud Computing',
+      difficulty: 'easy',
+      skill: 'Cloud Storage',
+      tags: ['Cloud', 'Storage', 'Data Accessibility']
+    }
+  ],
+
+  '17': [ // Artificial Intelligence Assessment
+    {
+      id: '17-1',
+      question: 'What is artificial intelligence (AI)?',
+      options: [
+        'Making computers artificial',
+        'Simulation of human intelligence in machines',
+        'A type of computer',
+        'A programming language'
+      ],
+      correctAnswer: 1,
+      explanation: 'Artificial intelligence simulates human intelligence in machines, enabling them to learn, reason, and make decisions.',
+      category: 'Artificial Intelligence',
+      difficulty: 'easy',
+      skill: 'AI Fundamentals',
+      tags: ['AI', 'Machine Intelligence', 'Human Simulation']
+    },
+    {
+      id: '17-2',
+      question: 'What is machine learning?',
+      options: [
+        'Teaching machines to learn',
+        'A subset of AI that enables systems to learn from data',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Machine learning is a subset of AI that enables systems to learn and improve from experience without explicit programming.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Machine Learning',
+      tags: ['AI', 'Machine Learning', 'Data Learning']
+    },
+    {
+      id: '17-3',
+      question: 'What is deep learning?',
+      options: [
+        'Learning deeply',
+        'A subset of machine learning using neural networks with multiple layers',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Deep learning uses neural networks with multiple layers to learn complex patterns in data.',
+      category: 'Artificial Intelligence',
+      difficulty: 'hard',
+      skill: 'Deep Learning',
+      tags: ['AI', 'Deep Learning', 'Neural Networks']
+    },
+    {
+      id: '17-4',
+      question: 'What is natural language processing (NLP)?',
+      options: [
+        'Processing natural language',
+        'AI technology that enables computers to understand human language',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'NLP enables computers to understand, interpret, and generate human language naturally.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Natural Language Processing',
+      tags: ['AI', 'NLP', 'Language Understanding']
+    },
+    {
+      id: '17-5',
+      question: 'What is computer vision?',
+      options: [
+        'Computer eyesight',
+        'AI technology that enables computers to interpret visual information',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Computer vision enables computers to interpret and understand visual information from images and videos.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Computer Vision',
+      tags: ['AI', 'Computer Vision', 'Visual Processing']
+    }
+  ],
+
+  '18': [ // Web Development Assessment
+    {
+      id: '18-1',
+      question: 'What is HTML?',
+      options: [
+        'A programming language',
+        'HyperText Markup Language used to structure web content',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'HTML (HyperText Markup Language) is used to structure and present content on the web.',
+      category: 'Web Development',
+      difficulty: 'easy',
+      skill: 'HTML',
+      tags: ['Web', 'HTML', 'Markup Language']
+    },
+    {
+      id: '18-2',
+      question: 'What is CSS?',
+      options: [
+        'A programming language',
+        'Cascading Style Sheets used to style web pages',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'CSS (Cascading Style Sheets) is used to style and layout web pages.',
+      category: 'Web Development',
+      difficulty: 'easy',
+      skill: 'CSS',
+      tags: ['Web', 'CSS', 'Styling']
+    },
+    {
+      id: '18-3',
+      question: 'What is the purpose of JavaScript in web development?',
+      options: [
+        'To make websites look good',
+        'To add interactivity and dynamic behavior to web pages',
+        'To store data',
+        'To secure websites'
+      ],
+      correctAnswer: 1,
+      explanation: 'JavaScript adds interactivity and dynamic behavior to web pages, making them responsive and engaging.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'JavaScript',
+      tags: ['Web', 'JavaScript', 'Interactivity']
+    },
+    {
+      id: '18-4',
+      question: 'What is responsive web design?',
+      options: [
+        'Making websites responsive',
+        'Designing websites to work well on all devices and screen sizes',
+        'Making websites faster',
+        'Making websites secure'
+      ],
+      correctAnswer: 1,
+      explanation: 'Responsive web design ensures websites work well on all devices and screen sizes.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Responsive Design',
+      tags: ['Web', 'Responsive Design', 'Mobile-First']
+    },
+    {
+      id: '18-5',
+      question: 'What is the purpose of APIs in web development?',
+      options: [
+        'To make websites faster',
+        'To enable communication between different software systems',
+        'To store data',
+        'To secure websites'
+      ],
+      correctAnswer: 1,
+      explanation: 'APIs enable communication between different software systems, allowing web applications to integrate with external services.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'APIs',
+      tags: ['Web', 'APIs', 'System Integration']
     }
   ]
 };
