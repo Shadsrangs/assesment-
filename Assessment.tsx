@@ -434,7 +434,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '14',
+      id: '30',
       title: 'Work Style',
       description: 'Understand your preferred work environment and collaboration style.',
       category: 'personality',
@@ -452,7 +452,7 @@ export default function Assessment() {
       exceedScore: 75
     },
     {
-      id: '15',
+      id: '31',
       title: 'Creativity Assessment',
       description: 'Measure your creative thinking and innovative problem-solving abilities.',
       category: 'aptitude',
@@ -470,7 +470,7 @@ export default function Assessment() {
       exceedScore: 85
     },
     {
-      id: '16',
+      id: '32',
       title: 'Stress Management',
       description: 'Evaluate how you handle pressure and stressful situations in the workplace.',
       category: 'personality',
@@ -488,7 +488,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '17',
+      id: '33',
       title: 'Time Management',
       description: 'Assess your ability to prioritize tasks and manage time effectively.',
       category: 'aptitude',
@@ -506,7 +506,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '18',
+      id: '34',
       title: 'Team Collaboration',
       description: 'Test your ability to work effectively in team environments and group projects.',
       category: 'personality',
@@ -524,7 +524,7 @@ export default function Assessment() {
       exceedScore: 80
     },
     {
-      id: '19',
+      id: '35',
       title: 'Adaptability',
       description: 'Measure your flexibility and ability to adapt to changing circumstances.',
       category: 'personality',
@@ -637,7 +637,7 @@ export default function Assessment() {
       description: 'Test your knowledge of cybersecurity fundamentals, threats, and protection methods.',
       category: 'skill',
       duration: 25,
-      questions: 5,
+      questions: 15,
       difficulty: 'medium',
       isCompleted: false,
       maxScore: 100,
@@ -655,7 +655,7 @@ export default function Assessment() {
       description: 'Assess your database design, SQL, and data management skills.',
       category: 'skill',
       duration: 30,
-      questions: 5,
+      questions: 15,
       difficulty: 'medium',
       isCompleted: false,
       maxScore: 100,
@@ -673,7 +673,7 @@ export default function Assessment() {
       description: 'Test your understanding of cloud platforms, virtualization, and cloud services.',
       category: 'skill',
       duration: 25,
-      questions: 5,
+      questions: 15,
       difficulty: 'medium',
       isCompleted: false,
       maxScore: 100,
@@ -691,7 +691,7 @@ export default function Assessment() {
       description: 'Evaluate your AI knowledge including machine learning and neural networks.',
       category: 'skill',
       duration: 30,
-      questions: 5,
+      questions: 15,
       difficulty: 'hard',
       isCompleted: false,
       maxScore: 100,
@@ -709,7 +709,7 @@ export default function Assessment() {
       description: 'Test your web development skills including HTML, CSS, and JavaScript.',
       category: 'skill',
       duration: 25,
-      questions: 5,
+      questions: 15,
       difficulty: 'medium',
       isCompleted: false,
       maxScore: 100,

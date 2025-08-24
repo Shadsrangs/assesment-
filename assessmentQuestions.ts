@@ -3010,6 +3010,166 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Social Engineering',
       tags: ['Security', 'Human Factors', 'Social Manipulation']
+    },
+    {
+      id: '14-6',
+      question: 'What is a DDoS attack?',
+      options: [
+        'A type of virus',
+        'Distributed Denial of Service attack that overwhelms systems with traffic',
+        'A security tool',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'A DDoS attack floods systems with excessive traffic to make them unavailable to legitimate users.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Attack Types',
+      tags: ['Security', 'DDoS', 'Network Attacks']
+    },
+    {
+      id: '14-7',
+      question: 'What is the purpose of two-factor authentication?',
+      options: [
+        'To make login faster',
+        'To add an extra layer of security beyond passwords',
+        'To reduce costs',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Two-factor authentication adds an extra layer of security by requiring a second form of verification beyond passwords.',
+      category: 'Cybersecurity',
+      difficulty: 'easy',
+      skill: 'Authentication',
+      tags: ['Security', '2FA', 'Multi-factor']
+    },
+    {
+      id: '14-8',
+      question: 'What is a zero-day vulnerability?',
+      options: [
+        'A vulnerability that lasts zero days',
+        'A vulnerability unknown to the vendor with no patch available',
+        'A security tool',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'A zero-day vulnerability is a security flaw unknown to the software vendor with no patch or fix available.',
+      category: 'Cybersecurity',
+      difficulty: 'hard',
+      skill: 'Vulnerability Types',
+      tags: ['Security', 'Zero-day', 'Unknown Vulnerabilities']
+    },
+    {
+      id: '14-9',
+      question: 'What is the purpose of penetration testing?',
+      options: [
+        'To test pens',
+        'To simulate attacks and identify security weaknesses',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Penetration testing simulates real attacks to identify security weaknesses and vulnerabilities in systems.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Security Testing',
+      tags: ['Security', 'Penetration Testing', 'Security Assessment']
+    },
+    {
+      id: '14-10',
+      question: 'What is the difference between symmetric and asymmetric encryption?',
+      options: [
+        'There is no difference',
+        'Symmetric uses one key, asymmetric uses public/private key pairs',
+        'Asymmetric is deprecated',
+        'Symmetric is only for small data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Symmetric encryption uses one key for both encryption and decryption, while asymmetric uses public/private key pairs.',
+      category: 'Cybersecurity',
+      difficulty: 'hard',
+      skill: 'Encryption Types',
+      tags: ['Security', 'Symmetric', 'Asymmetric', 'Encryption']
+    },
+    {
+      id: '14-11',
+      question: 'What is a man-in-the-middle attack?',
+      options: [
+        'A person standing in the middle',
+        'An attack where the attacker intercepts communication between two parties',
+        'A security tool',
+        'A type of virus'
+      ],
+      correctAnswer: 1,
+      explanation: 'A man-in-the-middle attack intercepts and potentially alters communication between two parties without their knowledge.',
+      category: 'Cybersecurity',
+      difficulty: 'hard',
+      skill: 'Attack Types',
+      tags: ['Security', 'MITM', 'Interception']
+    },
+    {
+      id: '14-12',
+      question: 'What is the purpose of a VPN?',
+      options: [
+        'To make internet faster',
+        'To create a secure, encrypted connection over public networks',
+        'To reduce costs',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'A VPN creates a secure, encrypted connection over public networks, protecting data and user privacy.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Network Security',
+      tags: ['Security', 'VPN', 'Encrypted Connection']
+    },
+    {
+      id: '14-13',
+      question: 'What is ransomware?',
+      options: [
+        'A type of software',
+        'Malicious software that encrypts files and demands payment',
+        'A security tool',
+        'A type of virus'
+      ],
+      correctAnswer: 1,
+      explanation: 'Ransomware is malicious software that encrypts files and demands payment to restore access.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Malware Types',
+      tags: ['Security', 'Ransomware', 'Malware']
+    },
+    {
+      id: '14-14',
+      question: 'What is the principle of least privilege?',
+      options: [
+        'To give everyone access',
+        'To grant users only the minimum access necessary for their job',
+        'To restrict all access',
+        'To give admin access to everyone'
+      ],
+      correctAnswer: 1,
+      explanation: 'The principle of least privilege grants users only the minimum access necessary to perform their job functions.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Access Control',
+      tags: ['Security', 'Least Privilege', 'Access Management']
+    },
+    {
+      id: '14-15',
+      question: 'What is the purpose of security awareness training?',
+      options: [
+        'To make people aware',
+        'To educate users about security threats and best practices',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Security awareness training educates users about security threats and best practices to prevent security incidents.',
+      category: 'Cybersecurity',
+      difficulty: 'easy',
+      skill: 'Security Training',
+      tags: ['Security', 'Training', 'User Education']
     }
   ],
 
@@ -3093,6 +3253,166 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Database Performance',
       tags: ['Database', 'Indexing', 'Performance Optimization']
+    },
+    {
+      id: '15-6',
+      question: 'What is a foreign key?',
+      options: [
+        'A key from another country',
+        'A field that references the primary key of another table',
+        'A backup key',
+        'A security key'
+      ],
+      correctAnswer: 1,
+      explanation: 'A foreign key is a field that references the primary key of another table, establishing relationships between tables.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Design',
+      tags: ['Database', 'Foreign Keys', 'Relationships']
+    },
+    {
+      id: '15-7',
+      question: 'What is the difference between DELETE and TRUNCATE?',
+      options: [
+        'There is no difference',
+        'DELETE removes specific rows, TRUNCATE removes all rows and resets auto-increment',
+        'TRUNCATE is deprecated',
+        'DELETE is only for small tables'
+      ],
+      correctAnswer: 1,
+      explanation: 'DELETE removes specific rows and can be rolled back, while TRUNCATE removes all rows and resets auto-increment counters.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'SQL Commands',
+      tags: ['Database', 'DELETE', 'TRUNCATE', 'Data Manipulation']
+    },
+    {
+      id: '15-8',
+      question: 'What is a database transaction?',
+      options: [
+        'A business transaction',
+        'A logical unit of work that must be completed entirely or not at all',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'A database transaction is a logical unit of work that must be completed entirely (commit) or not at all (rollback).',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Transactions',
+      tags: ['Database', 'Transactions', 'ACID Properties']
+    },
+    {
+      id: '15-9',
+      question: 'What are ACID properties?',
+      options: [
+        'Chemical properties',
+        'Atomicity, Consistency, Isolation, and Durability for database transactions',
+        'A type of database',
+        'Security protocols'
+      ],
+      correctAnswer: 1,
+      explanation: 'ACID properties ensure database transactions are reliable: Atomicity, Consistency, Isolation, and Durability.',
+      category: 'Database Management',
+      difficulty: 'hard',
+      skill: 'ACID Properties',
+      tags: ['Database', 'ACID', 'Transaction Properties']
+    },
+    {
+      id: '15-10',
+      question: 'What is the purpose of database views?',
+      options: [
+        'To view databases',
+        'To create virtual tables based on stored queries',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Database views create virtual tables based on stored queries, providing a way to present data differently.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Views',
+      tags: ['Database', 'Views', 'Virtual Tables']
+    },
+    {
+      id: '15-11',
+      question: 'What is the difference between INNER JOIN and LEFT JOIN?',
+      options: [
+        'There is no difference',
+        'INNER JOIN returns matching records, LEFT JOIN returns all from left table',
+        'LEFT JOIN is deprecated',
+        'INNER JOIN is only for small tables'
+      ],
+      correctAnswer: 1,
+      explanation: 'INNER JOIN returns only matching records from both tables, while LEFT JOIN returns all records from the left table.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'SQL Joins',
+      tags: ['Database', 'JOINs', 'Table Relationships']
+    },
+    {
+      id: '15-12',
+      question: 'What is database denormalization?',
+      options: [
+        'Making databases abnormal',
+        'Intentionally adding redundancy to improve query performance',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Denormalization intentionally adds redundancy to improve query performance, trading storage space for speed.',
+      category: 'Database Management',
+      difficulty: 'hard',
+      skill: 'Database Design',
+      tags: ['Database', 'Denormalization', 'Performance Optimization']
+    },
+    {
+      id: '15-13',
+      question: 'What is the purpose of stored procedures?',
+      options: [
+        'To store procedures',
+        'To store and execute pre-compiled SQL statements',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Stored procedures store and execute pre-compiled SQL statements, improving performance and security.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Stored Procedures',
+      tags: ['Database', 'Stored Procedures', 'Performance']
+    },
+    {
+      id: '15-14',
+      question: 'What is database sharding?',
+      options: [
+        'Breaking databases into pieces',
+        'Partitioning data across multiple databases for scalability',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Database sharding partitions data across multiple databases to improve scalability and performance.',
+      category: 'Database Management',
+      difficulty: 'hard',
+      skill: 'Database Scaling',
+      tags: ['Database', 'Sharding', 'Scalability']
+    },
+    {
+      id: '15-15',
+      question: 'What is the purpose of database replication?',
+      options: [
+        'To copy databases',
+        'To maintain multiple copies of data for availability and performance',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Database replication maintains multiple copies of data across different locations for availability and performance.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Replication',
+      tags: ['Database', 'Replication', 'High Availability']
     }
   ],
 
@@ -3176,6 +3496,166 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'easy',
       skill: 'Cloud Storage',
       tags: ['Cloud', 'Storage', 'Data Accessibility']
+    },
+    {
+      id: '16-6',
+      question: 'What is the difference between public and private clouds?',
+      options: [
+        'There is no difference',
+        'Public clouds are shared, private clouds are dedicated to one organization',
+        'Private clouds are deprecated',
+        'Public clouds are only for small companies'
+      ],
+      correctAnswer: 1,
+      explanation: 'Public clouds are shared among multiple organizations, while private clouds are dedicated to a single organization.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Cloud Types',
+      tags: ['Cloud', 'Public Cloud', 'Private Cloud']
+    },
+    {
+      id: '16-7',
+      question: 'What is a container in cloud computing?',
+      options: [
+        'A physical container',
+        'A lightweight, isolated environment for running applications',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Containers provide lightweight, isolated environments for running applications consistently across different environments.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Containers',
+      tags: ['Cloud', 'Containers', 'Application Deployment']
+    },
+    {
+      id: '16-8',
+      question: 'What is serverless computing?',
+      options: [
+        'Computing without servers',
+        'A model where cloud providers manage server infrastructure automatically',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Serverless computing allows developers to run code without managing server infrastructure, with automatic scaling.',
+      category: 'Cloud Computing',
+      difficulty: 'hard',
+      skill: 'Serverless',
+      tags: ['Cloud', 'Serverless', 'Function as a Service']
+    },
+    {
+      id: '16-9',
+      question: 'What is the purpose of cloud monitoring?',
+      options: [
+        'To monitor clouds',
+        'To track performance, availability, and resource usage of cloud services',
+        'To make clouds faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud monitoring tracks performance, availability, and resource usage to ensure optimal cloud service delivery.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Cloud Monitoring',
+      tags: ['Cloud', 'Monitoring', 'Performance Tracking']
+    },
+    {
+      id: '16-10',
+      question: 'What is cloud migration?',
+      options: [
+        'Moving clouds',
+        'Moving applications and data from on-premises to cloud environments',
+        'To make clouds faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud migration involves moving applications and data from on-premises infrastructure to cloud environments.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Cloud Migration',
+      tags: ['Cloud', 'Migration', 'Infrastructure']
+    },
+    {
+      id: '16-11',
+      question: 'What is the difference between IaaS and PaaS?',
+      options: [
+        'There is no difference',
+        'IaaS provides infrastructure, PaaS provides platform and development tools',
+        'PaaS is deprecated',
+        'IaaS is only for large companies'
+      ],
+      correctAnswer: 1,
+      explanation: 'IaaS provides virtualized infrastructure, while PaaS provides platform and development tools for application deployment.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Cloud Service Models',
+      tags: ['Cloud', 'IaaS', 'PaaS', 'Service Models']
+    },
+    {
+      id: '16-12',
+      question: 'What is cloud cost optimization?',
+      options: [
+        'To optimize costs',
+        'To minimize cloud spending while maintaining performance',
+        'To make clouds faster',
+        'To reduce security'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud cost optimization minimizes cloud spending while maintaining performance through efficient resource usage.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Cost Optimization',
+      tags: ['Cloud', 'Cost Management', 'Resource Optimization']
+    },
+    {
+      id: '16-13',
+      question: 'What is a cloud region?',
+      options: [
+        'A geographic area',
+        'A geographic location where cloud resources are deployed',
+        'A type of cloud service',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'A cloud region is a geographic location where cloud providers deploy their infrastructure and services.',
+      category: 'Cloud Computing',
+      difficulty: 'easy',
+      skill: 'Cloud Geography',
+      tags: ['Cloud', 'Regions', 'Geographic Distribution']
+    },
+    {
+      id: '16-14',
+      question: 'What is the purpose of cloud backup?',
+      options: [
+        'To backup clouds',
+        'To store copies of data in cloud storage for disaster recovery',
+        'To make clouds faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud backup stores copies of data in cloud storage to ensure data recovery in case of disasters or data loss.',
+      category: 'Cloud Computing',
+      difficulty: 'easy',
+      skill: 'Cloud Backup',
+      tags: ['Cloud', 'Backup', 'Disaster Recovery']
+    },
+    {
+      id: '16-15',
+      question: 'What is cloud security?',
+      options: [
+        'Security for clouds',
+        'Protection of cloud-based systems, data, and infrastructure',
+        'To make clouds faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud security protects cloud-based systems, data, and infrastructure from threats and vulnerabilities.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Cloud Security',
+      tags: ['Cloud', 'Security', 'Data Protection']
     }
   ],
 
@@ -3259,6 +3739,166 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Computer Vision',
       tags: ['AI', 'Computer Vision', 'Visual Processing']
+    },
+    {
+      id: '17-6',
+      question: 'What is supervised learning?',
+      options: [
+        'Learning with supervision',
+        'Machine learning using labeled training data to learn patterns',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Supervised learning uses labeled training data to learn patterns and make predictions on new, unseen data.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Supervised Learning',
+      tags: ['AI', 'Supervised Learning', 'Labeled Data']
+    },
+    {
+      id: '17-7',
+      question: 'What is unsupervised learning?',
+      options: [
+        'Learning without supervision',
+        'Machine learning that finds hidden patterns in unlabeled data',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Unsupervised learning finds hidden patterns and structures in data without predefined labels or outcomes.',
+      category: 'Artificial Intelligence',
+      difficulty: 'hard',
+      skill: 'Unsupervised Learning',
+      tags: ['AI', 'Unsupervised Learning', 'Pattern Discovery']
+    },
+    {
+      id: '17-8',
+      question: 'What is reinforcement learning?',
+      options: [
+        'Learning with reinforcement',
+        'Learning through interaction with an environment to maximize rewards',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Reinforcement learning learns optimal actions through interaction with an environment to maximize cumulative rewards.',
+      category: 'Artificial Intelligence',
+      difficulty: 'hard',
+      skill: 'Reinforcement Learning',
+      tags: ['AI', 'Reinforcement Learning', 'Environment Interaction']
+    },
+    {
+      id: '17-9',
+      question: 'What is a neural network?',
+      options: [
+        'A network of neurons',
+        'A computational model inspired by biological neural networks',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Neural networks are computational models inspired by biological neural networks, consisting of interconnected nodes.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Neural Networks',
+      tags: ['AI', 'Neural Networks', 'Computational Models']
+    },
+    {
+      id: '17-10',
+      question: 'What is overfitting in machine learning?',
+      options: [
+        'Fitting too much',
+        'When a model learns training data too well but fails on new data',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Overfitting occurs when a model learns training data too well, including noise, and fails to generalize to new data.',
+      category: 'Artificial Intelligence',
+      difficulty: 'hard',
+      skill: 'Model Training',
+      tags: ['AI', 'Overfitting', 'Generalization']
+    },
+    {
+      id: '17-11',
+      question: 'What is the purpose of cross-validation?',
+      options: [
+        'To validate crosses',
+        'To assess model performance and prevent overfitting',
+        'To make models faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cross-validation assesses model performance and helps prevent overfitting by testing on multiple data subsets.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Model Validation',
+      tags: ['AI', 'Cross-validation', 'Model Assessment']
+    },
+    {
+      id: '17-12',
+      question: 'What is feature engineering?',
+      options: [
+        'Engineering features',
+        'Creating and selecting relevant features to improve model performance',
+        'To make models faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Feature engineering creates and selects relevant features from raw data to improve machine learning model performance.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Feature Engineering',
+      tags: ['AI', 'Feature Engineering', 'Data Preparation']
+    },
+    {
+      id: '17-13',
+      question: 'What is the difference between classification and regression?',
+      options: [
+        'There is no difference',
+        'Classification predicts categories, regression predicts continuous values',
+        'Regression is deprecated',
+        'Classification is only for small datasets'
+      ],
+      correctAnswer: 1,
+      explanation: 'Classification predicts discrete categories or classes, while regression predicts continuous numerical values.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'ML Tasks',
+      tags: ['AI', 'Classification', 'Regression', 'Prediction Types']
+    },
+    {
+      id: '17-14',
+      question: 'What is transfer learning?',
+      options: [
+        'Transferring learning',
+        'Using knowledge from one task to improve learning on another task',
+        'To make models faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Transfer learning uses knowledge gained from one task to improve learning and performance on a related task.',
+      category: 'Artificial Intelligence',
+      difficulty: 'hard',
+      skill: 'Transfer Learning',
+      tags: ['AI', 'Transfer Learning', 'Knowledge Transfer']
+    },
+    {
+      id: '17-15',
+      question: 'What is the purpose of AI ethics?',
+      options: [
+        'To make AI ethical',
+        'To ensure AI systems are developed and used responsibly',
+        'To make AI faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'AI ethics ensures artificial intelligence systems are developed and used responsibly, fairly, and safely.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'AI Ethics',
+      tags: ['AI', 'Ethics', 'Responsible AI']
     }
   ],
 
@@ -3342,9 +3982,1627 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'APIs',
       tags: ['Web', 'APIs', 'System Integration']
+    },
+    {
+      id: '18-6',
+      question: 'What is the DOM in web development?',
+      options: [
+        'A type of database',
+        'Document Object Model representing the structure of web pages',
+        'A security protocol',
+        'A programming language'
+      ],
+      correctAnswer: 1,
+      explanation: 'The DOM (Document Object Model) represents the structure of web pages as a tree of objects that can be manipulated.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'DOM',
+      tags: ['Web', 'DOM', 'Page Structure']
+    },
+    {
+      id: '18-7',
+      question: 'What is a framework in web development?',
+      options: [
+        'A physical frame',
+        'A pre-built structure that provides common functionality for web applications',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'A framework provides pre-built structure and common functionality to speed up web application development.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Frameworks',
+      tags: ['Web', 'Frameworks', 'Development Tools']
+    },
+    {
+      id: '18-8',
+      question: 'What is the purpose of version control in web development?',
+      options: [
+        'To control versions',
+        'To track changes and collaborate on code development',
+        'To make websites faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Version control tracks changes to code, enables collaboration, and provides backup and rollback capabilities.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Version Control',
+      tags: ['Web', 'Git', 'Collaboration']
+    },
+    {
+      id: '18-9',
+      question: 'What is the difference between frontend and backend?',
+      options: [
+        'There is no difference',
+        'Frontend is user interface, backend is server-side logic and data',
+        'Backend is deprecated',
+        'Frontend is only for small websites'
+      ],
+      correctAnswer: 1,
+      explanation: 'Frontend handles user interface and client-side interactions, while backend manages server-side logic and data.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Architecture',
+      tags: ['Web', 'Frontend', 'Backend', 'Full-Stack']
+    },
+    {
+      id: '18-10',
+      question: 'What is the purpose of testing in web development?',
+      options: [
+        'To test websites',
+        'To ensure code quality, functionality, and user experience',
+        'To make websites faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Testing ensures code quality, functionality, and user experience by identifying and fixing bugs and issues.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Testing',
+      tags: ['Web', 'Testing', 'Quality Assurance']
+    },
+    {
+      id: '18-11',
+      question: 'What is accessibility in web development?',
+      options: [
+        'Making websites accessible',
+        'Ensuring websites are usable by people with disabilities',
+        'To make websites faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Web accessibility ensures websites are usable by people with disabilities, following WCAG guidelines.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Accessibility',
+      tags: ['Web', 'Accessibility', 'WCAG', 'Inclusive Design']
+    },
+    {
+      id: '18-12',
+      question: 'What is the purpose of optimization in web development?',
+      options: [
+        'To optimize websites',
+        'To improve performance, speed, and user experience',
+        'To make websites bigger',
+        'To increase costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Web optimization improves performance, loading speed, and user experience through various techniques.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Optimization',
+      tags: ['Web', 'Performance', 'Speed', 'User Experience']
+    },
+    {
+      id: '18-13',
+      question: 'What is a progressive web app (PWA)?',
+      options: [
+        'A type of app',
+        'A web application that provides app-like experience with offline capabilities',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'PWAs are web applications that provide app-like experiences with offline capabilities and native app features.',
+      category: 'Web Development',
+      difficulty: 'hard',
+      skill: 'Progressive Web Apps',
+      tags: ['Web', 'PWA', 'Offline Capabilities']
+    },
+    {
+      id: '18-14',
+      question: 'What is the purpose of SEO in web development?',
+      options: [
+        'To optimize search engines',
+        'To improve website visibility and ranking in search results',
+        'To make websites faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'SEO (Search Engine Optimization) improves website visibility and ranking in search engine results.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'SEO',
+      tags: ['Web', 'SEO', 'Search Optimization']
+    },
+    {
+      id: '18-15',
+      question: 'What is the purpose of security in web development?',
+      options: [
+        'To secure websites',
+        'To protect websites and users from security threats and vulnerabilities',
+        'To make websites faster',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Web security protects websites and users from security threats, vulnerabilities, and malicious attacks.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Security',
+      tags: ['Web', 'Security', 'Protection', 'HTTPS']
     }
-  ]
-};
+  ],
+
+  '30': [ // Work Style Assessment
+    {
+      id: '30-1',
+      question: 'How do you prefer to work on projects?',
+      options: [
+        'Independently with minimal supervision',
+        'In a team with regular collaboration',
+        'With a mentor guiding the process',
+        'In a structured, step-by-step manner'
+      ],
+      correctAnswer: 1,
+      explanation: 'This question helps identify your preferred work environment and collaboration style.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Collaboration Preferences',
+      tags: ['Work Style', 'Collaboration', 'Teamwork']
+    },
+    {
+      id: '30-2',
+      question: 'When faced with a deadline, you typically:',
+      options: [
+        'Work best under pressure and tight timelines',
+        'Prefer to start early and work steadily',
+        'Need frequent check-ins and reminders',
+        'Delegate tasks to team members'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your time management and deadline handling preferences.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Time Management',
+      tags: ['Work Style', 'Deadlines', 'Pressure Handling']
+    },
+    {
+      id: '30-3',
+      question: 'In a team meeting, you usually:',
+      options: [
+        'Take charge and lead the discussion',
+        'Listen carefully and contribute when asked',
+        'Prefer to work on tasks independently',
+        'Focus on taking detailed notes'
+      ],
+      correctAnswer: 1,
+      explanation: 'This indicates your communication and leadership style in group settings.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Communication Style',
+      tags: ['Work Style', 'Team Meetings', 'Leadership']
+    },
+    {
+      id: '30-4',
+      question: 'When learning a new skill, you prefer:',
+      options: [
+        'Hands-on practice and experimentation',
+        'Reading documentation and manuals',
+        'Watching video tutorials',
+        'Working with a mentor or coach'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your preferred learning style and approach to skill development.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Learning Style',
+      tags: ['Work Style', 'Learning', 'Skill Development']
+    },
+    {
+      id: '30-5',
+      question: 'Your ideal work environment is:',
+      options: [
+        'Quiet and focused with minimal distractions',
+        'Dynamic and interactive with team collaboration',
+        'Structured with clear processes and procedures',
+        'Flexible with the ability to work remotely'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your environmental preferences for optimal productivity.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Environmental Preferences',
+      tags: ['Work Style', 'Environment', 'Productivity']
+    },
+    {
+      id: '30-6',
+      question: 'When making decisions, you typically:',
+      options: [
+        'Analyze data and facts thoroughly',
+        'Trust your intuition and gut feeling',
+        'Seek input from colleagues and team members',
+        'Follow established protocols and procedures'
+      ],
+      correctAnswer: 1,
+      explanation: 'This indicates your decision-making approach and style.',
+      category: 'Work Style',
+      difficulty: 'medium',
+      skill: 'Decision Making',
+      tags: ['Work Style', 'Decision Making', 'Problem Solving']
+    },
+    {
+      id: '30-7',
+      question: 'How do you handle feedback on your work?',
+      options: [
+        'Welcome it as an opportunity to improve',
+        'Prefer to review it privately first',
+        'Discuss it immediately with the person giving it',
+        'Implement changes right away'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your openness to feedback and growth mindset.',
+      category: 'Work Style',
+      difficulty: 'medium',
+      skill: 'Feedback Handling',
+      tags: ['Work Style', 'Feedback', 'Growth Mindset']
+    },
+    {
+      id: '30-8',
+      question: 'In conflict situations, you usually:',
+      options: [
+        'Address issues directly and immediately',
+        'Take time to reflect before responding',
+        'Seek mediation from a third party',
+        'Avoid confrontation when possible'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your conflict resolution style and approach.',
+      category: 'Work Style',
+      difficulty: 'medium',
+      skill: 'Conflict Resolution',
+      tags: ['Work Style', 'Conflict', 'Resolution']
+    },
+    {
+      id: '30-9',
+      question: 'When working on multiple projects, you:',
+      options: [
+        'Focus on one project at a time',
+        'Switch between projects as needed',
+        'Delegate some projects to team members',
+        'Create detailed schedules and timelines'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your multitasking and project management preferences.',
+      category: 'Work Style',
+      difficulty: 'medium',
+      skill: 'Project Management',
+      tags: ['Work Style', 'Multitasking', 'Organization']
+    },
+    {
+      id: '30-10',
+      question: 'Your communication preference is:',
+      options: [
+        'Face-to-face conversations',
+        'Written communication (email, chat)',
+        'Video calls and virtual meetings',
+        'A combination of different methods'
+      ],
+      correctAnswer: 1,
+      explanation: 'This indicates your preferred communication channels and style.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Communication Preferences',
+      tags: ['Work Style', 'Communication', 'Channels']
+    },
+    {
+      id: '30-11',
+      question: 'When setting goals, you prefer:',
+      options: [
+        'Ambitious, challenging objectives',
+        'Realistic, achievable targets',
+        'Flexible, adaptable goals',
+        'Detailed, step-by-step plans'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your goal-setting approach and ambition level.',
+      category: 'Work Style',
+      difficulty: 'medium',
+      skill: 'Goal Setting',
+      tags: ['Work Style', 'Goals', 'Planning']
+    },
+    {
+      id: '30-12',
+      question: 'How do you prefer to track your progress?',
+      options: [
+        'Regular check-ins and status updates',
+        'Detailed metrics and analytics',
+        'Visual progress indicators',
+        'Informal conversations with colleagues'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your preferred method for monitoring and tracking progress.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Progress Tracking',
+      tags: ['Work Style', 'Progress', 'Monitoring']
+    },
+    {
+      id: '30-13',
+      question: 'When working with new team members, you:',
+      options: [
+        'Take initiative to introduce yourself',
+        'Wait for them to approach you',
+        'Focus on your own work initially',
+        'Offer to help them get oriented'
+      ],
+      correctAnswer: 1,
+      explanation: 'This indicates your approach to building relationships with new colleagues.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Relationship Building',
+      tags: ['Work Style', 'Team Building', 'Relationships']
+    },
+    {
+      id: '30-14',
+      question: 'Your approach to problem-solving is:',
+      options: [
+        'Systematic and analytical',
+        'Creative and innovative',
+        'Collaborative and team-based',
+        'Practical and experience-based'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your preferred problem-solving methodology and approach.',
+      category: 'Work Style',
+      difficulty: 'medium',
+      skill: 'Problem Solving',
+      tags: ['Work Style', 'Problem Solving', 'Methodology']
+    },
+    {
+      id: '30-15',
+      question: 'How do you prefer to celebrate achievements?',
+      options: [
+        'Individually and privately',
+        'With your immediate team',
+        'Company-wide recognition',
+        'A combination of different approaches'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your preference for recognition and celebration of accomplishments.',
+      category: 'Work Style',
+      difficulty: 'easy',
+      skill: 'Recognition Preferences',
+      tags: ['Work Style', 'Achievement', 'Recognition']
+          }
+    ],
+
+    '31': [ // Creativity Assessment
+      {
+        id: '31-1',
+        question: 'When brainstorming ideas, you typically:',
+        options: [
+          'Generate many diverse options quickly',
+          'Focus on one idea and develop it thoroughly',
+          'Build upon others\' suggestions',
+          'Analyze and evaluate each idea carefully'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to idea generation and creative thinking.',
+        category: 'Creativity',
+        difficulty: 'easy',
+        skill: 'Idea Generation',
+        tags: ['Creativity', 'Brainstorming', 'Ideation']
+      },
+      {
+        id: '31-2',
+        question: 'How do you approach solving unconventional problems?',
+        options: [
+          'Use traditional methods and proven solutions',
+          'Think outside the box and try new approaches',
+          'Research similar problems and adapt solutions',
+          'Collaborate with others to find solutions'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your willingness to use creative and innovative problem-solving methods.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Innovative Problem Solving',
+        tags: ['Creativity', 'Problem Solving', 'Innovation']
+      },
+      {
+        id: '31-3',
+        question: 'When working on creative projects, you prefer:',
+        options: [
+          'Following established guidelines and templates',
+          'Experimenting with new techniques and approaches',
+          'Combining elements from different sources',
+          'Refining and perfecting existing ideas'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your approach to creative project development and execution.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Creative Project Development',
+        tags: ['Creativity', 'Project Development', 'Experimentation']
+      },
+      {
+        id: '31-4',
+        question: 'How do you handle creative blocks?',
+        options: [
+          'Take a break and return with fresh perspective',
+          'Force yourself to continue working',
+          'Seek inspiration from external sources',
+          'Ask for help from colleagues or mentors'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your strategy for overcoming creative obstacles and challenges.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Overcoming Creative Blocks',
+        tags: ['Creativity', 'Problem Solving', 'Inspiration']
+      },
+      {
+        id: '31-5',
+        question: 'Your creative process typically involves:',
+        options: [
+          'Planning everything in detail before starting',
+          'Starting with a basic idea and developing it organically',
+          'Following a structured methodology',
+          'Collaborating with others throughout the process'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your preferred creative workflow and development approach.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Creative Process',
+        tags: ['Creativity', 'Workflow', 'Development Process']
+      },
+      {
+        id: '31-6',
+        question: 'When evaluating creative work, you focus on:',
+        options: [
+          'Technical quality and execution',
+          'Originality and innovation',
+          'Practicality and usefulness',
+          'Aesthetic appeal and visual impact'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your criteria for assessing creative work and outcomes.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Creative Evaluation',
+        tags: ['Creativity', 'Evaluation', 'Assessment Criteria']
+      },
+      {
+        id: '31-7',
+        question: 'How do you find inspiration for creative projects?',
+        options: [
+          'From nature and the environment',
+          'From other creative works and artists',
+          'From personal experiences and emotions',
+          'From research and data analysis'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your primary sources of creative inspiration and motivation.',
+        category: 'Creativity',
+        difficulty: 'easy',
+        skill: 'Finding Inspiration',
+        tags: ['Creativity', 'Inspiration', 'Motivation']
+      },
+      {
+        id: '31-8',
+        question: 'When collaborating on creative projects, you:',
+        options: [
+          'Prefer to work independently',
+          'Enjoy sharing ideas and building on others\' contributions',
+          'Focus on your specific role and responsibilities',
+          'Take on a leadership role in directing the project'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to creative collaboration and teamwork.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Creative Collaboration',
+        tags: ['Creativity', 'Collaboration', 'Teamwork']
+      },
+      {
+        id: '31-9',
+        question: 'How do you approach risk-taking in creative work?',
+        options: [
+          'Avoid risks and stick to proven methods',
+          'Embrace calculated risks for innovative outcomes',
+          'Take risks only when necessary',
+          'Consult with others before taking risks'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your comfort level with creative risk-taking and experimentation.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Risk Taking',
+        tags: ['Creativity', 'Risk Taking', 'Innovation']
+      },
+      {
+        id: '31-10',
+        question: 'Your creative strengths include:',
+        options: [
+          'Technical skills and precision',
+          'Imagination and conceptual thinking',
+          'Organization and planning',
+          'Communication and presentation'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your primary creative abilities and areas of expertise.',
+        category: 'Creativity',
+        difficulty: 'easy',
+        skill: 'Creative Strengths',
+        tags: ['Creativity', 'Strengths', 'Expertise']
+      },
+      {
+        id: '31-11',
+        question: 'How do you handle feedback on creative work?',
+        options: [
+          'Take it personally and feel discouraged',
+          'Use it constructively to improve your work',
+          'Ignore feedback that doesn\'t align with your vision',
+          'Implement all feedback immediately'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to receiving and using feedback for creative improvement.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Feedback Handling',
+        tags: ['Creativity', 'Feedback', 'Improvement']
+      },
+      {
+        id: '31-12',
+        question: 'When starting a new creative project, you:',
+        options: [
+          'Research extensively before beginning',
+          'Start creating immediately and refine later',
+          'Plan the entire project structure first',
+          'Seek input and approval from stakeholders'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to initiating creative projects and getting started.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Project Initiation',
+        tags: ['Creativity', 'Project Start', 'Planning']
+      },
+      {
+        id: '31-13',
+        question: 'How do you balance creativity with practicality?',
+        options: [
+          'Focus primarily on creative expression',
+          'Ensure creative ideas are feasible and useful',
+          'Prioritize practical considerations over creativity',
+          'Find a middle ground between both aspects'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to balancing artistic vision with practical implementation.',
+        category: 'Creativity',
+        difficulty: 'hard',
+        skill: 'Creativity-Practicality Balance',
+        tags: ['Creativity', 'Practicality', 'Balance']
+      },
+      {
+        id: '31-14',
+        question: 'Your creative style is best described as:',
+        options: [
+          'Traditional and classical',
+          'Innovative and experimental',
+          'Practical and functional',
+          'Emotional and expressive'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your overall creative style and artistic approach.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Creative Style',
+        tags: ['Creativity', 'Style', 'Artistic Approach']
+      },
+      {
+        id: '31-15',
+        question: 'How do you measure success in creative work?',
+        options: [
+          'By meeting deadlines and requirements',
+          'By originality and artistic merit',
+          'By client or audience satisfaction',
+          'By personal fulfillment and growth'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your criteria for measuring creative success and achievement.',
+        category: 'Creativity',
+        difficulty: 'medium',
+        skill: 'Success Measurement',
+        tags: ['Creativity', 'Success', 'Achievement']
+      }
+    ],
+
+    '32': [ // Stress Management Assessment
+      {
+        id: '32-1',
+        question: 'When you feel stressed at work, you typically:',
+        options: [
+          'Take a short break to clear your mind',
+          'Push through and continue working',
+          'Discuss the situation with a colleague',
+          'Ignore the stress and focus on tasks'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your immediate response to workplace stress and coping mechanisms.',
+        category: 'Stress Management',
+        difficulty: 'easy',
+        skill: 'Stress Response',
+        tags: ['Stress Management', 'Coping Mechanisms', 'Workplace Stress']
+      },
+      {
+        id: '32-2',
+        question: 'How do you prioritize tasks when feeling overwhelmed?',
+        options: [
+          'Focus on urgent tasks first',
+          'Take on everything at once',
+          'Delegate tasks to others',
+          'Avoid difficult tasks temporarily'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to task management under pressure.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Task Prioritization',
+        tags: ['Stress Management', 'Task Management', 'Prioritization']
+      },
+      {
+        id: '32-3',
+        question: 'What is your preferred way to manage work-related anxiety?',
+        options: [
+          'Deep breathing and mindfulness exercises',
+          'Working longer hours to catch up',
+          'Discussing concerns with supervisors',
+          'Taking time off work'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your preferred stress management techniques and coping strategies.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Anxiety Management',
+        tags: ['Stress Management', 'Anxiety', 'Mindfulness']
+      },
+      {
+        id: '32-4',
+        question: 'How do you handle tight deadlines?',
+        options: [
+          'Plan ahead and work systematically',
+          'Work under pressure at the last minute',
+          'Request deadline extensions',
+          'Delegate to team members'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to deadline management and time pressure.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Deadline Management',
+        tags: ['Stress Management', 'Deadlines', 'Time Pressure']
+      },
+      {
+        id: '32-5',
+        question: 'When conflicts arise at work, you:',
+        options: [
+          'Address them immediately and directly',
+          'Avoid confrontation and hope they resolve',
+          'Seek mediation from HR or supervisors',
+          'Focus on your own work and ignore conflicts'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to handling workplace conflicts and interpersonal stress.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Conflict Resolution',
+        tags: ['Stress Management', 'Conflict', 'Interpersonal']
+      },
+      {
+        id: '32-6',
+        question: 'How do you maintain work-life balance?',
+        options: [
+          'Set clear boundaries between work and personal time',
+          'Work from home to spend more time with family',
+          'Take work home to complete tasks',
+          'Focus primarily on work and career advancement'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to balancing professional and personal responsibilities.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Work-Life Balance',
+        tags: ['Stress Management', 'Work-Life Balance', 'Boundaries']
+      },
+      {
+        id: '32-7',
+        question: 'What helps you relax after a stressful workday?',
+        options: [
+          'Exercise or physical activity',
+          'Watching TV or browsing social media',
+          'Discussing work issues with family',
+          'Continuing to work on pending tasks'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your preferred relaxation and recovery methods.',
+        category: 'Stress Management',
+        difficulty: 'easy',
+        skill: 'Relaxation Techniques',
+        tags: ['Stress Management', 'Relaxation', 'Recovery']
+      },
+      {
+        id: '32-8',
+        question: 'How do you handle criticism at work?',
+        options: [
+          'Take it personally and feel discouraged',
+          'Use it constructively to improve performance',
+          'Disagree and defend your position',
+          'Ignore criticism and continue as before'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your response to feedback and ability to handle constructive criticism.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Handling Criticism',
+        tags: ['Stress Management', 'Criticism', 'Feedback']
+      },
+      {
+        id: '32-9',
+        question: 'When you\'re feeling overwhelmed, you prefer to:',
+        options: [
+          'Take a short break and return refreshed',
+          'Push through and complete all tasks',
+          'Ask for help from colleagues',
+          'Postpone non-essential tasks'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your preferred approach to managing overwhelming situations.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Overwhelm Management',
+        tags: ['Stress Management', 'Overwhelm', 'Coping']
+      },
+      {
+        id: '32-10',
+        question: 'How do you prepare for high-pressure situations?',
+        options: [
+          'Practice and rehearse thoroughly',
+          'Wing it and handle challenges as they arise',
+          'Avoid such situations when possible',
+          'Delegate to more experienced team members'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your preparation strategy for stressful or high-pressure work situations.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Preparation Strategies',
+        tags: ['Stress Management', 'Preparation', 'High Pressure']
+      },
+      {
+        id: '32-11',
+        question: 'What is your approach to managing workload stress?',
+        options: [
+          'Break large tasks into smaller, manageable parts',
+          'Work overtime to complete everything',
+          'Request additional resources or support',
+          'Focus on completing one task at a time'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your strategy for managing heavy workloads and reducing stress.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Workload Management',
+        tags: ['Stress Management', 'Workload', 'Task Breakdown']
+      },
+      {
+        id: '32-12',
+        question: 'How do you handle uncertainty at work?',
+        options: [
+          'Focus on what you can control',
+          'Worry about potential negative outcomes',
+          'Wait for clear direction from others',
+          'Avoid making decisions until certain'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to managing uncertainty and ambiguity in the workplace.',
+        category: 'Stress Management',
+        difficulty: 'hard',
+        skill: 'Uncertainty Management',
+        tags: ['Stress Management', 'Uncertainty', 'Control']
+      },
+      {
+        id: '32-13',
+        question: 'What is your preferred communication style during stressful periods?',
+        options: [
+          'Direct and concise communication',
+          'Detailed explanations and thorough discussions',
+          'Minimal communication to avoid conflicts',
+          'Emotional and expressive communication'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your communication preferences when under stress.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Communication Under Stress',
+        tags: ['Stress Management', 'Communication', 'Stress Periods']
+      },
+      {
+        id: '32-14',
+        question: 'How do you manage stress-related physical symptoms?',
+        options: [
+          'Practice stress-reduction techniques',
+          'Ignore symptoms and continue working',
+          'Take medication to manage symptoms',
+          'Reduce workload to minimize stress'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to managing the physical effects of stress.',
+        category: 'Stress Management',
+        difficulty: 'medium',
+        skill: 'Physical Stress Management',
+        tags: ['Stress Management', 'Physical Symptoms', 'Stress Reduction']
+      },
+      {
+        id: '32-15',
+        question: 'What is your long-term strategy for managing workplace stress?',
+        options: [
+          'Develop resilience and coping skills',
+          'Change jobs to find less stressful work',
+          'Reduce work hours and responsibilities',
+          'Seek therapy or professional help'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to building long-term stress management capabilities.',
+        category: 'Stress Management',
+        difficulty: 'hard',
+        skill: 'Long-term Stress Strategy',
+        tags: ['Stress Management', 'Long-term Strategy', 'Resilience']
+      }
+    ],
+
+    '33': [ // Time Management Assessment
+      {
+        id: '33-1',
+        question: 'How do you typically start your workday?',
+        options: [
+          'Check emails and respond to urgent messages',
+          'Review your to-do list and prioritize tasks',
+          'Start working on the first task you see',
+          'Attend meetings and team discussions'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to beginning the workday and initial task organization.',
+        category: 'Time Management',
+        difficulty: 'easy',
+        skill: 'Daily Planning',
+        tags: ['Time Management', 'Daily Planning', 'Task Organization']
+      },
+      {
+        id: '33-2',
+        question: 'When planning your week, you:',
+        options: [
+          'Create a detailed schedule with specific time blocks',
+          'Make a general list of tasks to complete',
+          'Wing it and handle tasks as they arise',
+          'Focus only on urgent and important items'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to weekly planning and time allocation.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Weekly Planning',
+        tags: ['Time Management', 'Weekly Planning', 'Schedule Creation']
+      },
+      {
+        id: '33-3',
+        question: 'How do you handle interruptions during focused work?',
+        options: [
+          'Address them immediately to get them out of the way',
+          'Schedule specific times to handle interruptions',
+          'Ignore them and continue with your current task',
+          'Delegate them to others when possible'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your strategy for managing interruptions and maintaining focus.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Interruption Management',
+        tags: ['Time Management', 'Interruptions', 'Focus Maintenance']
+      },
+      {
+        id: '33-4',
+        question: 'What is your approach to task prioritization?',
+        options: [
+          'Use a priority matrix (urgent vs. important)',
+          'Focus on tasks with the closest deadlines',
+          'Work on tasks you enjoy most first',
+          'Handle tasks in the order they were assigned'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your method for determining task importance and order.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Task Prioritization',
+        tags: ['Time Management', 'Prioritization', 'Task Importance']
+      },
+      {
+        id: '33-5',
+        question: 'How do you estimate time for completing tasks?',
+        options: [
+          'Add buffer time to your estimates',
+          'Use your best guess based on experience',
+          'Ask others how long similar tasks take',
+          'Underestimate to challenge yourself'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to time estimation and planning accuracy.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Time Estimation',
+        tags: ['Time Management', 'Time Estimation', 'Planning Accuracy']
+      },
+      {
+        id: '33-6',
+        question: 'When you have multiple deadlines, you:',
+        options: [
+          'Work on them simultaneously',
+          'Focus on one at a time in order of urgency',
+          'Request extensions for some deadlines',
+          'Delegate some tasks to team members'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your strategy for managing multiple concurrent deadlines.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Multiple Deadline Management',
+        tags: ['Time Management', 'Multiple Deadlines', 'Concurrent Tasks']
+      },
+      {
+        id: '33-7',
+        question: 'How do you use technology for time management?',
+        options: [
+          'Rely on digital calendars and task apps',
+          'Use traditional paper planners and lists',
+          'Combine digital and analog methods',
+          'Prefer to keep everything in your head'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your preferred tools and methods for time management.',
+        category: 'Time Management',
+        difficulty: 'easy',
+        skill: 'Technology Usage',
+        tags: ['Time Management', 'Technology', 'Tools and Methods']
+      },
+      {
+        id: '33-8',
+        question: 'What is your approach to meetings?',
+        options: [
+          'Schedule them back-to-back for efficiency',
+          'Leave buffer time between meetings',
+          'Keep meetings as short as possible',
+          'Allow meetings to run as long as needed'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your strategy for managing meeting time and scheduling.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Meeting Management',
+        tags: ['Time Management', 'Meetings', 'Scheduling']
+      },
+      {
+        id: '33-9',
+        question: 'How do you handle procrastination?',
+        options: [
+          'Break large tasks into smaller, manageable parts',
+          'Set strict deadlines and consequences',
+          'Work under pressure at the last minute',
+          'Avoid difficult tasks until necessary'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your strategy for overcoming procrastination and maintaining productivity.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Procrastination Management',
+        tags: ['Time Management', 'Procrastination', 'Productivity']
+      },
+      {
+        id: '33-10',
+        question: 'What is your preferred work schedule?',
+        options: [
+          'Fixed hours with clear start and end times',
+          'Flexible hours based on task completion',
+          'Longer hours with breaks throughout the day',
+          'Short, intense work sessions with long breaks'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your preferred work rhythm and schedule structure.',
+        category: 'Time Management',
+        difficulty: 'easy',
+        skill: 'Work Schedule Preferences',
+        tags: ['Time Management', 'Work Schedule', 'Work Rhythm']
+      },
+      {
+        id: '33-11',
+        question: 'How do you manage energy levels throughout the day?',
+        options: [
+          'Schedule important tasks during peak energy times',
+          'Work consistently regardless of energy levels',
+          'Take breaks when you feel tired',
+          'Adjust your schedule based on how you feel'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to aligning tasks with energy levels for optimal performance.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Energy Management',
+        tags: ['Time Management', 'Energy Levels', 'Peak Performance']
+      },
+      {
+        id: '33-12',
+        question: 'What is your approach to long-term project planning?',
+        options: [
+          'Create detailed timelines with milestones',
+          'Set general goals and work toward them',
+          'Focus on immediate tasks and adapt as needed',
+          'Wait for direction from supervisors'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to planning and managing long-term projects.',
+        category: 'Time Management',
+        difficulty: 'hard',
+        skill: 'Long-term Planning',
+        tags: ['Time Management', 'Long-term Planning', 'Project Management']
+      },
+      {
+        id: '33-13',
+        question: 'How do you handle unexpected urgent tasks?',
+        options: [
+          'Drop everything and address them immediately',
+          'Assess urgency and reprioritize your schedule',
+          'Delegate them to others when possible',
+          'Schedule them for later in the day'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your strategy for managing unexpected urgent tasks and schedule disruptions.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Urgent Task Management',
+        tags: ['Time Management', 'Urgent Tasks', 'Schedule Disruption']
+      },
+      {
+        id: '33-14',
+        question: 'What is your approach to learning new time management techniques?',
+        options: [
+          'Research and implement them immediately',
+          'Test them gradually on less important tasks',
+          'Stick to methods that have worked in the past',
+          'Wait for others to recommend proven techniques'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your openness to improving time management skills and trying new approaches.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Skill Development',
+        tags: ['Time Management', 'Skill Development', 'Continuous Improvement']
+      },
+      {
+        id: '33-15',
+        question: 'How do you measure your time management effectiveness?',
+        options: [
+          'Track time spent on different tasks',
+          'Assess whether you meet your daily goals',
+          'Compare your productivity to colleagues',
+          'Focus on completing tasks regardless of time spent'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your method for evaluating and improving your time management performance.',
+        category: 'Time Management',
+        difficulty: 'medium',
+        skill: 'Effectiveness Measurement',
+        tags: ['Time Management', 'Effectiveness', 'Performance Evaluation']
+      }
+    ],
+
+    '34': [ // Team Collaboration Assessment
+      {
+        id: '34-1',
+        question: 'When working in a team, you typically:',
+        options: [
+          'Take on a leadership role and direct the group',
+          'Contribute ideas and collaborate with others',
+          'Focus on your specific tasks and responsibilities',
+          'Prefer to work independently when possible'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your preferred role and approach in team settings.',
+        category: 'Team Collaboration',
+        difficulty: 'easy',
+        skill: 'Team Role Preferences',
+        tags: ['Team Collaboration', 'Team Roles', 'Leadership']
+      },
+      {
+        id: '34-2',
+        question: 'How do you handle disagreements within a team?',
+        options: [
+          'Address conflicts directly and immediately',
+          'Seek compromise and find common ground',
+          'Avoid confrontation and focus on agreement',
+          'Escalate to supervisors for resolution'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to resolving team conflicts and disagreements.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Conflict Resolution',
+        tags: ['Team Collaboration', 'Conflict Resolution', 'Disagreements']
+      },
+      {
+        id: '34-3',
+        question: 'What is your approach to sharing information with team members?',
+        options: [
+          'Share everything immediately to keep everyone informed',
+          'Share relevant information when asked',
+          'Share only what is necessary for specific tasks',
+          'Wait for formal requests before sharing'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your communication style and information-sharing approach in teams.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Information Sharing',
+        tags: ['Team Collaboration', 'Information Sharing', 'Communication']
+      },
+      {
+        id: '34-4',
+        question: 'How do you contribute to team meetings?',
+        options: [
+          'Lead discussions and set the agenda',
+          'Actively participate and share ideas',
+          'Listen carefully and contribute when asked',
+          'Take notes and follow up on action items'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your participation style and contribution level in team meetings.',
+        category: 'Team Collaboration',
+        difficulty: 'easy',
+        skill: 'Meeting Participation',
+        tags: ['Team Collaboration', 'Meeting Participation', 'Contribution']
+      },
+      {
+        id: '34-5',
+        question: 'When a team member is struggling, you:',
+        options: [
+          'Offer immediate help and support',
+          'Wait for them to ask for assistance',
+          'Focus on your own work to avoid delays',
+          'Report the issue to supervisors'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to supporting team members and fostering collaboration.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Team Support',
+        tags: ['Team Collaboration', 'Team Support', 'Collaboration']
+      },
+      {
+        id: '34-6',
+        question: 'How do you handle team decision-making?',
+        options: [
+          'Make decisions independently and inform the team',
+          'Collaborate with the team to reach consensus',
+          'Follow the majority opinion of the group',
+          'Wait for clear direction from leadership'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to involving the team in decision-making processes.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Decision Making',
+        tags: ['Team Collaboration', 'Decision Making', 'Consensus Building']
+      },
+      {
+        id: '34-7',
+        question: 'What is your approach to team accountability?',
+        options: [
+          'Hold everyone accountable for their commitments',
+          'Focus on your own responsibilities',
+          'Address issues only when they affect you',
+          'Let supervisors handle accountability matters'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to ensuring team members meet their commitments.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Team Accountability',
+        tags: ['Team Collaboration', 'Accountability', 'Commitments']
+      },
+      {
+        id: '34-8',
+        question: 'How do you build relationships with new team members?',
+        options: [
+          'Take initiative to introduce yourself and welcome them',
+          'Wait for them to approach you first',
+          'Focus on work-related interactions only',
+          'Let relationships develop naturally over time'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your approach to integrating new team members and building rapport.',
+        category: 'Team Collaboration',
+        difficulty: 'easy',
+        skill: 'Relationship Building',
+        tags: ['Team Collaboration', 'Relationship Building', 'New Team Members']
+      },
+      {
+        id: '34-9',
+        question: 'What is your approach to team feedback?',
+        options: [
+          'Provide constructive feedback regularly',
+          'Give feedback only when asked',
+          'Focus on positive feedback to maintain morale',
+          'Avoid giving feedback to prevent conflicts'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to providing feedback and helping team members improve.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Feedback Provision',
+        tags: ['Team Collaboration', 'Feedback', 'Team Improvement']
+      },
+      {
+        id: '34-10',
+        question: 'How do you handle team workload distribution?',
+        options: [
+          'Take on extra work to help the team',
+          'Ensure fair distribution of tasks',
+          'Focus on your assigned responsibilities',
+          'Delegate your tasks to others when busy'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to managing team workload and task distribution.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Workload Distribution',
+        tags: ['Team Collaboration', 'Workload', 'Task Distribution']
+      },
+      {
+        id: '34-11',
+        question: 'What is your approach to team communication?',
+        options: [
+          'Use multiple communication channels for different purposes',
+          'Stick to one primary communication method',
+          'Communicate only when necessary',
+          'Let others initiate communication'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your strategy for effective team communication and information flow.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Communication Strategy',
+        tags: ['Team Collaboration', 'Communication Strategy', 'Information Flow']
+      },
+      {
+        id: '34-12',
+        question: 'How do you handle team performance issues?',
+        options: [
+          'Address performance problems directly with individuals',
+          'Discuss issues in team meetings',
+          'Report problems to supervisors',
+          'Focus on your own performance'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to addressing team performance challenges.',
+        category: 'Team Collaboration',
+        difficulty: 'hard',
+        skill: 'Performance Management',
+        tags: ['Team Collaboration', 'Performance Management', 'Issue Resolution']
+      },
+      {
+        id: '34-13',
+        question: 'What is your approach to team innovation?',
+        options: [
+          'Encourage creative thinking and new ideas',
+          'Focus on proven methods and best practices',
+          'Let others drive innovation initiatives',
+          'Avoid changes that might disrupt workflow'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to fostering innovation and creativity within the team.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Innovation Fostering',
+        tags: ['Team Collaboration', 'Innovation', 'Creative Thinking']
+      },
+      {
+        id: '34-14',
+        question: 'How do you measure team success?',
+        options: [
+          'Focus on individual achievements and contributions',
+          'Measure collective outcomes and team performance',
+          'Track project completion and deadlines',
+          'Evaluate team satisfaction and morale'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your approach to evaluating team performance and success.',
+        category: 'Team Collaboration',
+        difficulty: 'medium',
+        skill: 'Success Measurement',
+        tags: ['Team Collaboration', 'Success Measurement', 'Team Performance']
+      },
+      {
+        id: '34-15',
+        question: 'What is your long-term approach to team development?',
+        options: [
+          'Focus on immediate project needs',
+          'Invest in team skill development and growth',
+          'Maintain current team structure and processes',
+          'Adapt team composition based on project requirements'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your approach to building and developing the team over time.',
+        category: 'Team Collaboration',
+        difficulty: 'hard',
+        skill: 'Team Development',
+        tags: ['Team Collaboration', 'Team Development', 'Long-term Growth']
+      }
+    ],
+
+    '35': [ // Adaptability Assessment
+      {
+        id: '35-1',
+        question: 'When your work routine changes unexpectedly, you:',
+        options: [
+          'Feel stressed and prefer the old routine',
+          'Adapt quickly and find new ways to work',
+          'Wait for clear instructions before proceeding',
+          'Request to return to the previous routine'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your initial response to unexpected changes in work routines.',
+        category: 'Adaptability',
+        difficulty: 'easy',
+        skill: 'Routine Change Response',
+        tags: ['Adaptability', 'Routine Changes', 'Flexibility']
+      },
+      {
+        id: '35-2',
+        question: 'How do you approach learning new technologies?',
+        options: [
+          'Prefer to stick with familiar tools',
+          'Embrace new technologies and learn quickly',
+          'Learn only what is necessary for your job',
+          'Wait for others to master them first'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your willingness to learn and adapt to new technological changes.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Technology Adaptation',
+        tags: ['Adaptability', 'Technology Learning', 'Innovation']
+      },
+      {
+        id: '35-3',
+        question: 'When assigned to a new team, you:',
+        options: [
+          'Take time to observe team dynamics before participating',
+          'Actively engage and adapt to the new environment',
+          'Prefer to work independently until comfortable',
+          'Request to return to your previous team'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your approach to adapting to new team environments.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Team Environment Adaptation',
+        tags: ['Adaptability', 'Team Adaptation', 'New Environments']
+      },
+      {
+        id: '35-4',
+        question: 'How do you handle changes in project requirements?',
+        options: [
+          'Resist changes and prefer original plans',
+          'Adapt plans and find new solutions',
+          'Wait for detailed new instructions',
+          'Request additional time for adjustments'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your flexibility in adapting to changing project needs.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Project Requirement Adaptation',
+        tags: ['Adaptability', 'Project Changes', 'Flexibility']
+      },
+      {
+        id: '35-5',
+        question: 'When your role or responsibilities change, you:',
+        options: [
+          'Feel uncertain about your new position',
+          'Embrace the opportunity to grow and learn',
+          'Seek clarification on all new expectations',
+          'Prefer to maintain your previous role'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your response to role changes and willingness to adapt.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Role Adaptation',
+        tags: ['Adaptability', 'Role Changes', 'Growth Mindset']
+      },
+      {
+        id: '35-6',
+        question: 'How do you approach new work methodologies?',
+        options: [
+          'Stick to proven methods that work for you',
+          'Experiment with new approaches and adapt',
+          'Learn new methods only when required',
+          'Wait for others to test them first'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your openness to trying new work approaches and methods.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Methodology Adaptation',
+        tags: ['Adaptability', 'New Methods', 'Experimentation']
+      },
+      {
+        id: '35-7',
+        question: 'When company policies change, you:',
+        options: [
+          'Question the need for changes',
+          'Quickly adapt to new policies and procedures',
+          'Wait for others to implement changes first',
+          'Request exceptions to maintain old practices'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your ability to adapt to organizational changes and new policies.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Policy Adaptation',
+        tags: ['Adaptability', 'Policy Changes', 'Organizational Change']
+      },
+      {
+        id: '35-8',
+        question: 'How do you handle working with new clients or stakeholders?',
+        options: [
+          'Prefer working with familiar clients',
+          'Quickly understand and adapt to new client needs',
+          'Take time to learn client preferences',
+          'Request to work with existing clients only'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your ability to adapt to different client requirements and expectations.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Client Adaptation',
+        tags: ['Adaptability', 'Client Relationships', 'Needs Assessment']
+      },
+      {
+        id: '35-9',
+        question: 'When industry trends change, you:',
+        options: [
+          'Continue with current approaches',
+          'Stay updated and adapt strategies accordingly',
+          'Wait for trends to become mainstream',
+          'Focus on maintaining current practices'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your awareness of industry changes and willingness to adapt.',
+        category: 'Adaptability',
+        difficulty: 'hard',
+        skill: 'Industry Trend Adaptation',
+        tags: ['Adaptability', 'Industry Trends', 'Strategic Adaptation']
+      },
+      {
+        id: '35-10',
+        question: 'How do you handle unexpected challenges at work?',
+        options: [
+          'Feel overwhelmed and seek help immediately',
+          'Analyze the situation and adapt your approach',
+          'Wait for guidance from supervisors',
+          'Avoid challenges that seem too difficult'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your problem-solving approach and adaptability to challenges.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Challenge Adaptation',
+        tags: ['Adaptability', 'Problem Solving', 'Challenge Response']
+      },
+      {
+        id: '35-11',
+        question: 'What is your approach to feedback that requires behavior changes?',
+        options: [
+          'Resist changes to your established patterns',
+          'Embrace feedback and work on improvement',
+          'Consider changes but implement slowly',
+          'Disagree with feedback that requires changes'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your willingness to adapt behavior based on feedback.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Behavioral Adaptation',
+        tags: ['Adaptability', 'Feedback', 'Behavior Change']
+      },
+      {
+        id: '35-12',
+        question: 'How do you approach cross-functional projects?',
+        options: [
+          'Prefer to work within your area of expertise',
+          'Learn new skills and adapt to different functions',
+          'Collaborate but focus on your specific role',
+          'Request to work only on familiar aspects'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your willingness to adapt and learn in cross-functional environments.',
+        category: 'Adaptability',
+        difficulty: 'hard',
+        skill: 'Cross-functional Adaptation',
+        tags: ['Adaptability', 'Cross-functional Work', 'Skill Development']
+      },
+      {
+        id: '35-13',
+        question: 'When your work environment changes, you:',
+        options: [
+          'Prefer to maintain your current setup',
+          'Quickly adapt to new environments and arrangements',
+          'Take time to adjust to new surroundings',
+          'Request to keep your previous workspace'
+        ],
+        correctAnswer: 1,
+        explanation: 'This shows your ability to adapt to physical and environmental changes.',
+        category: 'Adaptability',
+        difficulty: 'easy',
+        skill: 'Environmental Adaptation',
+        tags: ['Adaptability', 'Environmental Changes', 'Workspace Adaptation']
+      },
+      {
+        id: '35-14',
+        question: 'How do you handle changes in team leadership?',
+        options: [
+          'Prefer consistency in leadership',
+          'Adapt to new leadership styles and expectations',
+          'Wait to understand the new leader\'s approach',
+          'Request to work with previous leaders'
+        ],
+        correctAnswer: 1,
+        explanation: 'This indicates your ability to adapt to different leadership styles and approaches.',
+        category: 'Adaptability',
+        difficulty: 'medium',
+        skill: 'Leadership Adaptation',
+        tags: ['Adaptability', 'Leadership Changes', 'Style Adaptation']
+      },
+      {
+        id: '35-15',
+        question: 'What is your long-term approach to staying adaptable?',
+        options: [
+          'Maintain current skills and methods',
+          'Continuously learn and develop new capabilities',
+          'Adapt only when necessary for job security',
+          'Focus on becoming an expert in your current role'
+        ],
+        correctAnswer: 1,
+        explanation: 'This reveals your commitment to long-term adaptability and continuous learning.',
+        category: 'Adaptability',
+        difficulty: 'hard',
+        skill: 'Long-term Adaptability',
+        tags: ['Adaptability', 'Continuous Learning', 'Skill Development']
+      }
+    ]
+  };
 
 // Enhanced function to get questions with better shuffling
 export const getQuestionsForAssessment = (assessmentId: string): Question[] => {
