@@ -98,8 +98,8 @@ export const assessmentQuestions: AssessmentQuestions = {
       explanation: 'APIs (Application Programming Interfaces) allow different software applications to communicate and share data.',
       category: 'Programming',
       difficulty: 'medium',
-      skill: 'API Design',
-      tags: ['Integration', 'Communication']
+      skill: 'APIs',
+      tags: ['Web', 'Integration']
     },
     {
       id: '1-6',
@@ -340,88 +340,9 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'hard',
       skill: 'Function Methods',
       tags: ['Functions', 'this Context']
-    },
-    {
-      id: '1-21',
-      question: 'What is the difference between shallow and deep copying?',
-      options: [
-        'There is no difference',
-        'Shallow copies reference nested objects, deep copies create new nested objects',
-        'Deep copies are always faster',
-        'Shallow copies are deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Shallow copying creates a new object but references nested objects, while deep copying creates completely new copies of nested objects.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'Object Manipulation',
-      tags: ['Objects', 'Memory Management']
-    },
-    {
-      id: '1-22',
-      question: 'What is the purpose of the Symbol type?',
-      options: [
-        'To create symbols',
-        'To create unique identifiers',
-        'To improve performance',
-        'To create new data types'
-      ],
-      correctAnswer: 1,
-      explanation: 'Symbols are primitive values that are unique and immutable, often used as unique identifiers for object properties.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Symbols', 'Unique Identifiers']
-    },
-    {
-      id: '1-23',
-      question: 'What is the difference between for...in and for...of loops?',
-      options: [
-        'They are the same',
-        'for...in iterates over enumerable properties, for...of iterates over iterable values',
-        'for...of is faster than for...in',
-        'for...in is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'for...in iterates over enumerable properties of an object, while for...of iterates over iterable values like arrays.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'Loops',
-      tags: ['Iteration', 'ES6']
-    },
-    {
-      id: '1-24',
-      question: 'What is the purpose of the Proxy object?',
-      options: [
-        'To create proxy servers',
-        'To intercept and customize operations on objects',
-        'To improve performance',
-        'To create new objects'
-      ],
-      correctAnswer: 1,
-      explanation: 'The Proxy object enables you to create a proxy for another object, which can intercept and customize fundamental operations.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Proxies', 'Metaprogramming']
-    },
-    {
-      id: '1-25',
-      question: 'What is the difference between Object.freeze() and Object.seal()?',
-      options: [
-        'They are the same',
-        'freeze() prevents all changes, seal() prevents adding/removing properties',
-        'seal() is more restrictive than freeze()',
-        'freeze() is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Object.freeze() prevents all changes to an object, while Object.seal() prevents adding/removing properties but allows modifying existing ones.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'Object Methods',
-      tags: ['Objects', 'Immutability']
     }
   ],
+
   '2': [ // React Development - Enhanced with more questions
     {
       id: '2-1',
@@ -581,7 +502,7 @@ export const assessmentQuestions: AssessmentQuestions = {
       category: 'React',
       difficulty: 'medium',
       skill: 'Performance Optimization',
-      tags: ['Memoization', 'Components']
+      tags: ['Memoization', 'Hooks']
     },
     {
       id: '2-11',
@@ -675,7 +596,7 @@ export const assessmentQuestions: AssessmentQuestions = {
       correctAnswer: 1,
       explanation: 'useEffect fires asynchronously after the browser has painted, while useLayoutEffect fires synchronously after all DOM mutations.',
       category: 'React',
-      difficulty: 'medium',
+      difficulty: 'hard',
       skill: 'Effects',
       tags: ['Timing', 'DOM Updates']
     },
@@ -721,7 +642,7 @@ export const assessmentQuestions: AssessmentQuestions = {
         'To create strict rules'
       ],
       correctAnswer: 1,
-      explanation: 'StrictMode is a development mode that helps identify potential problems in your application by highlighting deprecated lifecycle methods.',
+      explanation: 'React.StrictMode is a development mode that helps identify potential problems in your application by highlighting deprecated lifecycle methods.',
       category: 'React',
       difficulty: 'medium',
       skill: 'Development Tools',
@@ -742,3007 +663,2687 @@ export const assessmentQuestions: AssessmentQuestions = {
       difficulty: 'medium',
       skill: 'Component Types',
       tags: ['Classes vs Functions', 'Hooks']
-    },
-    {
-      id: '2-21',
-      question: 'What is the purpose of the React.lazy function?',
-      options: [
-        'To make components lazy',
-        'To enable code splitting and lazy loading of components',
-        'To improve performance',
-        'To create lazy components'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.lazy enables code splitting by allowing you to render a dynamic import as a regular component.',
-      category: 'React',
-      difficulty: 'hard',
-      skill: 'Code Splitting',
-      tags: ['Performance', 'Dynamic Imports']
-    },
-    {
-      id: '2-22',
-      question: 'What is the difference between React.memo and React.PureComponent?',
-      options: [
-        'They are the same',
-        'React.memo is for functional components, PureComponent is for class components',
-        'PureComponent is always better',
-        'React.memo is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.memo is a higher-order component for functional components, while PureComponent is a base class for class components.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Performance Optimization',
-      tags: ['Memoization', 'Component Types']
-    },
-    {
-      id: '2-23',
-      question: 'What is the purpose of the React.Suspense component?',
-      options: [
-        'To create suspense',
-        'To wrap components that may suspend and show fallback UI',
-        'To improve performance',
-        'To create suspenseful components'
-      ],
-      correctAnswer: 1,
-      explanation: 'Suspense lets you wrap components that may suspend and show fallback UI while waiting for something to load.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Loading States',
-      tags: ['Async Rendering', 'Fallback UI']
-    },
-    {
-      id: '2-24',
-      question: 'What is the difference between controlled and uncontrolled forms?',
-      options: [
-        'They are the same',
-        'Controlled forms have React state, uncontrolled forms use DOM state',
-        'Uncontrolled forms are always better',
-        'Controlled forms are deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Controlled forms have their form data handled by React state, while uncontrolled forms use the DOM to handle form data.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Form Handling',
-      tags: ['Forms', 'State Management']
-    },
-    {
-      id: '2-25',
-      question: 'What is the purpose of the React.Portal?',
-      options: [
-        'To create portals',
-        'To render children into a DOM node that exists outside the parent component',
-        'To improve performance',
-        'To create new portals'
-      ],
-      correctAnswer: 1,
-      explanation: 'Portals provide a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component.',
-      category: 'React',
-      difficulty: 'hard',
-      skill: 'DOM Rendering',
-      tags: ['DOM Manipulation', 'Modal Rendering']
     }
   ],
-  '2': [
-    // Additional React Development Questions (2-26 to 2-50)
+
+  '3': [ // Python Programming Assessment
     {
-      id: '2-26',
-      question: 'What is the purpose of React.memo()?',
+      id: '3-1',
+      question: 'What is the difference between a list and a tuple in Python?',
       options: [
-        'To create memoized components',
-        'To prevent unnecessary re-renders of functional components',
-        'To improve performance',
-        'To create new components'
+        'There is no difference',
+        'Lists are mutable, tuples are immutable',
+        'Tuples are faster than lists',
+        'Lists can only contain numbers'
       ],
       correctAnswer: 1,
-      explanation: 'React.memo() is a higher-order component that memoizes a functional component, preventing re-renders if props haven\'t changed.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Performance Optimization',
-      tags: ['React.memo', 'Performance', 'HOCs']
-    },
-    {
-      id: '2-27',
-      question: 'What is the difference between useCallback and useMemo?',
-      options: [
-        'They are identical',
-        'useCallback memoizes functions, useMemo memoizes values',
-        'useMemo is faster',
-        'useCallback is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'useCallback memoizes functions to prevent unnecessary re-creations, while useMemo memoizes computed values.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Hooks',
-      tags: ['useCallback', 'useMemo', 'Hooks', 'Performance']
-    },
-    {
-      id: '2-28',
-      question: 'What is the purpose of the React.Suspense component?',
-      options: [
-        'To create suspense',
-        'To handle loading states and lazy loading of components',
-        'To improve performance',
-        'To create new components'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.Suspense allows you to wrap components that may suspend (like lazy-loaded components) and show fallback content while loading.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Code Splitting',
-      tags: ['Suspense', 'Lazy Loading', 'Code Splitting']
-    },
-    {
-      id: '2-29',
-      question: 'What is the difference between controlled and uncontrolled components?',
-      options: [
-        'They are identical',
-        'Controlled components have their state managed by React, uncontrolled use DOM',
-        'Uncontrolled are faster',
-        'Controlled are deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Controlled components have their form data handled by React state, while uncontrolled components use the DOM to handle form data.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Form Handling',
-      tags: ['Forms', 'State Management']
-    },
-    {
-      id: '2-30',
-      question: 'What is the purpose of the useReducer hook?',
-      options: [
-        'To reduce state',
-        'To manage complex state logic with a reducer function',
-        'To improve performance',
-        'To create new hooks'
-      ],
-      correctAnswer: 1,
-      explanation: 'useReducer is useful for managing complex state logic that involves multiple sub-values or when the next state depends on the previous one.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Hooks',
-      tags: ['useReducer', 'Hooks', 'State Management']
-    },
-    {
-      id: '2-31',
-      question: 'What is the difference between React.Fragment and a div wrapper?',
-      options: [
-        'They are identical',
-        'Fragment doesn\'t create an extra DOM node, div does',
-        'div is faster',
-        'Fragment is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.Fragment allows you to group elements without adding an extra DOM node, while a div wrapper creates an additional DOM element.',
-      category: 'React',
+      explanation: 'Lists are mutable (can be changed), while tuples are immutable (cannot be changed after creation).',
+      category: 'Python',
       difficulty: 'easy',
-      skill: 'JSX',
-      tags: ['Fragment', 'JSX', 'DOM']
+      skill: 'Data Structures',
+      tags: ['Python', 'Lists', 'Tuples']
     },
     {
-      id: '2-32',
-      question: 'What is the purpose of the React.lazy() function?',
+      id: '3-2',
+      question: 'What is a decorator in Python?',
       options: [
-        'To create lazy components',
-        'To enable code splitting and lazy loading of components',
-        'To improve performance',
-        'To create new functions'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.lazy() enables code splitting by allowing you to dynamically import components, which helps reduce the initial bundle size.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Code Splitting',
-      tags: ['React.lazy', 'Code Splitting', 'Dynamic Imports']
-    },
-    {
-      id: '2-33',
-      question: 'What is the difference between useEffect and useLayoutEffect?',
-      options: [
-        'They are identical',
-        'useLayoutEffect fires synchronously after DOM mutations, useEffect fires asynchronously',
-        'useEffect is faster',
-        'useLayoutEffect is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'useLayoutEffect fires synchronously after all DOM mutations, while useEffect fires asynchronously after the browser has painted.',
-      category: 'React',
-      difficulty: 'hard',
-      skill: 'Hooks',
-      tags: ['useEffect', 'useLayoutEffect', 'Hooks', 'DOM']
-    },
-    {
-      id: '2-34',
-      question: 'What is the purpose of the React.createContext() function?',
-      options: [
-        'To create contexts',
-        'To create a Context object for sharing data between components',
-        'To improve performance',
-        'To create new functions'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.createContext() creates a Context object that allows you to share data between components without explicitly passing props.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Context API',
-      tags: ['Context', 'State Sharing', 'Props Drilling']
-    },
-    {
-      id: '2-35',
-      question: 'What is the difference between useState and useRef?',
-      options: [
-        'They are identical',
-        'useState triggers re-renders, useRef doesn\'t',
-        'useRef is faster',
-        'useState is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'useState triggers re-renders when the state changes, while useRef doesn\'t trigger re-renders and persists between renders.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Hooks',
-      tags: ['useState', 'useRef', 'Hooks', 'Re-renders']
-    },
-    {
-      id: '2-36',
-      question: 'What is the purpose of the React.StrictMode component?',
-      options: [
-        'To create strict mode',
-        'To enable additional development checks and warnings',
-        'To improve performance',
-        'To create new components'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.StrictMode enables additional development checks and warnings to help identify potential problems in your application.',
-      category: 'React',
-      difficulty: 'easy',
-      skill: 'Development Tools',
-      tags: ['StrictMode', 'Development', 'Debugging']
-    },
-    {
-      id: '2-37',
-      question: 'What is the difference between class components and functional components?',
-      options: [
-        'They are identical',
-        'Class components use lifecycle methods, functional components use hooks',
-        'Functional are faster',
-        'Class components are deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Class components use lifecycle methods and this.state, while functional components use hooks and are generally preferred in modern React.',
-      category: 'React',
-      difficulty: 'easy',
-      skill: 'Component Types',
-      tags: ['Class Components', 'Functional Components', 'Hooks']
-    },
-    {
-      id: '2-38',
-      question: 'What is the purpose of the useImperativeHandle hook?',
-      options: [
-        'To create imperative handles',
-        'To customize the instance value that is exposed to parent components',
-        'To improve performance',
-        'To create new hooks'
-      ],
-      correctAnswer: 1,
-      explanation: 'useImperativeHandle customizes the instance value that is exposed to parent components when using ref.',
-      category: 'React',
-      difficulty: 'hard',
-      skill: 'Hooks',
-      tags: ['useImperativeHandle', 'Hooks', 'Refs']
-    },
-    {
-      id: '2-39',
-      question: 'What is the difference between React.PureComponent and React.Component?',
-      options: [
-        'They are identical',
-        'PureComponent implements shouldComponentUpdate with shallow comparison',
-        'Component is faster',
-        'PureComponent is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.PureComponent implements shouldComponentUpdate with a shallow comparison of props and state, while React.Component doesn\'t.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Performance Optimization',
-      tags: ['PureComponent', 'Component', 'Performance']
-    },
-    {
-      id: '2-40',
-      question: 'What is the purpose of the React.Children utility?',
-      options: [
-        'To create children',
-        'To manipulate and transform React children elements',
-        'To improve performance',
-        'To create new utilities'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.Children provides utilities for working with the children prop, including mapping, counting, and transforming children.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Children API',
-      tags: ['Children', 'Props', 'Utilities']
-    },
-    {
-      id: '2-41',
-      question: 'What is the difference between forwardRef and useRef?',
-      options: [
-        'They are identical',
-        'forwardRef forwards refs to child components, useRef creates refs',
-        'useRef is faster',
-        'forwardRef is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'forwardRef forwards refs to child components, while useRef creates and manages refs within a component.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Refs',
-      tags: ['forwardRef', 'useRef', 'Refs']
-    },
-    {
-      id: '2-42',
-      question: 'What is the purpose of the React.cloneElement() function?',
-      options: [
-        'To clone elements',
-        'To clone and modify React elements with new props',
-        'To improve performance',
-        'To create new functions'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.cloneElement() clones a React element and allows you to pass new props to it, useful for modifying child components.',
-      category: 'React',
-      difficulty: 'hard',
-      skill: 'Element Manipulation',
-      tags: ['cloneElement', 'Props', 'Children']
-    },
-    {
-      id: '2-43',
-      question: 'What is the difference between React.memo and useMemo?',
-      options: [
-        'They are identical',
-        'React.memo memoizes components, useMemo memoizes values',
-        'useMemo is faster',
-        'React.memo is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.memo memoizes entire components to prevent unnecessary re-renders, while useMemo memoizes computed values within a component.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Performance Optimization',
-      tags: ['React.memo', 'useMemo', 'Performance']
-    },
-    {
-      id: '2-44',
-      question: 'What is the purpose of the React.isValidElement() function?',
-      options: [
-        'To validate elements',
-        'To check if a value is a valid React element',
-        'To improve performance',
-        'To create new functions'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.isValidElement() checks if a value is a valid React element, useful for validation and conditional rendering.',
-      category: 'React',
-      difficulty: 'easy',
-      skill: 'Element Validation',
-      tags: ['isValidElement', 'Validation', 'Elements']
-    },
-    {
-      id: '2-45',
-      question: 'What is the difference between useEffect cleanup and componentWillUnmount?',
-      options: [
-        'They are identical',
-        'useEffect cleanup runs before next effect, componentWillUnmount runs before unmount',
-        'componentWillUnmount is faster',
-        'componentWillUnmount is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'useEffect cleanup runs before the next effect execution, while componentWillUnmount runs just before the component is unmounted.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Lifecycle',
-      tags: ['useEffect', 'componentWillUnmount', 'Cleanup']
-    },
-    {
-      id: '2-46',
-      question: 'What is the purpose of the React.createRef() function?',
-      options: [
-        'To create refs',
-        'To create a ref object that can be attached to React elements',
-        'To improve performance',
-        'To create new functions'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.createRef() creates a ref object that can be attached to React elements to access the underlying DOM node or component instance.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Refs',
-      tags: ['createRef', 'Refs', 'DOM Access']
-    },
-    {
-      id: '2-47',
-      question: 'What is the difference between useCallback and useMemo for functions?',
-      options: [
-        'They are identical',
-        'useCallback is specifically for functions, useMemo can memoize any value',
-        'useMemo is faster',
-        'useCallback is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'useCallback is specifically designed for memoizing functions, while useMemo can memoize any computed value including functions.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Hooks',
-      tags: ['useCallback', 'useMemo', 'Hooks', 'Performance']
-    },
-    {
-      id: '2-48',
-      question: 'What is the purpose of the React.Fragment shorthand syntax?',
-      options: [
-        'To create fragments',
-        'To use <> </> instead of <React.Fragment> </React.Fragment>',
-        'To improve performance',
-        'To create new syntax'
-      ],
-      correctAnswer: 1,
-      explanation: 'The shorthand syntax <> </> is equivalent to <React.Fragment> </React.Fragment> and provides a cleaner way to group elements.',
-      category: 'React',
-      difficulty: 'easy',
-      skill: 'JSX',
-      tags: ['Fragment', 'JSX', 'Shorthand']
-    },
-    {
-      id: '2-49',
-      question: 'What is the difference between React.lazy and dynamic imports?',
-      options: [
-        'They are identical',
-        'React.lazy is React-specific, dynamic imports are JavaScript standard',
-        'Dynamic imports are faster',
-        'React.lazy is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'React.lazy is a React-specific wrapper around dynamic imports that provides better integration with React\'s component system.',
-      category: 'React',
-      difficulty: 'medium',
-      skill: 'Code Splitting',
-      tags: ['React.lazy', 'Dynamic Imports', 'Code Splitting']
-    },
-    {
-      id: '2-50',
-      question: 'What is the purpose of the React.Suspense fallback prop?',
-      options: [
-        'To create fallbacks',
-        'To specify what to render while the suspended component is loading',
-        'To improve performance',
-        'To create new props'
-      ],
-      correctAnswer: 1,
-      explanation: 'The fallback prop in React.Suspense specifies what to render while the suspended component is loading, typically a loading spinner or skeleton.',
-      category: 'React',
-      difficulty: 'easy',
-      skill: 'Suspense',
-      tags: ['Suspense', 'Loading States', 'Fallback']
-    }
-    ],
-  '1': [
-    // Additional JavaScript Fundamentals Questions (1-26 to 1-50)
-    {
-      id: '1-26',
-      question: 'What is the purpose of the Symbol type in JavaScript?',
-      options: [
-        'To create unique identifiers',
-        'To represent numbers',
-        'To create strings',
-        'To define functions'
+        'A function that modifies another function',
+        'A type of variable',
+        'A loop construct',
+        'A data structure'
       ],
       correctAnswer: 0,
-      explanation: 'Symbols are primitive values that are guaranteed to be unique, making them perfect for creating unique identifiers.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Symbols', 'ES6', 'Unique Identifiers']
-    },
-    {
-      id: '1-27',
-      question: 'What is the difference between Object.freeze() and Object.seal()?',
-      options: [
-        'They are identical',
-        'freeze() prevents all changes, seal() only prevents property deletion',
-        'seal() is faster',
-        'freeze() is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Object.freeze() makes an object completely immutable, while Object.seal() only prevents adding/deleting properties but allows modification.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'Object Manipulation',
-      tags: ['Objects', 'Immutability', 'ES5']
-    },
-    {
-      id: '1-28',
-      question: 'What is the purpose of the Proxy object?',
-      options: [
-        'To create network proxies',
-        'To intercept and customize operations on objects',
-        'To improve performance',
-        'To create new objects'
-      ],
-      correctAnswer: 1,
-      explanation: 'Proxies allow you to intercept and customize fundamental operations on objects like property lookup, assignment, enumeration, etc.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Proxies', 'ES6', 'Metaprogramming']
-    },
-    {
-      id: '1-29',
-      question: 'What is the difference between WeakMap and Map?',
-      options: [
-        'WeakMap is faster',
-        'WeakMap keys are weakly referenced and can be garbage collected',
-        'Map is deprecated',
-        'They are identical'
-      ],
-      correctAnswer: 1,
-      explanation: 'WeakMap keys are weakly referenced, meaning they can be garbage collected if no other references exist, unlike regular Map keys.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Collections',
-      tags: ['WeakMap', 'Map', 'Garbage Collection', 'ES6']
-    },
-    {
-      id: '1-30',
-      question: 'What is the purpose of the Reflect API?',
-      options: [
-        'To reflect objects',
-        'To provide methods for interceptable JavaScript operations',
-        'To improve performance',
-        'To create reflections'
-      ],
-      correctAnswer: 1,
-      explanation: 'The Reflect API provides methods for interceptable JavaScript operations, making it easier to work with objects and functions.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Reflect', 'ES6', 'Metaprogramming']
-    },
-    {
-      id: '1-31',
-      question: 'What is the difference between for...in and for...of loops?',
-      options: [
-        'for...in is faster',
-        'for...in iterates over enumerable properties, for...of iterates over iterable values',
-        'for...of is deprecated',
-        'They are identical'
-      ],
-      correctAnswer: 1,
-      explanation: 'for...in iterates over enumerable properties of an object, while for...of iterates over iterable values like arrays, strings, etc.',
-      category: 'JavaScript',
+      explanation: 'A decorator is a function that takes another function as input and returns a modified version of that function.',
+      category: 'Python',
       difficulty: 'medium',
-      skill: 'Loops',
-      tags: ['Loops', 'ES6', 'Iteration']
+      skill: 'Advanced Python',
+      tags: ['Python', 'Decorators', 'Functions']
     },
     {
-      id: '1-32',
-      question: 'What is the purpose of the Generator function?',
+      id: '3-3',
+      question: 'What is the purpose of the __init__ method?',
       options: [
-        'To generate random numbers',
-        'To create functions that can pause and resume execution',
-        'To improve performance',
-        'To create new functions'
+        'To destroy objects',
+        'To initialize object attributes when creating a new instance',
+        'To import modules',
+        'To handle exceptions'
       ],
       correctAnswer: 1,
-      explanation: 'Generator functions can pause and resume execution, allowing for more complex iteration patterns and asynchronous programming.',
-      category: 'JavaScript',
-      difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Generators', 'ES6', 'Iteration']
-    },
-    {
-      id: '1-33',
-      question: 'What is the difference between call(), apply(), and bind()?',
-      options: [
-        'They are identical',
-        'call() and apply() execute immediately, bind() returns a new function',
-        'bind() is faster',
-        'call() is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'call() and apply() execute the function immediately with the specified context, while bind() returns a new function with the bound context.',
-      category: 'JavaScript',
+      explanation: 'The __init__ method is a constructor that initializes object attributes when creating a new instance of a class.',
+      category: 'Python',
       difficulty: 'medium',
-      skill: 'Function Methods',
-      tags: ['Functions', 'Context', 'this']
+      skill: 'Object-Oriented Programming',
+      tags: ['Python', 'Classes', 'OOP']
     },
     {
-      id: '1-34',
-      question: 'What is the purpose of the Set object?',
+      id: '3-4',
+      question: 'What is the difference between append() and extend() for lists?',
       options: [
-        'To create mathematical sets',
-        'To store unique values of any type',
-        'To improve performance',
-        'To create new objects'
+        'There is no difference',
+        'append() adds one element, extend() adds elements from an iterable',
+        'extend() is faster',
+        'append() only works with numbers'
       ],
       correctAnswer: 1,
-      explanation: 'Set objects let you store unique values of any type, whether primitive values or object references.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'ES6 Collections',
-      tags: ['Set', 'ES6', 'Unique Values']
-    },
-    {
-      id: '1-35',
-      question: 'What is the difference between null and undefined?',
-      options: [
-        'They are identical',
-        'null is an assigned value, undefined is the default value',
-        'undefined is faster',
-        'null is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'null is an explicitly assigned value representing "no value", while undefined is the default value for uninitialized variables.',
-      category: 'JavaScript',
+      explanation: 'append() adds a single element to the end of a list, while extend() adds all elements from an iterable.',
+      category: 'Python',
       difficulty: 'easy',
-      skill: 'Primitive Types',
-      tags: ['null', 'undefined', 'Primitive Types']
+      skill: 'List Methods',
+      tags: ['Python', 'Lists', 'Methods']
     },
     {
-      id: '1-36',
-      question: 'What is the purpose of the BigInt type?',
+      id: '3-5',
+      question: 'What is a lambda function?',
       options: [
-        'To create big integers',
-        'To represent integers with arbitrary precision',
-        'To improve performance',
-        'To create new numbers'
+        'A function that never ends',
+        'An anonymous function defined with the lambda keyword',
+        'A function that only works with numbers',
+        'A built-in Python function'
       ],
       correctAnswer: 1,
-      explanation: 'BigInt allows you to represent integers with arbitrary precision, beyond the safe integer limit of Number.MAX_SAFE_INTEGER.',
-      category: 'JavaScript',
+      explanation: 'A lambda function is an anonymous function defined with the lambda keyword, typically used for simple operations.',
+      category: 'Python',
       difficulty: 'medium',
-      skill: 'ES2020 Features',
-      tags: ['BigInt', 'ES2020', 'Arbitrary Precision']
+      skill: 'Functional Programming',
+      tags: ['Python', 'Lambda', 'Functions']
     },
     {
-      id: '1-37',
-      question: 'What is the difference between == and ===?',
+      id: '3-6',
+      question: 'What is the difference between == and is in Python?',
       options: [
-        'They are identical',
-        '== performs type coercion, === checks value and type',
-        '=== is faster',
-        '== is deprecated'
+        'There is no difference',
+        '== compares values, is compares object identity',
+        'is is faster than ==',
+        '== only works with numbers'
       ],
       correctAnswer: 1,
-      explanation: '== performs type coercion before comparison, while === checks both value and type without coercion.',
-      category: 'JavaScript',
-      difficulty: 'easy',
+      explanation: '== compares the values of objects, while is checks if two variables point to the same object in memory.',
+      category: 'Python',
+      difficulty: 'medium',
       skill: 'Operators',
-      tags: ['Equality', 'Type Coercion', 'Operators']
+      tags: ['Python', 'Operators', 'Identity']
     },
     {
-      id: '1-38',
-      question: 'What is the purpose of the Optional Chaining operator (?.)?',
+      id: '3-7',
+      question: 'What is a generator in Python?',
       options: [
-        'To create optional properties',
-        'To safely access nested properties without throwing errors',
-        'To improve performance',
-        'To create new operators'
+        'A type of loop',
+        'A function that yields values one at a time',
+        'A data structure',
+        'A built-in module'
       ],
       correctAnswer: 1,
-      explanation: 'The optional chaining operator (?.) allows you to safely access nested properties without throwing an error if a reference is null or undefined.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'ES2020 Features',
-      tags: ['Optional Chaining', 'ES2020', 'Null Safety']
-    },
-    {
-      id: '1-39',
-      question: 'What is the difference between let and var in terms of hoisting?',
-      options: [
-        'They are identical',
-        'var declarations are hoisted, let declarations are not',
-        'let is faster',
-        'var is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'var declarations are hoisted to the top of their scope, while let declarations are not hoisted and remain in the temporal dead zone.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'Variable Scoping',
-      tags: ['Hoisting', 'let', 'var', 'ES6']
-    },
-    {
-      id: '1-40',
-      question: 'What is the purpose of the Nullish Coalescing operator (??)?',
-      options: [
-        'To create null values',
-        'To provide a fallback value only for null or undefined',
-        'To improve performance',
-        'To create new operators'
-      ],
-      correctAnswer: 1,
-      explanation: 'The nullish coalescing operator (??) returns the right-hand operand when the left-hand operand is null or undefined, otherwise returns the left-hand operand.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'ES2020 Features',
-      tags: ['Nullish Coalescing', 'ES2020', 'Fallback Values']
-    },
-    {
-      id: '1-41',
-      question: 'What is the difference between Object.keys() and Object.getOwnPropertyNames()?',
-      options: [
-        'They are identical',
-        'getOwnPropertyNames() includes non-enumerable properties',
-        'keys() is faster',
-        'getOwnPropertyNames() is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'Object.keys() returns only enumerable properties, while Object.getOwnPropertyNames() returns all properties including non-enumerable ones.',
-      category: 'JavaScript',
+      explanation: 'A generator is a function that uses the yield keyword to return values one at a time, creating an iterator.',
+      category: 'Python',
       difficulty: 'hard',
-      skill: 'Object Methods',
-      tags: ['Objects', 'Property Enumeration', 'ES5']
+      skill: 'Generators',
+      tags: ['Python', 'Generators', 'Iterators']
     },
     {
-      id: '1-42',
-      question: 'What is the purpose of the Array.from() method?',
+      id: '3-8',
+      question: 'What is the purpose of the with statement?',
       options: [
-        'To create arrays',
-        'To create a new Array instance from array-like or iterable objects',
-        'To improve performance',
-        'To create new methods'
+        'To create loops',
+        'To handle context management and resource cleanup',
+        'To define functions',
+        'To import modules'
       ],
       correctAnswer: 1,
-      explanation: 'Array.from() creates a new Array instance from array-like or iterable objects, making it useful for converting various data structures to arrays.',
-      category: 'JavaScript',
+      explanation: 'The with statement is used for context management, ensuring proper setup and cleanup of resources.',
+      category: 'Python',
       difficulty: 'medium',
-      skill: 'Array Methods',
-      tags: ['Arrays', 'ES6', 'Array Creation']
+      skill: 'Context Management',
+      tags: ['Python', 'Context Managers', 'Resource Management']
     },
     {
-      id: '1-43',
-      question: 'What is the difference between Promise.all() and Promise.race()?',
+      id: '3-9',
+      question: 'What is the difference between *args and **kwargs?',
       options: [
-        'They are identical',
-        'all() waits for all promises, race() returns the first to resolve/reject',
-        'race() is faster',
-        'all() is deprecated'
+        'There is no difference',
+        '*args is for positional arguments, **kwargs is for keyword arguments',
+        '**kwargs is deprecated',
+        '*args only works with functions'
       ],
       correctAnswer: 1,
-      explanation: 'Promise.all() waits for all promises to resolve, while Promise.race() returns the first promise that resolves or rejects.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'Promises',
-      tags: ['Promises', 'ES6', 'Asynchronous Programming']
+      explanation: '*args collects positional arguments into a tuple, while **kwargs collects keyword arguments into a dictionary.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Function Arguments',
+      tags: ['Python', 'Args', 'Kwargs', 'Functions']
     },
     {
-      id: '1-44',
-      question: 'What is the purpose of the Template Literals?',
+      id: '3-10',
+      question: 'What is the purpose of the __str__ method?',
       options: [
-        'To create templates',
-        'To create strings with embedded expressions and multiline support',
-        'To improve performance',
-        'To create new strings'
-      ],
-      correctAnswer: 1,
-      explanation: 'Template literals allow you to create strings with embedded expressions using ${} syntax and support multiline strings.',
-      category: 'JavaScript',
-      difficulty: 'easy',
-      skill: 'ES6 Features',
-      tags: ['Template Literals', 'ES6', 'String Interpolation']
-    },
-    {
-      id: '1-45',
-      question: 'What is the difference between Function.prototype.call and Function.prototype.apply?',
-      options: [
-        'They are identical',
-        'call() takes arguments individually, apply() takes an array of arguments',
-        'apply() is faster',
-        'call() is deprecated'
-      ],
-      correctAnswer: 1,
-      explanation: 'call() takes arguments individually, while apply() takes an array of arguments, making it useful when you have an array of arguments.',
-      category: 'JavaScript',
-      difficulty: 'medium',
-      skill: 'Function Methods',
-      tags: ['Functions', 'Context', 'Arguments']
-    },
-    {
-      id: '1-46',
-      question: 'What is the purpose of the Object.assign() method?',
-      options: [
-        'To assign objects',
-        'To copy values from one or more source objects to a target object',
-        'To improve performance',
+        'To convert to string',
+        'To provide a string representation of an object',
+        'To handle errors',
         'To create new objects'
       ],
       correctAnswer: 1,
-      explanation: 'Object.assign() copies all enumerable own properties from one or more source objects to a target object, returning the target object.',
-      category: 'JavaScript',
+      explanation: 'The __str__ method returns a string representation of an object, used when calling str() or print().',
+      category: 'Python',
       difficulty: 'medium',
-      skill: 'ES6 Features',
-      tags: ['Object.assign', 'ES6', 'Object Copying']
+      skill: 'Magic Methods',
+      tags: ['Python', 'Magic Methods', 'String Representation']
     },
     {
-      id: '1-47',
-      question: 'What is the difference between Array.prototype.some() and Array.prototype.every()?',
+      id: '3-11',
+      question: 'What is the difference between a module and a package?',
       options: [
-        'They are identical',
-        'some() returns true if any element passes the test, every() returns true if all elements pass',
-        'every() is faster',
-        'some() is deprecated'
+        'There is no difference',
+        'A module is a single file, a package is a directory with __init__.py',
+        'Packages are deprecated',
+        'Modules are only for built-ins'
       ],
       correctAnswer: 1,
-      explanation: 'some() returns true if at least one element passes the test, while every() returns true only if all elements pass the test.',
-      category: 'JavaScript',
+      explanation: 'A module is a single Python file, while a package is a directory containing an __init__.py file and other modules.',
+      category: 'Python',
       difficulty: 'medium',
-      skill: 'Array Methods',
-      tags: ['Arrays', 'Array Methods', 'ES5']
+      skill: 'Modules and Packages',
+      tags: ['Python', 'Modules', 'Packages', 'Import System']
     },
     {
-      id: '1-48',
-      question: 'What is the purpose of the Symbol.iterator?',
+      id: '3-12',
+      question: 'What is the purpose of the @property decorator?',
       options: [
-        'To create iterators',
-        'To define the default iterator for an object',
+        'To create properties',
+        'To define getter and setter methods for attributes',
         'To improve performance',
-        'To create new symbols'
+        'To handle exceptions'
       ],
       correctAnswer: 1,
-      explanation: 'Symbol.iterator defines the default iterator for an object, allowing it to be used in for...of loops and other iteration contexts.',
-      category: 'JavaScript',
+      explanation: 'The @property decorator allows you to define getter and setter methods for class attributes.',
+      category: 'Python',
       difficulty: 'hard',
-      skill: 'ES6 Features',
-      tags: ['Symbols', 'Iterators', 'ES6']
+      skill: 'Properties',
+      tags: ['Python', 'Properties', 'Decorators', 'OOP']
     },
     {
-      id: '1-49',
-      question: 'What is the difference between Object.create() and the new operator?',
+      id: '3-13',
+      question: 'What is the difference between deepcopy and shallow copy?',
       options: [
-        'They are identical',
-        'Object.create() creates an object with a specified prototype, new calls a constructor function',
-        'new is faster',
-        'Object.create() is deprecated'
+        'There is no difference',
+        'Shallow copy creates a new object, deepcopy creates a completely independent copy',
+        'Deepcopy is always faster',
+        'Shallow copy is deprecated'
       ],
       correctAnswer: 1,
-      explanation: 'Object.create() creates an object with a specified prototype, while the new operator calls a constructor function to create an object.',
-      category: 'JavaScript',
+      explanation: 'Shallow copy creates a new object but references the same nested objects, while deepcopy creates a completely independent copy.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Copy Operations',
+      tags: ['Python', 'Copy', 'Objects', 'References']
+    },
+    {
+      id: '3-14',
+      question: 'What is the purpose of the __slots__ attribute?',
+      options: [
+        'To define slots',
+        'To restrict the attributes that can be assigned to instances',
+        'To improve performance',
+        'To handle errors'
+      ],
+      correctAnswer: 1,
+      explanation: '__slots__ restricts the attributes that can be assigned to instances, improving memory usage and performance.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Memory Optimization',
+      tags: ['Python', 'Slots', 'Memory', 'Performance']
+    },
+    {
+      id: '3-15',
+      question: 'What is the difference between a class method and a static method?',
+      options: [
+        'There is no difference',
+        'Class methods receive the class as first argument, static methods don\'t',
+        'Static methods are deprecated',
+        'Class methods are only for inheritance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Class methods receive the class as the first argument, while static methods don\'t receive any implicit first argument.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Method Types',
+      tags: ['Python', 'Class Methods', 'Static Methods', 'OOP']
+    },
+    {
+      id: '3-16',
+      question: 'What is the purpose of the __enter__ and __exit__ methods?',
+      options: [
+        'To enter and exit functions',
+        'To implement context manager protocol for the with statement',
+        'To create new objects',
+        'To handle errors'
+      ],
+      correctAnswer: 1,
+      explanation: 'These methods implement the context manager protocol, allowing objects to be used with the with statement.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Context Managers',
+      tags: ['Python', 'Context Managers', 'with Statement']
+    },
+    {
+      id: '3-17',
+      question: 'What is the difference between a list comprehension and a generator expression?',
+      options: [
+        'They are the same',
+        'List comprehension creates a list, generator expression creates an iterator',
+        'Generator expressions are deprecated',
+        'List comprehensions are only for numbers'
+      ],
+      correctAnswer: 1,
+      explanation: 'List comprehension creates a list in memory, while generator expression creates an iterator that yields values on demand.',
+      category: 'Python',
+      difficulty: 'medium',
+      skill: 'Comprehensions',
+      tags: ['Python', 'List Comprehension', 'Generators']
+    },
+    {
+      id: '3-18',
+      question: 'What is the purpose of the @classmethod decorator?',
+      options: [
+        'To create classes',
+        'To define methods that operate on the class rather than instances',
+        'To improve performance',
+        'To handle errors'
+      ],
+      correctAnswer: 1,
+      explanation: 'The @classmethod decorator defines methods that operate on the class rather than instances, receiving the class as the first argument.',
+      category: 'Python',
+      difficulty: 'hard',
+      skill: 'Decorators',
+      tags: ['Python', 'Class Methods', 'Decorators']
+    },
+    {
+      id: '3-19',
+      question: 'What is the difference between __new__ and __init__?',
+      options: [
+        'They are the same',
+        '__new__ creates the object, __init__ initializes it',
+        '__init__ is deprecated',
+        '__new__ is only for inheritance'
+      ],
+      correctAnswer: 1,
+      explanation: '__new__ is a static method that creates and returns the object, while __init__ initializes the created object.',
+      category: 'Python',
       difficulty: 'hard',
       skill: 'Object Creation',
-      tags: ['Objects', 'Prototypes', 'ES5']
+      tags: ['Python', 'Object Creation', 'Lifecycle']
     },
     {
-      id: '1-50',
-      question: 'What is the purpose of the WeakSet object?',
+      id: '3-20',
+      question: 'What is the purpose of the @staticmethod decorator?',
       options: [
-        'To create weak sets',
-        'To store unique objects that can be garbage collected',
+        'To create static methods',
+        'To define methods that don\'t receive implicit first arguments',
         'To improve performance',
-        'To create new sets'
+        'To handle errors'
       ],
       correctAnswer: 1,
-      explanation: 'WeakSet objects let you store unique objects that can be garbage collected when no other references exist, similar to WeakMap.',
-      category: 'JavaScript',
+      explanation: 'The @staticmethod decorator defines methods that don\'t receive implicit first arguments (self or cls).',
+      category: 'Python',
       difficulty: 'hard',
-      skill: 'ES6 Collections',
-      tags: ['WeakSet', 'ES6', 'Garbage Collection']
+      skill: 'Static Methods',
+      tags: ['Python', 'Static Methods', 'Decorators']
     }
   ],
 
-// DevOps & Cloud Assessment
-'6': [
-  {
-    id: '6-1',
-    question: 'What is the primary goal of DevOps?',
-    options: [
-      'To reduce costs',
-      'To improve collaboration between development and operations teams',
-      'To automate everything',
-      'To replace traditional IT'
-    ],
-    correctAnswer: 1,
-    explanation: 'DevOps aims to improve collaboration between development and operations teams to deliver software faster and more reliably.',
-    category: 'DevOps',
-    difficulty: 'easy',
-    skill: 'DevOps Principles',
-    tags: ['DevOps', 'Collaboration', 'Software Delivery']
-  },
-  {
-    id: '6-2',
-    question: 'What is Infrastructure as Code (IaC)?',
-    options: [
-      'Writing code for infrastructure',
-      'Managing infrastructure through configuration files and scripts',
-      'Building physical servers',
-      'Cloud computing only'
-    ],
-    correctAnswer: 1,
-    explanation: 'Infrastructure as Code manages infrastructure through configuration files and scripts, enabling version control and automation.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Infrastructure as Code',
-    tags: ['DevOps', 'IaC', 'Automation']
-  },
-  {
-    id: '6-3',
-    question: 'What is the purpose of CI/CD pipelines?',
-    options: [
-      'To build software',
-      'To automate the software delivery process from development to production',
-      'To test code',
-      'To deploy applications'
-    ],
-    correctAnswer: 1,
-    explanation: 'CI/CD pipelines automate the software delivery process, ensuring code is built, tested, and deployed automatically.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'CI/CD',
-    tags: ['DevOps', 'CI/CD', 'Automation']
-  },
-  {
-    id: '6-4',
-    question: 'What is a container in DevOps?',
-    options: [
-      'A physical server',
-      'A lightweight, isolated environment for running applications',
-      'A virtual machine',
-      'A cloud service'
-    ],
-    correctAnswer: 1,
-    explanation: 'Containers provide lightweight, isolated environments for running applications, ensuring consistency across different environments.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Containers',
-    tags: ['DevOps', 'Containers', 'Docker']
-  },
-  {
-    id: '6-5',
-    question: 'What is the purpose of monitoring in DevOps?',
-    options: [
-      'To watch systems',
-      'To track application performance and identify issues proactively',
-      'To reduce costs',
-      'To automate deployments'
-    ],
-    correctAnswer: 1,
-    explanation: 'Monitoring tracks application performance and identifies issues proactively, enabling quick response and resolution.',
-    category: 'DevOps',
-    difficulty: 'easy',
-    skill: 'Monitoring',
-    tags: ['DevOps', 'Monitoring', 'Observability']
-  },
-  {
-    id: '6-6',
-    question: 'What is the difference between horizontal and vertical scaling?',
-    options: [
-      'There is no difference',
-      'Horizontal scaling adds more machines, vertical scaling adds more resources to existing machines',
-      'Vertical scaling is deprecated',
-      'Horizontal scaling is only for cloud'
-    ],
-    correctAnswer: 1,
-    explanation: 'Horizontal scaling adds more machines to distribute load, while vertical scaling adds more resources to existing machines.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Scaling',
-    tags: ['DevOps', 'Scaling', 'Performance']
-  },
-  {
-    id: '6-7',
-    question: 'What is the purpose of configuration management?',
-    options: [
-      'To manage configurations',
-      'To automate the setup and maintenance of infrastructure and applications',
-      'To reduce costs',
-      'To improve security'
-    ],
-    correctAnswer: 1,
-    explanation: 'Configuration management automates the setup and maintenance of infrastructure and applications, ensuring consistency.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Configuration Management',
-    tags: ['DevOps', 'Configuration', 'Automation']
-  },
-  {
-    id: '6-8',
-    question: 'What is the difference between blue-green and rolling deployments?',
-    options: [
-      'There is no difference',
-      'Blue-green switches between two identical environments, rolling updates gradually',
-      'Rolling deployments are deprecated',
-      'Blue-green is only for testing'
-    ],
-    correctAnswer: 1,
-    explanation: 'Blue-green switches between two identical environments, while rolling deployments gradually update instances.',
-    category: 'DevOps',
-    difficulty: 'hard',
-    skill: 'Deployment Strategies',
-    tags: ['DevOps', 'Deployment', 'Zero Downtime']
-  },
-  {
-    id: '6-9',
-    question: 'What is the purpose of log aggregation?',
-    options: [
-      'To collect logs',
-      'To centralize logs from multiple sources for analysis and monitoring',
-      'To reduce storage costs',
-      'To improve performance'
-    ],
-    correctAnswer: 1,
-    explanation: 'Log aggregation centralizes logs from multiple sources, enabling better analysis, monitoring, and troubleshooting.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Logging',
-    tags: ['DevOps', 'Logging', 'Monitoring']
-  },
-  {
-    id: '6-10',
-    question: 'What is the difference between stateless and stateful applications?',
-    options: [
-      'There is no difference',
-      'Stateless apps don\'t store session data, stateful apps maintain state',
-      'Stateful apps are deprecated',
-      'Stateless apps are only for web'
-    ],
-    correctAnswer: 1,
-    explanation: 'Stateless applications don\'t store session data between requests, while stateful applications maintain state.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Application Architecture',
-    tags: ['DevOps', 'Architecture', 'State Management']
-  },
-  {
-    id: '6-11',
-    question: 'What is the purpose of service mesh?',
-    options: [
-      'To connect services',
-      'To manage service-to-service communication, security, and observability',
-      'To improve performance',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'Service mesh manages service-to-service communication, security, and observability in microservices architectures.',
-    category: 'DevOps',
-    difficulty: 'hard',
-    skill: 'Service Mesh',
-    tags: ['DevOps', 'Service Mesh', 'Microservices']
-  },
-  {
-    id: '6-12',
-    question: 'What is the difference between IaaS, PaaS, and SaaS?',
-    options: [
-      'There is no difference',
-      'IaaS provides infrastructure, PaaS provides platform, SaaS provides software',
-      'PaaS is deprecated',
-      'IaaS is only for large companies'
-    ],
-    correctAnswer: 1,
-    explanation: 'IaaS provides infrastructure, PaaS provides platform, and SaaS provides software as a service.',
-    category: 'DevOps',
-    difficulty: 'medium',
-    skill: 'Cloud Services',
-    tags: ['DevOps', 'Cloud', 'IaaS', 'PaaS', 'SaaS']
-  },
-  {
-    id: '6-13',
-    question: 'What is the purpose of chaos engineering?',
-    options: [
-      'To create chaos',
-      'To test system resilience by intentionally introducing failures',
-      'To improve performance',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'Chaos engineering tests system resilience by intentionally introducing failures to identify weaknesses.',
-    category: 'DevOps',
-    difficulty: 'hard',
-    skill: 'Chaos Engineering',
-    tags: ['DevOps', 'Resilience', 'Testing']
-  },
-  {
-    id: '6-14',
-    question: 'What is the difference between imperative and declarative configuration?',
-    options: [
-      'There is no difference',
-      'Imperative specifies how, declarative specifies what',
-      'Declarative is deprecated',
-      'Imperative is only for scripts'
-    ],
-    correctAnswer: 1,
-    explanation: 'Imperative configuration specifies how to achieve a state, while declarative specifies the desired state.',
-    category: 'DevOps',
-    difficulty: 'hard',
-    skill: 'Configuration Management',
-    tags: ['DevOps', 'Configuration', 'Declarative']
-  },
-  {
-    id: '6-15',
-    question: 'What is the purpose of GitOps?',
-    options: [
-      'To use Git',
-      'To use Git as the single source of truth for infrastructure and application deployment',
-      'To improve performance',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'GitOps uses Git as the single source of truth for infrastructure and application deployment, enabling version control and collaboration.',
-    category: 'DevOps',
-    difficulty: 'hard',
-    skill: 'GitOps',
-    tags: ['DevOps', 'GitOps', 'Version Control']
-  }
-],
+  '4': [ // UI/UX Design Assessment
+    {
+      id: '4-1',
+      question: 'What is the primary goal of user experience (UX) design?',
+      options: [
+        'To make things look pretty',
+        'To create meaningful and relevant experiences for users',
+        'To use the latest design trends',
+        'To minimize development costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'UX design focuses on creating meaningful and relevant experiences that meet user needs and business goals.',
+      category: 'Design',
+      difficulty: 'easy',
+      skill: 'UX Principles',
+      tags: ['UX', 'Design', 'User Experience']
+    },
+    {
+      id: '4-2',
+      question: 'What is the purpose of wireframing in the design process?',
+      options: [
+        'To add colors and images',
+        'To create a visual hierarchy and layout structure',
+        'To write content',
+        'To test functionality'
+      ],
+      correctAnswer: 1,
+      explanation: 'Wireframing helps establish the visual hierarchy and layout structure before adding visual design elements.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Wireframing',
+      tags: ['Design', 'Wireframes', 'Layout']
+    },
+    {
+      id: '4-3',
+      question: 'What is the difference between UI and UX?',
+      options: [
+        'There is no difference',
+        'UI focuses on visual design, UX focuses on overall user experience',
+        'UI is more important than UX',
+        'UX is only for mobile apps'
+      ],
+      correctAnswer: 1,
+      explanation: 'UI (User Interface) focuses on visual design and interactions, while UX (User Experience) encompasses the entire user journey.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Design Concepts',
+      tags: ['UI', 'UX', 'Design']
+    },
+    {
+      id: '4-4',
+      question: 'What is accessibility in design?',
+      options: [
+        'Making designs look good',
+        'Ensuring designs are usable by people with disabilities',
+        'Using modern design tools',
+        'Creating responsive layouts'
+      ],
+      correctAnswer: 1,
+      explanation: 'Accessibility ensures that designs are usable by people with various disabilities and limitations.',
+      category: 'Design',
+      difficulty: 'easy',
+      skill: 'Accessibility',
+      tags: ['Design', 'Accessibility', 'Inclusive Design']
+    },
+    {
+      id: '4-5',
+      question: 'What is the purpose of user research in UX design?',
+      options: [
+        'To waste time',
+        'To understand user needs, behaviors, and pain points',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'User research helps designers understand user needs, behaviors, and pain points to create better solutions.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'User Research',
+      tags: ['UX', 'Research', 'User Needs']
+    },
+    {
+      id: '4-6',
+      question: 'What is the purpose of personas in UX design?',
+      options: [
+        'To create fictional characters',
+        'To represent target users and their characteristics',
+        'To make designs more colorful',
+        'To reduce design time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Personas represent target users and their characteristics, helping designers make user-centered design decisions.',
+      category: 'Design',
+      difficulty: 'easy',
+      skill: 'Personas',
+      tags: ['UX', 'Personas', 'User Research']
+    },
+    {
+      id: '4-7',
+      question: 'What is the difference between usability and user experience?',
+      options: [
+        'There is no difference',
+        'Usability focuses on efficiency, UX encompasses the entire experience',
+        'UX is only about aesthetics',
+        'Usability is deprecated'
+      ],
+      correctAnswer: 1,
+      explanation: 'Usability focuses on efficiency and effectiveness, while UX encompasses the entire user experience including emotions and satisfaction.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'UX Concepts',
+      tags: ['UX', 'Usability', 'Design']
+    },
+    {
+      id: '4-8',
+      question: 'What is the purpose of A/B testing in UX design?',
+      options: [
+        'To test two different designs',
+        'To compare two versions and determine which performs better',
+        'To create backup designs',
+        'To reduce development costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'A/B testing compares two versions of a design to determine which performs better based on user behavior and metrics.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'A/B Testing',
+      tags: ['UX', 'Testing', 'Optimization']
+    },
+    {
+      id: '4-9',
+      question: 'What is the purpose of information architecture?',
+      options: [
+        'To organize information',
+        'To structure and organize content in a way that users can easily navigate',
+        'To create databases',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Information architecture structures and organizes content in a way that users can easily navigate and find what they need.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Information Architecture',
+      tags: ['UX', 'Information Architecture', 'Navigation']
+    },
+    {
+      id: '4-10',
+      question: 'What is the purpose of user journey mapping?',
+      options: [
+        'To create maps',
+        'To visualize the user\'s experience from start to finish',
+        'To track user locations',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'User journey mapping visualizes the user\'s experience from start to finish, identifying pain points and opportunities.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Journey Mapping',
+      tags: ['UX', 'Journey Mapping', 'User Experience']
+    },
+    {
+      id: '4-11',
+      question: 'What is the purpose of usability testing?',
+      options: [
+        'To test usability',
+        'To evaluate how easy a product is to use with real users',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Usability testing evaluates how easy a product is to use by observing real users interacting with it.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Usability Testing',
+      tags: ['UX', 'Testing', 'User Evaluation']
+    },
+    {
+      id: '4-12',
+      question: 'What is the difference between UX and UI design?',
+      options: [
+        'There is no difference',
+        'UX focuses on user experience, UI focuses on visual design',
+        'UI is more important than UX',
+        'UX is only for research'
+      ],
+      correctAnswer: 1,
+      explanation: 'UX design focuses on the overall user experience and journey, while UI design focuses on the visual and interactive elements.',
+      category: 'Design',
+      difficulty: 'easy',
+      skill: 'Design Concepts',
+      tags: ['UX', 'UI', 'Design Differences']
+    },
+    {
+      id: '4-13',
+      question: 'What is the purpose of design systems?',
+      options: [
+        'To design systems',
+        'To create consistent design patterns and components',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Design systems create consistent design patterns and components for better user experience and development efficiency.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Design Systems',
+      tags: ['UX', 'Design Systems', 'Consistency']
+    },
+    {
+      id: '4-14',
+      question: 'What is the difference between qualitative and quantitative research?',
+      options: [
+        'There is no difference',
+        'Qualitative explores why, quantitative measures how much',
+        'Quantitative is deprecated',
+        'Qualitative is only for interviews'
+      ],
+      correctAnswer: 1,
+      explanation: 'Qualitative research explores why users behave certain ways, while quantitative research measures how much or how often.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Research Methods',
+      tags: ['UX', 'Research', 'Qualitative vs Quantitative']
+    },
+    {
+      id: '4-15',
+      question: 'What is the purpose of heuristic evaluation?',
+      options: [
+        'To evaluate heuristics',
+        'To assess usability using established design principles',
+        'To make designs look better',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Heuristic evaluation assesses usability by examining interfaces against established design principles and guidelines.',
+      category: 'Design',
+      difficulty: 'medium',
+      skill: 'Heuristic Evaluation',
+      tags: ['UX', 'Evaluation', 'Design Principles']
+    }
+  ],
 
-// Mobile Development Assessment
-'7': [
-  {
-    id: '7-1',
-    question: 'What is the difference between native and cross-platform mobile development?',
-    options: [
-      'There is no difference',
-      'Native uses platform-specific languages, cross-platform uses shared codebase',
-      'Cross-platform is deprecated',
-      'Native is only for iOS'
-    ],
-    correctAnswer: 1,
-    explanation: 'Native development uses platform-specific languages and tools, while cross-platform uses shared codebase for multiple platforms.',
-    category: 'Mobile Development',
-    difficulty: 'easy',
-    skill: 'Mobile Development Types',
-    tags: ['Mobile', 'Native', 'Cross-platform']
-  },
-  {
-    id: '7-2',
-    question: 'What is the purpose of responsive design in mobile development?',
-    options: [
-      'To make designs responsive',
-      'To ensure apps work well across different screen sizes and orientations',
-      'To improve performance',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Responsive design ensures mobile apps work well across different screen sizes and orientations.',
-    category: 'Mobile Development',
-    difficulty: 'easy',
-    skill: 'Responsive Design',
-    tags: ['Mobile', 'Responsive', 'UI/UX']
-  },
-  {
-    id: '7-3',
-    question: 'What is the difference between iOS and Android development?',
-    options: [
-      'There is no difference',
-      'iOS uses Swift/Objective-C, Android uses Java/Kotlin',
-      'Android is deprecated',
-      'iOS is only for iPhones'
-    ],
-    correctAnswer: 1,
-    explanation: 'iOS development uses Swift or Objective-C, while Android development uses Java or Kotlin.',
-    category: 'Mobile Development',
-    difficulty: 'easy',
-    skill: 'Platform Differences',
-    tags: ['Mobile', 'iOS', 'Android', 'Programming Languages']
-  },
-  {
-    id: '7-4',
-    question: 'What is the purpose of mobile app testing?',
-    options: [
-      'To test apps',
-      'To ensure apps work correctly across different devices and scenarios',
-      'To improve performance',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile app testing ensures apps work correctly across different devices, screen sizes, and usage scenarios.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Testing',
-    tags: ['Mobile', 'Testing', 'Quality Assurance']
-  },
-  {
-    id: '7-5',
-    question: 'What is the difference between offline and online mobile apps?',
-    options: [
-      'There is no difference',
-      'Offline apps work without internet, online apps require connectivity',
-      'Offline apps are deprecated',
-      'Online apps are only for web'
-    ],
-    correctAnswer: 1,
-    explanation: 'Offline apps can function without internet connectivity, while online apps require constant internet connection.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Connectivity',
-    tags: ['Mobile', 'Offline', 'Online', 'Connectivity']
-  },
-  {
-    id: '7-6',
-    question: 'What is the purpose of mobile app performance optimization?',
-    options: [
-      'To optimize performance',
-      'To improve app speed, battery life, and user experience',
-      'To reduce development time',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile app performance optimization improves app speed, battery life, and overall user experience.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Performance',
-    tags: ['Mobile', 'Performance', 'Optimization']
-  },
-  {
-    id: '7-7',
-    question: 'What is the difference between mobile web apps and native apps?',
-    options: [
-      'There is no difference',
-      'Mobile web apps run in browsers, native apps are installed on devices',
-      'Native apps are deprecated',
-      'Mobile web apps are only for testing'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile web apps run in web browsers, while native apps are installed directly on mobile devices.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'App Types',
-    tags: ['Mobile', 'Web Apps', 'Native Apps']
-  },
-  {
-    id: '7-8',
-    question: 'What is the purpose of mobile app security?',
-    options: [
-      'To secure apps',
-      'To protect user data and prevent unauthorized access',
-      'To improve performance',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile app security protects user data and prevents unauthorized access to app functionality.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Security',
-    tags: ['Mobile', 'Security', 'Data Protection']
-  },
-  {
-    id: '7-9',
-    question: 'What is the difference between push and pull notifications?',
-    options: [
-      'There is no difference',
-      'Push notifications are sent from server, pull notifications are requested by app',
-      'Pull notifications are deprecated',
-      'Push notifications are only for iOS'
-    ],
-    correctAnswer: 1,
-    explanation: 'Push notifications are sent from servers to devices, while pull notifications are requested by the app.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Notifications',
-    tags: ['Mobile', 'Push Notifications', 'Pull Notifications']
-  },
-  {
-    id: '7-10',
-    question: 'What is the purpose of mobile app analytics?',
-    options: [
-      'To analyze apps',
-      'To track user behavior and app performance for insights',
-      'To improve performance',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile app analytics track user behavior and app performance to provide insights for improvement.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Analytics',
-    tags: ['Mobile', 'Analytics', 'User Behavior']
-  },
-  {
-    id: '7-11',
-    question: 'What is the difference between mobile app stores and enterprise distribution?',
-    options: [
-      'There is no difference',
-      'App stores are public, enterprise distribution is for internal company use',
-      'Enterprise distribution is deprecated',
-      'App stores are only for consumers'
-    ],
-    correctAnswer: 1,
-    explanation: 'App stores are public platforms for consumer apps, while enterprise distribution is for internal company app deployment.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Distribution',
-    tags: ['Mobile', 'App Stores', 'Enterprise']
-  },
-  {
-    id: '7-12',
-    question: 'What is the purpose of mobile app accessibility?',
-    options: [
-      'To make apps accessible',
-      'To ensure apps are usable by people with disabilities',
-      'To improve performance',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile app accessibility ensures apps are usable by people with various disabilities and limitations.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Accessibility',
-    tags: ['Mobile', 'Accessibility', 'Inclusive Design']
-  },
-  {
-    id: '7-13',
-    question: 'What is the difference between mobile app updates and versioning?',
-    options: [
-      'There is no difference',
-      'Updates modify existing apps, versioning creates new app versions',
-      'Versioning is deprecated',
-      'Updates are only for bug fixes'
-    ],
-    correctAnswer: 1,
-    explanation: 'Updates modify existing apps with new features or fixes, while versioning creates new app versions.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Updates',
-    tags: ['Mobile', 'Updates', 'Versioning']
-  },
-  {
-    id: '7-14',
-    question: 'What is the purpose of mobile app monetization?',
-    options: [
-      'To monetize apps',
-      'To generate revenue from mobile applications',
-      'To improve performance',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'Mobile app monetization strategies generate revenue from mobile applications through various methods.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Monetization',
-    tags: ['Mobile', 'Monetization', 'Revenue']
-  },
-  {
-    id: '7-15',
-    question: 'What is the difference between mobile app development frameworks?',
-    options: [
-      'There is no difference',
-      'Different frameworks offer different features, performance, and development approaches',
-      'Frameworks are deprecated',
-      'All frameworks are the same'
-    ],
-    correctAnswer: 1,
-    explanation: 'Different mobile development frameworks offer varying features, performance characteristics, and development approaches.',
-    category: 'Mobile Development',
-    difficulty: 'medium',
-    skill: 'Frameworks',
-    tags: ['Mobile', 'Frameworks', 'Development Tools']
-  }
-]
-};
+  '5': [ // Data Science Assessment
+    {
+      id: '5-1',
+      question: 'What is the difference between supervised and unsupervised learning?',
+      options: [
+        'There is no difference',
+        'Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data',
+        'Unsupervised learning is always better',
+        'Supervised learning is only for classification'
+      ],
+      correctAnswer: 1,
+      explanation: 'Supervised learning uses labeled training data, while unsupervised learning finds patterns in data without labels.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Machine Learning',
+      tags: ['ML', 'Supervised Learning', 'Unsupervised Learning']
+    },
+    {
+      id: '5-2',
+      question: 'What is overfitting in machine learning?',
+      options: [
+        'A good thing',
+        'When a model performs well on training data but poorly on new data',
+        'When a model is too simple',
+        'When data is missing'
+      ],
+      correctAnswer: 1,
+      explanation: 'Overfitting occurs when a model learns the training data too well and fails to generalize to new, unseen data.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Model Validation',
+      tags: ['ML', 'Overfitting', 'Generalization']
+    },
+    {
+      id: '5-3',
+      question: 'What is the purpose of cross-validation?',
+      options: [
+        'To make models faster',
+        'To assess how well a model will generalize to new data',
+        'To reduce data size',
+        'To add more features'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cross-validation helps assess how well a model will generalize to new, unseen data by testing on different subsets.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Model Validation',
+      tags: ['ML', 'Cross-validation', 'Generalization']
+    },
+    {
+      id: '5-4',
+      question: 'What is the difference between correlation and causation?',
+      options: [
+        'There is no difference',
+        'Correlation shows relationship, causation shows one variable causes another',
+        'Correlation is always causation',
+        'Causation is easier to prove'
+      ],
+      correctAnswer: 1,
+      explanation: 'Correlation shows a relationship between variables, while causation shows that one variable directly causes another.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Statistics',
+      tags: ['Statistics', 'Correlation', 'Causation']
+    },
+    {
+      id: '5-5',
+      question: 'What is feature engineering?',
+      options: [
+        'Building houses',
+        'Creating new features from existing data to improve model performance',
+        'Adding more data',
+        'Removing features'
+      ],
+      correctAnswer: 1,
+      explanation: 'Feature engineering involves creating new features from existing data to improve machine learning model performance.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Feature Engineering',
+      tags: ['ML', 'Features', 'Data Processing']
+    },
+    {
+      id: '5-6',
+      question: 'What is the purpose of regularization in machine learning?',
+      options: [
+        'To make models regular',
+        'To prevent overfitting by adding constraints to the model',
+        'To improve performance',
+        'To reduce data size'
+      ],
+      correctAnswer: 1,
+      explanation: 'Regularization prevents overfitting by adding constraints to the model, such as L1 or L2 penalties.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Regularization',
+      tags: ['ML', 'Regularization', 'Overfitting']
+    },
+    {
+      id: '5-7',
+      question: 'What is the difference between precision and recall?',
+      options: [
+        'There is no difference',
+        'Precision measures accuracy of positive predictions, recall measures ability to find all positives',
+        'Precision is deprecated',
+        'Recall is only for classification'
+      ],
+      correctAnswer: 1,
+      explanation: 'Precision measures the accuracy of positive predictions, while recall measures the ability to find all positive instances.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Model Evaluation',
+      tags: ['ML', 'Precision', 'Recall', 'Metrics']
+    },
+    {
+      id: '5-8',
+      question: 'What is the purpose of ensemble methods?',
+      options: [
+        'To create ensembles',
+        'To combine multiple models to improve overall performance',
+        'To reduce model complexity',
+        'To speed up training'
+      ],
+      correctAnswer: 1,
+      explanation: 'Ensemble methods combine multiple models to improve overall performance and reduce overfitting.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Ensemble Methods',
+      tags: ['ML', 'Ensemble', 'Model Combination']
+    },
+    {
+      id: '5-9',
+      question: 'What is the difference between classification and regression?',
+      options: [
+        'There is no difference',
+        'Classification predicts categories, regression predicts continuous values',
+        'Regression is deprecated',
+        'Classification is only for numbers'
+      ],
+      correctAnswer: 1,
+      explanation: 'Classification predicts discrete categories or classes, while regression predicts continuous numerical values.',
+      category: 'Data Science',
+      difficulty: 'easy',
+      skill: 'ML Types',
+      tags: ['ML', 'Classification', 'Regression']
+    },
+    {
+      id: '5-10',
+      question: 'What is the purpose of dimensionality reduction?',
+      options: [
+        'To reduce dimensions',
+        'To reduce the number of features while preserving important information',
+        'To improve performance',
+        'To reduce data size'
+      ],
+      correctAnswer: 1,
+      explanation: 'Dimensionality reduction reduces the number of features while preserving important information and reducing noise.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Dimensionality Reduction',
+      tags: ['ML', 'Dimensionality', 'Feature Selection']
+    },
+    {
+      id: '5-11',
+      question: 'What is the difference between bagging and boosting?',
+      options: [
+        'There is no difference',
+        'Bagging trains models independently, boosting trains models sequentially',
+        'Boosting is deprecated',
+        'Bagging is only for classification'
+      ],
+      correctAnswer: 1,
+      explanation: 'Bagging trains models independently and averages their predictions, while boosting trains models sequentially, each focusing on previous errors.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Ensemble Methods',
+      tags: ['ML', 'Bagging', 'Boosting', 'Ensemble']
+    },
+    {
+      id: '5-12',
+      question: 'What is the purpose of hyperparameter tuning?',
+      options: [
+        'To tune hyperparameters',
+        'To find optimal model parameters that maximize performance',
+        'To improve performance',
+        'To reduce training time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Hyperparameter tuning finds optimal model parameters that maximize performance on validation data.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Hyperparameter Tuning',
+      tags: ['ML', 'Hyperparameters', 'Optimization']
+    },
+    {
+      id: '5-13',
+      question: 'What is the difference between training and validation sets?',
+      options: [
+        'There is no difference',
+        'Training set is used to train the model, validation set is used to tune hyperparameters',
+        'Validation set is deprecated',
+        'Training set is only for testing'
+      ],
+      correctAnswer: 1,
+      explanation: 'Training set is used to train the model, while validation set is used to tune hyperparameters and assess performance.',
+      category: 'Data Science',
+      difficulty: 'easy',
+      skill: 'Data Splitting',
+      tags: ['ML', 'Training', 'Validation', 'Data']
+    },
+    {
+      id: '5-14',
+      question: 'What is the purpose of feature selection?',
+      options: [
+        'To select features',
+        'To identify and use only the most relevant features for modeling',
+        'To improve performance',
+        'To reduce data size'
+      ],
+      correctAnswer: 1,
+      explanation: 'Feature selection identifies and uses only the most relevant features for modeling, improving performance and reducing noise.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Feature Selection',
+      tags: ['ML', 'Feature Selection', 'Data Quality']
+    },
+    {
+      id: '5-15',
+      question: 'What is the difference between parametric and non-parametric models?',
+      options: [
+        'There is no difference',
+        'Parametric models have fixed parameters, non-parametric models adapt to data',
+        'Non-parametric models are deprecated',
+        'Parametric models are only for regression'
+      ],
+      correctAnswer: 1,
+      explanation: 'Parametric models have a fixed number of parameters, while non-parametric models adapt their complexity to the data.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Model Types',
+      tags: ['ML', 'Parametric', 'Non-parametric', 'Models']
+    },
+    {
+      id: '5-16',
+      question: 'What is the purpose of cross-entropy loss?',
+      options: [
+        'To make models faster',
+        'To measure the difference between predicted and actual probabilities',
+        'To reduce data size',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cross-entropy loss measures the difference between predicted and actual probability distributions, commonly used in classification.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Loss Functions',
+      tags: ['ML', 'Loss Functions', 'Classification']
+    },
+    {
+      id: '5-17',
+      question: 'What is the difference between L1 and L2 regularization?',
+      options: [
+        'They are the same',
+        'L1 adds absolute values, L2 adds squared values to the loss function',
+        'L2 is deprecated',
+        'L1 is only for regression'
+      ],
+      correctAnswer: 1,
+      explanation: 'L1 regularization adds absolute values of weights, while L2 adds squared values, leading to different sparsity patterns.',
+      category: 'Data Science',
+      difficulty: 'hard',
+      skill: 'Regularization',
+      tags: ['ML', 'L1 Regularization', 'L2 Regularization']
+    },
+    {
+      id: '5-18',
+      question: 'What is the purpose of k-fold cross-validation?',
+      options: [
+        'To fold data',
+        'To divide data into k subsets for robust model evaluation',
+        'To reduce data size',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'K-fold cross-validation divides data into k subsets, training on k-1 folds and validating on the remaining fold.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Cross-validation',
+      tags: ['ML', 'Cross-validation', 'Model Evaluation']
+    },
+    {
+      id: '5-19',
+      question: 'What is the difference between supervised and reinforcement learning?',
+      options: [
+        'They are the same',
+        'Supervised uses labeled data, reinforcement learning uses rewards and actions',
+        'Reinforcement learning is deprecated',
+        'Supervised learning is only for classification'
+      ],
+      correctAnswer: 1,
+      explanation: 'Supervised learning uses labeled training data, while reinforcement learning learns through interaction with an environment.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Learning Types',
+      tags: ['ML', 'Supervised Learning', 'Reinforcement Learning']
+    },
+    {
+      id: '5-20',
+      question: 'What is the purpose of feature scaling?',
+      options: [
+        'To scale features',
+        'To normalize features to the same scale for better model performance',
+        'To reduce data size',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Feature scaling normalizes features to the same scale, preventing some features from dominating the learning process.',
+      category: 'Data Science',
+      difficulty: 'medium',
+      skill: 'Feature Engineering',
+      tags: ['ML', 'Feature Scaling', 'Normalization']
+    }
+  ],
 
-// Python Programming Assessment
-'3': [
-  {
-    id: '3-1',
-    question: 'What is the difference between a list and a tuple in Python?',
-    options: [
-      'There is no difference',
-      'Lists are mutable, tuples are immutable',
-      'Tuples are faster than lists',
-      'Lists can only contain numbers'
-    ],
-    correctAnswer: 1,
-    explanation: 'Lists are mutable (can be changed), while tuples are immutable (cannot be changed after creation).',
-    category: 'Python',
-    difficulty: 'easy',
-    skill: 'Data Structures',
-    tags: ['Python', 'Lists', 'Tuples']
-  },
-  {
-    id: '3-2',
-    question: 'What is a decorator in Python?',
-    options: [
-      'A function that modifies another function',
-      'A type of variable',
-      'A loop construct',
-      'A data structure'
-    ],
-    correctAnswer: 0,
-    explanation: 'A decorator is a function that takes another function as input and returns a modified version of that function.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Advanced Python',
-    tags: ['Python', 'Decorators', 'Functions']
-  },
-  {
-    id: '3-3',
-    question: 'What is the purpose of the __init__ method?',
-    options: [
-      'To destroy objects',
-      'To initialize object attributes when creating a new instance',
-      'To import modules',
-      'To handle exceptions'
-    ],
-    correctAnswer: 1,
-    explanation: 'The __init__ method is a constructor that initializes object attributes when creating a new instance of a class.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Object-Oriented Programming',
-    tags: ['Python', 'Classes', 'OOP']
-  },
-  {
-    id: '3-4',
-    question: 'What is the difference between append() and extend() for lists?',
-    options: [
-      'There is no difference',
-      'append() adds one element, extend() adds elements from an iterable',
-      'extend() is faster',
-      'append() only works with numbers'
-    ],
-    correctAnswer: 1,
-    explanation: 'append() adds a single element to the end of a list, while extend() adds all elements from an iterable.',
-    category: 'Python',
-    difficulty: 'easy',
-    skill: 'List Methods',
-    tags: ['Python', 'Lists', 'Methods']
-  },
-  {
-    id: '3-5',
-    question: 'What is a lambda function?',
-    options: [
-      'A function that never ends',
-      'An anonymous function defined with the lambda keyword',
-      'A function that only works with numbers',
-      'A built-in Python function'
-    ],
-    correctAnswer: 1,
-    explanation: 'A lambda function is an anonymous function defined with the lambda keyword, typically used for simple operations.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Functional Programming',
-    tags: ['Python', 'Lambda', 'Functions']
-  },
-  {
-    id: '3-6',
-    question: 'What is the difference between == and is in Python?',
-    options: [
-      'There is no difference',
-      '== compares values, is compares object identity',
-      'is is faster than ==',
-      '== only works with numbers'
-    ],
-    correctAnswer: 1,
-    explanation: '== compares the values of objects, while is checks if two variables point to the same object in memory.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Operators',
-    tags: ['Python', 'Operators', 'Identity']
-  },
-  {
-    id: '3-7',
-    question: 'What is a generator in Python?',
-    options: [
-      'A type of loop',
-      'A function that yields values one at a time',
-      'A data structure',
-      'A built-in module'
-    ],
-    correctAnswer: 1,
-    explanation: 'A generator is a function that uses the yield keyword to return values one at a time, creating an iterator.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Generators',
-    tags: ['Python', 'Generators', 'Iterators']
-  },
-  {
-    id: '3-8',
-    question: 'What is the purpose of the with statement?',
-    options: [
-      'To create loops',
-      'To handle context management and resource cleanup',
-      'To define functions',
-      'To import modules'
-    ],
-    correctAnswer: 1,
-    explanation: 'The with statement is used for context management, ensuring proper setup and cleanup of resources.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Context Management',
-    tags: ['Python', 'Context Managers', 'Resource Management']
-  },
-  {
-    id: '3-9',
-    question: 'What is the difference between *args and **kwargs?',
-    options: [
-      'There is no difference',
-      '*args is for positional arguments, **kwargs is for keyword arguments',
-      '**kwargs is deprecated',
-      '*args only works with functions'
-    ],
-    correctAnswer: 1,
-    explanation: '*args collects positional arguments into a tuple, while **kwargs collects keyword arguments into a dictionary.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Function Arguments',
-    tags: ['Python', 'Args', 'Kwargs', 'Functions']
-  },
-  {
-    id: '3-10',
-    question: 'What is the purpose of the __str__ method?',
-    options: [
-      'To convert to string',
-      'To provide a string representation of an object',
-      'To handle errors',
-      'To create new objects'
-    ],
-    correctAnswer: 1,
-    explanation: 'The __str__ method returns a string representation of an object, used when calling str() or print().',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Magic Methods',
-    tags: ['Python', 'Magic Methods', 'String Representation']
-  },
-  {
-    id: '3-11',
-    question: 'What is the difference between a module and a package?',
-    options: [
-      'There is no difference',
-      'A module is a single file, a package is a directory with __init__.py',
-      'Packages are deprecated',
-      'Modules are only for built-ins'
-    ],
-    correctAnswer: 1,
-    explanation: 'A module is a single Python file, while a package is a directory containing an __init__.py file and other modules.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Modules and Packages',
-    tags: ['Python', 'Modules', 'Packages', 'Import System']
-  },
-  {
-    id: '3-12',
-    question: 'What is the purpose of the @property decorator?',
-    options: [
-      'To create properties',
-      'To define getter and setter methods for attributes',
-      'To improve performance',
-      'To handle exceptions'
-    ],
-    correctAnswer: 1,
-    explanation: 'The @property decorator allows you to define getter and setter methods for class attributes.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Properties',
-    tags: ['Python', 'Properties', 'Decorators', 'OOP']
-  },
-  {
-    id: '3-13',
-    question: 'What is the difference between deepcopy and shallow copy?',
-    options: [
-      'There is no difference',
-      'Shallow copy creates a new object, deepcopy creates a completely independent copy',
-      'Deepcopy is always faster',
-      'Shallow copy is deprecated'
-    ],
-    correctAnswer: 1,
-    explanation: 'Shallow copy creates a new object but references the same nested objects, while deepcopy creates a completely independent copy.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Copy Operations',
-    tags: ['Python', 'Copy', 'Objects', 'References']
-  },
-  {
-    id: '3-14',
-    question: 'What is the purpose of the __slots__ attribute?',
-    options: [
-      'To define slots',
-      'To restrict the attributes that can be assigned to instances',
-      'To improve performance',
-      'To handle errors'
-    ],
-    correctAnswer: 1,
-    explanation: '__slots__ restricts the attributes that can be assigned to instances, improving memory usage and performance.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Memory Optimization',
-    tags: ['Python', 'Slots', 'Memory', 'Performance']
-  },
-  {
-    id: '3-15',
-    question: 'What is the difference between a class method and a static method?',
-    options: [
-      'There is no difference',
-      'Class methods receive the class as first argument, static methods don\'t',
-      'Static methods are deprecated',
-      'Class methods are only for inheritance'
-    ],
-    correctAnswer: 1,
-    explanation: 'Class methods receive the class as the first argument, while static methods don\'t receive any implicit first argument.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Method Types',
-    tags: ['Python', 'Class Methods', 'Static Methods', 'OOP']
-  },
-  {
-    id: '3-16',
-    question: 'What is the purpose of the __enter__ and __exit__ methods?',
-    options: [
-      'To enter and exit functions',
-      'To implement context manager protocol for the with statement',
-      'To handle loops',
-      'To create decorators'
-    ],
-    correctAnswer: 1,
-    explanation: 'These methods implement the context manager protocol, allowing objects to be used with the with statement.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Context Managers',
-    tags: ['Python', 'Context Managers', 'With Statement']
-  },
-  {
-    id: '3-17',
-    question: 'What is the difference between a list comprehension and a generator expression?',
-    options: [
-      'There is no difference',
-      'List comprehension creates a list, generator expression creates an iterator',
-      'Generator expressions are deprecated',
-      'List comprehensions are only for numbers'
-    ],
-    correctAnswer: 1,
-    explanation: 'List comprehension creates a list in memory, while generator expression creates an iterator that yields values on demand.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Comprehensions',
-    tags: ['Python', 'List Comprehension', 'Generator Expression', 'Memory']
-  },
-  {
-    id: '3-18',
-    question: 'What is the purpose of the __call__ method?',
-    options: [
-      'To make objects callable',
-      'To define how an object behaves when called like a function',
-      'To handle errors',
-      'To create new objects'
-    ],
-    correctAnswer: 1,
-    explanation: 'The __call__ method allows instances of a class to be called like functions.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Callable Objects',
-    tags: ['Python', 'Callable', 'Magic Methods', 'OOP']
-  },
-  {
-    id: '3-19',
-    question: 'What is the difference between a set and a frozenset?',
-    options: [
-      'There is no difference',
-      'Sets are mutable, frozensets are immutable',
-      'Frozensets are deprecated',
-      'Sets only work with numbers'
-    ],
-    correctAnswer: 1,
-    explanation: 'Sets are mutable and can be modified, while frozensets are immutable and cannot be changed after creation.',
-    category: 'Python',
-    difficulty: 'medium',
-    skill: 'Sets',
-    tags: ['Python', 'Sets', 'Frozensets', 'Immutability']
-  },
-  {
-    id: '3-20',
-    question: 'What is the purpose of the __new__ method?',
-    options: [
-      'To create new objects',
-      'To control the creation of new instances of a class',
-      'To handle errors',
-      'To define constructors'
-    ],
-    correctAnswer: 1,
-    explanation: 'The __new__ method is called before __init__ and controls the creation of new instances of a class.',
-    category: 'Python',
-    difficulty: 'hard',
-    skill: 'Object Creation',
-    tags: ['Python', 'New Method', 'Object Creation', 'OOP']
-  }
-],
+  '6': [ // DevOps & Cloud Assessment
+    {
+      id: '6-1',
+      question: 'What is the primary goal of DevOps?',
+      options: [
+        'To reduce costs',
+        'To improve collaboration between development and operations teams',
+        'To automate everything',
+        'To replace traditional IT'
+      ],
+      correctAnswer: 1,
+      explanation: 'DevOps aims to improve collaboration between development and operations teams to deliver software faster and more reliably.',
+      category: 'DevOps',
+      difficulty: 'easy',
+      skill: 'DevOps Principles',
+      tags: ['DevOps', 'Collaboration', 'Software Delivery']
+    },
+    {
+      id: '6-2',
+      question: 'What is Infrastructure as Code (IaC)?',
+      options: [
+        'Writing code for infrastructure',
+        'Managing infrastructure through configuration files and scripts',
+        'Building physical servers',
+        'Cloud computing only'
+      ],
+      correctAnswer: 1,
+      explanation: 'Infrastructure as Code manages infrastructure through configuration files and scripts, enabling version control and automation.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Infrastructure as Code',
+      tags: ['DevOps', 'IaC', 'Automation']
+    },
+    {
+      id: '6-3',
+      question: 'What is the purpose of CI/CD pipelines?',
+      options: [
+        'To build software',
+        'To automate the software delivery process from development to production',
+        'To test code',
+        'To deploy applications'
+      ],
+      correctAnswer: 1,
+      explanation: 'CI/CD pipelines automate the software delivery process, ensuring code is built, tested, and deployed automatically.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'CI/CD',
+      tags: ['DevOps', 'CI/CD', 'Automation']
+    },
+    {
+      id: '6-4',
+      question: 'What is a container in DevOps?',
+      options: [
+        'A physical server',
+        'A lightweight, isolated environment for running applications',
+        'A virtual machine',
+        'A cloud service'
+      ],
+      correctAnswer: 1,
+      explanation: 'Containers provide lightweight, isolated environments for running applications, ensuring consistency across different environments.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Containers',
+      tags: ['DevOps', 'Containers', 'Docker']
+    },
+    {
+      id: '6-5',
+      question: 'What is the purpose of monitoring in DevOps?',
+      options: [
+        'To watch systems',
+        'To track application performance and identify issues proactively',
+        'To reduce costs',
+        'To automate deployments'
+      ],
+      correctAnswer: 1,
+      explanation: 'Monitoring tracks application performance and identifies issues proactively, enabling quick response and resolution.',
+      category: 'DevOps',
+      difficulty: 'easy',
+      skill: 'Monitoring',
+      tags: ['DevOps', 'Monitoring', 'Observability']
+    },
+    {
+      id: '6-6',
+      question: 'What is the difference between horizontal and vertical scaling?',
+      options: [
+        'There is no difference',
+        'Horizontal scaling adds more machines, vertical scaling adds more resources to existing machines',
+        'Vertical scaling is deprecated',
+        'Horizontal scaling is only for cloud'
+      ],
+      correctAnswer: 1,
+      explanation: 'Horizontal scaling adds more machines to distribute load, while vertical scaling adds more resources to existing machines.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Scaling',
+      tags: ['DevOps', 'Scaling', 'Performance']
+    },
+    {
+      id: '6-7',
+      question: 'What is the purpose of configuration management?',
+      options: [
+        'To manage configurations',
+        'To automate the setup and maintenance of infrastructure and applications',
+        'To reduce costs',
+        'To improve security'
+      ],
+      correctAnswer: 1,
+      explanation: 'Configuration management automates the setup and maintenance of infrastructure and applications, ensuring consistency.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Configuration Management',
+      tags: ['DevOps', 'Configuration', 'Automation']
+    },
+    {
+      id: '6-8',
+      question: 'What is the difference between blue-green and rolling deployments?',
+      options: [
+        'There is no difference',
+        'Blue-green switches between two identical environments, rolling updates gradually',
+        'Rolling deployments are deprecated',
+        'Blue-green is only for testing'
+      ],
+      correctAnswer: 1,
+      explanation: 'Blue-green switches between two identical environments, while rolling deployments gradually update instances.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Deployment Strategies',
+      tags: ['DevOps', 'Deployment', 'Zero Downtime']
+    },
+    {
+      id: '6-9',
+      question: 'What is the purpose of log aggregation?',
+      options: [
+        'To collect logs',
+        'To centralize logs from multiple sources for analysis and monitoring',
+        'To reduce storage costs',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Log aggregation centralizes logs from multiple sources, enabling better analysis, monitoring, and troubleshooting.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Logging',
+      tags: ['DevOps', 'Logging', 'Monitoring']
+    },
+    {
+      id: '6-10',
+      question: 'What is the difference between stateless and stateful applications?',
+      options: [
+        'There is no difference',
+        'Stateless apps don\'t store session data, stateful apps maintain state',
+        'Stateful apps are deprecated',
+        'Stateless apps are only for web'
+      ],
+      correctAnswer: 1,
+      explanation: 'Stateless applications don\'t store session data between requests, while stateful applications maintain state.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Application Architecture',
+      tags: ['DevOps', 'Architecture', 'State Management']
+    },
+    {
+      id: '6-11',
+      question: 'What is the purpose of service mesh?',
+      options: [
+        'To connect services',
+        'To manage service-to-service communication, security, and observability',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Service mesh manages service-to-service communication, security, and observability in microservices architectures.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Service Mesh',
+      tags: ['DevOps', 'Service Mesh', 'Microservices']
+    },
+    {
+      id: '6-12',
+      question: 'What is the difference between IaaS, PaaS, and SaaS?',
+      options: [
+        'There is no difference',
+        'IaaS provides infrastructure, PaaS provides platform, SaaS provides software',
+        'PaaS is deprecated',
+        'IaaS is only for large companies'
+      ],
+      correctAnswer: 1,
+      explanation: 'IaaS provides infrastructure, PaaS provides platform, and SaaS provides software as a service.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Cloud Services',
+      tags: ['DevOps', 'Cloud', 'IaaS', 'PaaS', 'SaaS']
+    },
+    {
+      id: '6-13',
+      question: 'What is the purpose of chaos engineering?',
+      options: [
+        'To create chaos',
+        'To test system resilience by intentionally introducing failures',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Chaos engineering tests system resilience by intentionally introducing failures to identify weaknesses.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Chaos Engineering',
+      tags: ['DevOps', 'Resilience', 'Testing']
+    },
+    {
+      id: '6-14',
+      question: 'What is the difference between imperative and declarative configuration?',
+      options: [
+        'There is no difference',
+        'Imperative specifies how, declarative specifies what',
+        'Declarative is deprecated',
+        'Imperative is only for scripts'
+      ],
+      correctAnswer: 1,
+      explanation: 'Imperative configuration specifies how to achieve a state, while declarative specifies the desired state.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Configuration Management',
+      tags: ['DevOps', 'Configuration', 'Declarative']
+    },
+    {
+      id: '6-15',
+      question: 'What is the purpose of GitOps?',
+      options: [
+        'To use Git',
+        'To use Git as the single source of truth for infrastructure and application deployment',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'GitOps uses Git as the single source of truth for infrastructure and application deployment, enabling version control and collaboration.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'GitOps',
+      tags: ['DevOps', 'GitOps', 'Version Control']
+    },
+    {
+      id: '6-16',
+      question: 'What is the difference between blue-green and canary deployments?',
+      options: [
+        'They are the same',
+        'Blue-green switches entire environments, canary gradually shifts traffic',
+        'Canary deployments are deprecated',
+        'Blue-green is only for testing'
+      ],
+      correctAnswer: 1,
+      explanation: 'Blue-green switches between entire environments, while canary gradually shifts traffic from old to new versions.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Deployment Strategies',
+      tags: ['DevOps', 'Blue-Green', 'Canary', 'Deployment']
+    },
+    {
+      id: '6-17',
+      question: 'What is the purpose of infrastructure monitoring?',
+      options: [
+        'To monitor infrastructure',
+        'To track system health, performance, and availability',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Infrastructure monitoring tracks system health, performance, and availability to ensure reliable service delivery.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Monitoring',
+      tags: ['DevOps', 'Monitoring', 'System Health']
+    },
+    {
+      id: '6-18',
+      question: 'What is the difference between Docker and Kubernetes?',
+      options: [
+        'They are the same',
+        'Docker creates containers, Kubernetes orchestrates them',
+        'Kubernetes is deprecated',
+        'Docker is only for development'
+      ],
+      correctAnswer: 1,
+      explanation: 'Docker creates and runs containers, while Kubernetes orchestrates and manages containerized applications at scale.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Containerization',
+      tags: ['DevOps', 'Docker', 'Kubernetes', 'Containers']
+    },
+    {
+      id: '6-19',
+      question: 'What is the purpose of continuous monitoring?',
+      options: [
+        'To monitor continuously',
+        'To provide real-time insights into application and infrastructure performance',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Continuous monitoring provides real-time insights into application and infrastructure performance for proactive issue resolution.',
+      category: 'DevOps',
+      difficulty: 'medium',
+      skill: 'Continuous Monitoring',
+      tags: ['DevOps', 'Monitoring', 'Real-time Insights']
+    },
+    {
+      id: '6-20',
+      question: 'What is the difference between monitoring and observability?',
+      options: [
+        'They are the same',
+        'Monitoring tracks metrics, observability provides deeper system understanding',
+        'Observability is deprecated',
+        'Monitoring is only for metrics'
+      ],
+      correctAnswer: 1,
+      explanation: 'Monitoring tracks specific metrics, while observability provides deeper understanding of system behavior and internal state.',
+      category: 'DevOps',
+      difficulty: 'hard',
+      skill: 'Observability',
+      tags: ['DevOps', 'Monitoring', 'Observability', 'System Understanding']
+    }
+  ],
 
-// UI/UX Design Assessment
-'4': [
-  {
-    id: '4-1',
-    question: 'What is the primary goal of user experience (UX) design?',
-    options: [
-      'To make things look pretty',
-      'To create meaningful and relevant experiences for users',
-      'To use the latest design trends',
-      'To minimize development costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'UX design focuses on creating meaningful and relevant experiences that meet user needs and business goals.',
-    category: 'Design',
-    difficulty: 'easy',
-    skill: 'UX Principles',
-    tags: ['UX', 'Design', 'User Experience']
-  },
-  {
-    id: '4-2',
-    question: 'What is the purpose of wireframing in the design process?',
-    options: [
-      'To add colors and images',
-      'To create a visual hierarchy and layout structure',
-      'To write content',
-      'To test functionality'
-    ],
-    correctAnswer: 1,
-    explanation: 'Wireframing helps establish the visual hierarchy and layout structure before adding visual design elements.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Wireframing',
-    tags: ['Design', 'Wireframes', 'Layout']
-  },
-  {
-    id: '4-3',
-    question: 'What is the difference between UI and UX?',
-    options: [
-      'There is no difference',
-      'UI focuses on visual design, UX focuses on overall user experience',
-      'UI is more important than UX',
-      'UX is only for mobile apps'
-    ],
-    correctAnswer: 1,
-    explanation: 'UI (User Interface) focuses on visual design and interactions, while UX (User Experience) encompasses the entire user journey.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Design Concepts',
-    tags: ['UI', 'UX', 'Design']
-  },
-  {
-    id: '4-4',
-    question: 'What is accessibility in design?',
-    options: [
-      'Making designs look good',
-      'Ensuring designs are usable by people with disabilities',
-      'Using modern design tools',
-      'Creating responsive layouts'
-    ],
-    correctAnswer: 1,
-    explanation: 'Accessibility ensures that designs are usable by people with various disabilities and limitations.',
-    category: 'Design',
-    difficulty: 'easy',
-    skill: 'Accessibility',
-    tags: ['Design', 'Accessibility', 'Inclusive Design']
-  },
-  {
-    id: '4-5',
-    question: 'What is the purpose of user research in UX design?',
-    options: [
-      'To waste time',
-      'To understand user needs, behaviors, and pain points',
-      'To make designs look better',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'User research helps designers understand user needs, behaviors, and pain points to create better solutions.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'User Research',
-    tags: ['UX', 'Research', 'User Needs']
-  },
-  {
-    id: '4-6',
-    question: 'What is the purpose of personas in UX design?',
-    options: [
-      'To create fictional characters',
-      'To represent target users and their characteristics',
-      'To make designs more colorful',
-      'To reduce design time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Personas represent target users and their characteristics, helping designers make user-centered design decisions.',
-    category: 'Design',
-    difficulty: 'easy',
-    skill: 'Personas',
-    tags: ['UX', 'Personas', 'User Research']
-  },
-  {
-    id: '4-7',
-    question: 'What is the difference between usability and user experience?',
-    options: [
-      'There is no difference',
-      'Usability focuses on efficiency, UX encompasses the entire experience',
-      'UX is only about aesthetics',
-      'Usability is deprecated'
-    ],
-    correctAnswer: 1,
-    explanation: 'Usability focuses on efficiency and effectiveness, while UX encompasses the entire user experience including emotions and satisfaction.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'UX Concepts',
-    tags: ['UX', 'Usability', 'Design']
-  },
-  {
-    id: '4-8',
-    question: 'What is the purpose of A/B testing in UX design?',
-    options: [
-      'To test two different designs',
-      'To compare two versions and determine which performs better',
-      'To create backup designs',
-      'To reduce development costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'A/B testing compares two versions of a design to determine which performs better based on user behavior and metrics.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'A/B Testing',
-    tags: ['UX', 'Testing', 'Optimization']
-  },
-  {
-    id: '4-9',
-    question: 'What is the purpose of information architecture?',
-    options: [
-      'To organize information',
-      'To structure and organize content in a way that users can easily navigate',
-      'To create databases',
-      'To improve performance'
-    ],
-    correctAnswer: 1,
-    explanation: 'Information architecture structures and organizes content in a way that users can easily navigate and find what they need.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Information Architecture',
-    tags: ['UX', 'Information Architecture', 'Navigation']
-  },
-  {
-    id: '4-10',
-    question: 'What is the purpose of user journey mapping?',
-    options: [
-      'To create maps',
-      'To visualize the user\'s experience from start to finish',
-      'To track user locations',
-      'To improve performance'
-    ],
-    correctAnswer: 1,
-    explanation: 'User journey mapping visualizes the user\'s experience from start to finish, identifying pain points and opportunities.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Journey Mapping',
-    tags: ['UX', 'Journey Mapping', 'User Experience']
-  },
-  {
-    id: '4-11',
-    question: 'What is the purpose of heuristic evaluation?',
-    options: [
-      'To evaluate heuristics',
-      'To identify usability problems using established design principles',
-      'To test with users',
-      'To improve aesthetics'
-    ],
-    correctAnswer: 1,
-    explanation: 'Heuristic evaluation identifies usability problems by examining an interface against established design principles.',
-    category: 'Design',
-    difficulty: 'hard',
-    skill: 'Heuristic Evaluation',
-    tags: ['UX', 'Evaluation', 'Usability']
-  },
-  {
-    id: '4-12',
-    question: 'What is the purpose of card sorting in UX research?',
-    options: [
-      'To organize cards',
-      'To understand how users group and categorize information',
-      'To create card games',
-      'To improve performance'
-    ],
-    correctAnswer: 1,
-    explanation: 'Card sorting helps understand how users group and categorize information, informing information architecture decisions.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Card Sorting',
-    tags: ['UX', 'Research', 'Information Architecture']
-  },
-  {
-    id: '4-13',
-    question: 'What is the purpose of usability testing?',
-    options: [
-      'To test usability',
-      'To observe real users interacting with a design to identify problems',
-      'To improve aesthetics',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Usability testing observes real users interacting with a design to identify usability problems and areas for improvement.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Usability Testing',
-    tags: ['UX', 'Testing', 'User Research']
-  },
-  {
-    id: '4-14',
-    question: 'What is the purpose of design systems?',
-    options: [
-      'To create systems',
-      'To maintain consistency across products through reusable components',
-      'To improve performance',
-      'To reduce costs'
-    ],
-    correctAnswer: 1,
-    explanation: 'Design systems maintain consistency across products through reusable components, patterns, and guidelines.',
-    category: 'Design',
-    difficulty: 'medium',
-    skill: 'Design Systems',
-    tags: ['UX', 'Design Systems', 'Consistency']
-  },
-  {
-    id: '4-15',
-    question: 'What is the purpose of responsive design?',
-    options: [
-      'To make designs responsive',
-      'To ensure designs work well across different screen sizes and devices',
-      'To improve performance',
-      'To reduce development time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Responsive design ensures that designs work well across different screen sizes and devices, providing optimal user experience.',
-    category: 'Design',
-    difficulty: 'easy',
-    skill: 'Responsive Design',
-    tags: ['UX', 'Responsive Design', 'Mobile']
-  }
-],
+  '7': [ // Mobile Development Assessment
+    {
+      id: '7-1',
+      question: 'What is the difference between native and cross-platform mobile development?',
+      options: [
+        'There is no difference',
+        'Native uses platform-specific languages, cross-platform uses shared codebase',
+        'Cross-platform is deprecated',
+        'Native is only for iOS'
+      ],
+      correctAnswer: 1,
+      explanation: 'Native development uses platform-specific languages and tools, while cross-platform uses shared codebase for multiple platforms.',
+      category: 'Mobile Development',
+      difficulty: 'easy',
+      skill: 'Mobile Development Types',
+      tags: ['Mobile', 'Native', 'Cross-platform']
+    },
+    {
+      id: '7-2',
+      question: 'What is the purpose of responsive design in mobile development?',
+      options: [
+        'To make designs responsive',
+        'To ensure apps work well across different screen sizes and orientations',
+        'To improve performance',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Responsive design ensures mobile apps work well across different screen sizes and orientations.',
+      category: 'Mobile Development',
+      difficulty: 'easy',
+      skill: 'Responsive Design',
+      tags: ['Mobile', 'Responsive', 'UI/UX']
+    },
+    {
+      id: '7-3',
+      question: 'What is the difference between iOS and Android development?',
+      options: [
+        'There is no difference',
+        'iOS uses Swift/Objective-C, Android uses Java/Kotlin',
+        'Android is deprecated',
+        'iOS is only for iPhones'
+      ],
+      correctAnswer: 1,
+      explanation: 'iOS development uses Swift or Objective-C, while Android development uses Java or Kotlin.',
+      category: 'Mobile Development',
+      difficulty: 'easy',
+      skill: 'Platform Differences',
+      tags: ['Mobile', 'iOS', 'Android', 'Programming Languages']
+    },
+    {
+      id: '7-4',
+      question: 'What is the purpose of mobile app testing?',
+      options: [
+        'To test apps',
+        'To ensure apps work correctly across different devices and scenarios',
+        'To improve performance',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app testing ensures apps work correctly across different devices, screen sizes, and usage scenarios.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Testing',
+      tags: ['Mobile', 'Testing', 'Quality Assurance']
+    },
+    {
+      id: '7-5',
+      question: 'What is the difference between offline and online mobile apps?',
+      options: [
+        'There is no difference',
+        'Offline apps work without internet, online apps require connectivity',
+        'Offline apps are deprecated',
+        'Online apps are only for web'
+      ],
+      correctAnswer: 1,
+      explanation: 'Offline apps can function without internet connectivity, while online apps require constant internet connection.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Connectivity',
+      tags: ['Mobile', 'Offline', 'Online', 'Connectivity']
+    },
+    {
+      id: '7-6',
+      question: 'What is the purpose of mobile app performance optimization?',
+      options: [
+        'To optimize performance',
+        'To improve app speed, battery life, and user experience',
+        'To reduce development time',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app performance optimization improves app speed, battery life, and overall user experience.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Performance',
+      tags: ['Mobile', 'Performance', 'Optimization']
+    },
+    {
+      id: '7-7',
+      question: 'What is the difference between mobile web apps and native apps?',
+      options: [
+        'There is no difference',
+        'Mobile web apps run in browsers, native apps are installed on devices',
+        'Native apps are deprecated',
+        'Mobile web apps are only for testing'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile web apps run in web browsers, while native apps are installed directly on mobile devices.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'App Types',
+      tags: ['Mobile', 'Web Apps', 'Native Apps']
+    },
+    {
+      id: '7-8',
+      question: 'What is the purpose of mobile app security?',
+      options: [
+        'To secure apps',
+        'To protect user data and prevent unauthorized access',
+        'To improve performance',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app security protects user data and prevents unauthorized access to app functionality.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Security',
+      tags: ['Mobile', 'Security', 'Data Protection']
+    },
+    {
+      id: '7-9',
+      question: 'What is the difference between push and pull notifications?',
+      options: [
+        'There is no difference',
+        'Push notifications are sent from server, pull notifications are requested by app',
+        'Pull notifications are deprecated',
+        'Push notifications are only for iOS'
+      ],
+      correctAnswer: 1,
+      explanation: 'Push notifications are sent from servers to devices, while pull notifications are requested by the app.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Notifications',
+      tags: ['Mobile', 'Push Notifications', 'Pull Notifications']
+    },
+    {
+      id: '7-10',
+      question: 'What is the purpose of mobile app analytics?',
+      options: [
+        'To analyze apps',
+        'To track user behavior and app performance for insights',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app analytics track user behavior and app performance to provide insights for improvement.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Analytics',
+      tags: ['Mobile', 'Analytics', 'User Behavior']
+    },
+    {
+      id: '7-11',
+      question: 'What is the difference between mobile app stores and enterprise distribution?',
+      options: [
+        'There is no difference',
+        'App stores are public, enterprise distribution is for internal company use',
+        'Enterprise distribution is deprecated',
+        'App stores are only for consumers'
+      ],
+      correctAnswer: 1,
+      explanation: 'App stores are public platforms for consumer apps, while enterprise distribution is for internal company app deployment.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Distribution',
+      tags: ['Mobile', 'App Stores', 'Enterprise']
+    },
+    {
+      id: '7-12',
+      question: 'What is the purpose of mobile app accessibility?',
+      options: [
+        'To make apps accessible',
+        'To ensure apps are usable by people with disabilities',
+        'To improve performance',
+        'To reduce development time'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app accessibility ensures apps are usable by people with various disabilities and limitations.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Accessibility',
+      tags: ['Mobile', 'Accessibility', 'Inclusive Design']
+    },
+    {
+      id: '7-13',
+      question: 'What is the difference between mobile app updates and versioning?',
+      options: [
+        'There is no difference',
+        'Updates modify existing apps, versioning creates new app versions',
+        'Versioning is deprecated',
+        'Updates are only for bug fixes'
+      ],
+      correctAnswer: 1,
+      explanation: 'Updates modify existing apps with new features or fixes, while versioning creates new app versions.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Updates',
+      tags: ['Mobile', 'Updates', 'Versioning']
+    },
+    {
+      id: '7-14',
+      question: 'What is the purpose of mobile app monetization?',
+      options: [
+        'To monetize apps',
+        'To generate revenue from mobile applications',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app monetization strategies generate revenue from mobile applications through various methods.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Monetization',
+      tags: ['Mobile', 'Monetization', 'Revenue']
+    },
+    {
+      id: '7-15',
+      question: 'What is the difference between mobile app development frameworks?',
+      options: [
+        'There is no difference',
+        'Different frameworks offer different features, performance, and development approaches',
+        'Frameworks are deprecated',
+        'All frameworks are the same'
+      ],
+      correctAnswer: 1,
+      explanation: 'Different mobile development frameworks offer varying features, performance characteristics, and development approaches.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Frameworks',
+      tags: ['Mobile', 'Frameworks', 'Development Tools']
+    },
+    {
+      id: '7-16',
+      question: 'What is the purpose of mobile app testing automation?',
+      options: [
+        'To automate testing',
+        'To reduce manual testing effort and improve test coverage',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app testing automation reduces manual testing effort and improves test coverage for better quality assurance.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Test Automation',
+      tags: ['Mobile', 'Test Automation', 'Quality Assurance']
+    },
+    {
+      id: '7-17',
+      question: 'What is the difference between native and hybrid mobile apps?',
+      options: [
+        'They are the same',
+        'Native apps use platform-specific code, hybrid apps use web technologies',
+        'Hybrid apps are deprecated',
+        'Native apps are only for iOS'
+      ],
+      correctAnswer: 1,
+      explanation: 'Native apps use platform-specific programming languages and APIs, while hybrid apps use web technologies wrapped in native containers.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'App Types',
+      tags: ['Mobile', 'Native Apps', 'Hybrid Apps']
+    },
+    {
+      id: '7-18',
+      question: 'What is the purpose of mobile app performance profiling?',
+      options: [
+        'To profile performance',
+        'To identify performance bottlenecks and optimize app speed',
+        'To improve security',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app performance profiling identifies performance bottlenecks and helps optimize app speed and responsiveness.',
+      category: 'Mobile Development',
+      difficulty: 'hard',
+      skill: 'Performance Profiling',
+      tags: ['Mobile', 'Performance', 'Optimization']
+    },
+    {
+      id: '7-19',
+      question: 'What is the difference between mobile app stores and enterprise distribution?',
+      options: [
+        'They are the same',
+        'App stores are public, enterprise distribution is for internal company use',
+        'Enterprise distribution is deprecated',
+        'App stores are only for consumers'
+      ],
+      correctAnswer: 1,
+      explanation: 'App stores are public platforms for consumer apps, while enterprise distribution is for internal company app deployment.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Distribution',
+      tags: ['Mobile', 'App Stores', 'Enterprise']
+    },
+    {
+      id: '7-20',
+      question: 'What is the purpose of mobile app analytics?',
+      options: [
+        'To analyze apps',
+        'To track user behavior and app performance for insights',
+        'To improve performance',
+        'To reduce costs'
+      ],
+      correctAnswer: 1,
+      explanation: 'Mobile app analytics track user behavior and app performance to provide insights for improvement and optimization.',
+      category: 'Mobile Development',
+      difficulty: 'medium',
+      skill: 'Analytics',
+      tags: ['Mobile', 'Analytics', 'User Behavior']
+    }
+  ],
 
-// Data Science Assessment
-'5': [
-  {
-    id: '5-1',
-    question: 'What is the difference between supervised and unsupervised learning?',
-    options: [
-      'There is no difference',
-      'Supervised learning uses labeled data, unsupervised learning finds patterns in unlabeled data',
-      'Unsupervised learning is always better',
-      'Supervised learning is only for classification'
-    ],
-    correctAnswer: 1,
-    explanation: 'Supervised learning uses labeled training data, while unsupervised learning finds patterns in data without labels.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Machine Learning',
-    tags: ['ML', 'Supervised Learning', 'Unsupervised Learning']
-  },
-  {
-    id: '5-2',
-    question: 'What is overfitting in machine learning?',
-    options: [
-      'A good thing',
-      'When a model performs well on training data but poorly on new data',
-      'When a model is too simple',
-      'When data is missing'
-    ],
-    correctAnswer: 1,
-    explanation: 'Overfitting occurs when a model learns the training data too well and fails to generalize to new, unseen data.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Model Validation',
-    tags: ['ML', 'Overfitting', 'Generalization']
-  },
-  {
-    id: '5-3',
-    question: 'What is the purpose of cross-validation?',
-    options: [
-      'To make models faster',
-      'To assess how well a model will generalize to new data',
-      'To reduce data size',
-      'To add more features'
-    ],
-    correctAnswer: 1,
-    explanation: 'Cross-validation helps assess how well a model will generalize to new, unseen data by testing on different subsets.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Model Validation',
-    tags: ['ML', 'Cross-validation', 'Generalization']
-  },
-  {
-    id: '5-4',
-    question: 'What is the difference between correlation and causation?',
-    options: [
-      'There is no difference',
-      'Correlation shows relationship, causation shows one variable causes another',
-      'Correlation is always causation',
-      'Causation is easier to prove'
-    ],
-    correctAnswer: 1,
-    explanation: 'Correlation shows a relationship between variables, while causation shows that one variable directly causes another.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Statistics',
-    tags: ['Statistics', 'Correlation', 'Causation']
-  },
-  {
-    id: '5-5',
-    question: 'What is feature engineering?',
-    options: [
-      'Building houses',
-      'Creating new features from existing data to improve model performance',
-      'Adding more data',
-      'Removing features'
-    ],
-    correctAnswer: 1,
-    explanation: 'Feature engineering involves creating new features from existing data to improve machine learning model performance.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Feature Engineering',
-    tags: ['ML', 'Features', 'Data Processing']
-  },
-  {
-    id: '5-6',
-    question: 'What is the purpose of regularization in machine learning?',
-    options: [
-      'To make models regular',
-      'To prevent overfitting by adding constraints to the model',
-      'To improve performance',
-      'To reduce data size'
-    ],
-    correctAnswer: 1,
-    explanation: 'Regularization prevents overfitting by adding constraints to the model, such as L1 or L2 penalties.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Regularization',
-    tags: ['ML', 'Regularization', 'Overfitting']
-  },
-  {
-    id: '5-7',
-    question: 'What is the difference between precision and recall?',
-    options: [
-      'There is no difference',
-      'Precision measures accuracy of positive predictions, recall measures ability to find all positives',
-      'Precision is deprecated',
-      'Recall is only for classification'
-    ],
-    correctAnswer: 1,
-    explanation: 'Precision measures the accuracy of positive predictions, while recall measures the ability to find all positive instances.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Model Evaluation',
-    tags: ['ML', 'Precision', 'Recall', 'Metrics']
-  },
-  {
-    id: '5-8',
-    question: 'What is the purpose of ensemble methods?',
-    options: [
-      'To create ensembles',
-      'To combine multiple models to improve overall performance',
-      'To reduce model complexity',
-      'To speed up training'
-    ],
-    correctAnswer: 1,
-    explanation: 'Ensemble methods combine multiple models to improve overall performance and reduce overfitting.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Ensemble Methods',
-    tags: ['ML', 'Ensemble', 'Model Combination']
-  },
-  {
-    id: '5-9',
-    question: 'What is the difference between classification and regression?',
-    options: [
-      'There is no difference',
-      'Classification predicts categories, regression predicts continuous values',
-      'Regression is deprecated',
-      'Classification is only for numbers'
-    ],
-    correctAnswer: 1,
-    explanation: 'Classification predicts discrete categories or classes, while regression predicts continuous numerical values.',
-    category: 'Data Science',
-    difficulty: 'easy',
-    skill: 'ML Types',
-    tags: ['ML', 'Classification', 'Regression']
-  },
-  {
-    id: '5-10',
-    question: 'What is the purpose of dimensionality reduction?',
-    options: [
-      'To reduce dimensions',
-      'To reduce the number of features while preserving important information',
-      'To improve performance',
-      'To reduce data size'
-    ],
-    correctAnswer: 1,
-    explanation: 'Dimensionality reduction reduces the number of features while preserving important information and reducing noise.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Dimensionality Reduction',
-    tags: ['ML', 'Dimensionality', 'Feature Selection']
-  },
-  {
-    id: '5-11',
-    question: 'What is the difference between bagging and boosting?',
-    options: [
-      'There is no difference',
-      'Bagging trains models independently, boosting trains models sequentially',
-      'Boosting is deprecated',
-      'Bagging is only for classification'
-    ],
-    correctAnswer: 1,
-    explanation: 'Bagging trains models independently and averages their predictions, while boosting trains models sequentially, each focusing on previous errors.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Ensemble Methods',
-    tags: ['ML', 'Bagging', 'Boosting', 'Ensemble']
-  },
-  {
-    id: '5-12',
-    question: 'What is the purpose of hyperparameter tuning?',
-    options: [
-      'To tune hyperparameters',
-      'To find optimal model parameters that maximize performance',
-      'To improve performance',
-      'To reduce training time'
-    ],
-    correctAnswer: 1,
-    explanation: 'Hyperparameter tuning finds optimal model parameters that maximize performance on validation data.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Hyperparameter Tuning',
-    tags: ['ML', 'Hyperparameters', 'Optimization']
-  },
-  {
-    id: '5-13',
-    question: 'What is the difference between training and validation sets?',
-    options: [
-      'There is no difference',
-      'Training set is used to train the model, validation set is used to tune hyperparameters',
-      'Validation set is deprecated',
-      'Training set is only for testing'
-    ],
-    correctAnswer: 1,
-    explanation: 'Training set is used to train the model, while validation set is used to tune hyperparameters and assess performance.',
-    category: 'Data Science',
-    difficulty: 'easy',
-    skill: 'Data Splitting',
-    tags: ['ML', 'Training', 'Validation', 'Data']
-  },
-  {
-    id: '5-14',
-    question: 'What is the purpose of feature selection?',
-    options: [
-      'To select features',
-      'To identify and use only the most relevant features for modeling',
-      'To improve performance',
-      'To reduce data size'
-    ],
-    correctAnswer: 1,
-    explanation: 'Feature selection identifies and uses only the most relevant features for modeling, improving performance and reducing noise.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Feature Selection',
-    tags: ['ML', 'Feature Selection', 'Data Quality']
-  },
-  {
-    id: '5-15',
-    question: 'What is the difference between parametric and non-parametric models?',
-    options: [
-      'There is no difference',
-      'Parametric models have fixed parameters, non-parametric models adapt to data',
-      'Non-parametric models are deprecated',
-      'Parametric models are only for regression'
-    ],
-    correctAnswer: 1,
-    explanation: 'Parametric models have a fixed number of parameters, while non-parametric models adapt their complexity to the data.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Model Types',
-    tags: ['ML', 'Parametric', 'Non-parametric', 'Models']
-  },
-  {
-    id: '5-16',
-    question: 'What is the purpose of clustering in unsupervised learning?',
-    options: [
-      'To create clusters',
-      'To group similar data points together without predefined labels',
-      'To improve performance',
-      'To reduce data size'
-    ],
-    correctAnswer: 1,
-    explanation: 'Clustering groups similar data points together without predefined labels, discovering natural patterns in the data.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Clustering',
-    tags: ['ML', 'Clustering', 'Unsupervised Learning']
-  },
-  {
-    id: '5-17',
-    question: 'What is the difference between bias and variance?',
-    options: [
-      'There is no difference',
-      'Bias is model simplicity, variance is model sensitivity to data changes',
-      'Variance is deprecated',
-      'Bias is only for classification'
-    ],
-    correctAnswer: 1,
-    explanation: 'Bias represents model simplicity and assumptions, while variance represents model sensitivity to changes in training data.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Bias-Variance Tradeoff',
-    tags: ['ML', 'Bias', 'Variance', 'Tradeoff']
-  },
-  {
-    id: '5-18',
-    question: 'What is the purpose of data normalization?',
-    options: [
-      'To normalize data',
-      'To scale features to a similar range for better model performance',
-      'To improve performance',
-      'To reduce data size'
-    ],
-    correctAnswer: 1,
-    explanation: 'Data normalization scales features to a similar range, preventing some features from dominating the model training.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Data Preprocessing',
-    tags: ['ML', 'Normalization', 'Scaling', 'Preprocessing']
-  },
-  {
-    id: '5-19',
-    question: 'What is the difference between supervised and reinforcement learning?',
-    options: [
-      'There is no difference',
-      'Supervised learning uses labeled data, reinforcement learning learns through trial and error',
-      'Reinforcement learning is deprecated',
-      'Supervised learning is only for classification'
-    ],
-    correctAnswer: 1,
-    explanation: 'Supervised learning uses labeled training data, while reinforcement learning learns through trial and error with rewards and penalties.',
-    category: 'Data Science',
-    difficulty: 'hard',
-    skill: 'Learning Types',
-    tags: ['ML', 'Supervised Learning', 'Reinforcement Learning']
-  },
-  {
-    id: '5-20',
-    question: 'What is the purpose of model interpretability?',
-    options: [
-      'To interpret models',
-      'To understand how and why a model makes predictions',
-      'To improve performance',
-      'To reduce complexity'
-    ],
-    correctAnswer: 1,
-    explanation: 'Model interpretability helps understand how and why a model makes predictions, which is crucial for trust and debugging.',
-    category: 'Data Science',
-    difficulty: 'medium',
-    skill: 'Model Interpretability',
-    tags: ['ML', 'Interpretability', 'Explainability']
-  }
-],
+  '9': [ // Personality Assessment - Leadership Style
+    {
+      id: '9-1',
+      question: 'When working with a team, I prefer to:',
+      options: [
+        'Take charge and make decisions',
+        'Collaborate and build consensus',
+        'Let others lead while I support',
+        'Work independently'
+      ],
+      correctAnswer: 1,
+      explanation: 'This question helps identify your leadership style and team collaboration preferences.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Leadership',
+      tags: ['Leadership', 'Teamwork', 'Personality']
+    },
+    {
+      id: '9-2',
+      question: 'In a crisis situation, I typically:',
+      options: [
+        'Act quickly and decisively',
+        'Analyze the situation thoroughly first',
+        'Seek input from others',
+        'Wait for instructions'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals how you handle pressure and make decisions in challenging situations.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Crisis Management',
+      tags: ['Leadership', 'Crisis', 'Decision Making']
+    },
+    {
+      id: '9-3',
+      question: 'When giving feedback to team members, I:',
+      options: [
+        'Focus only on what needs improvement',
+        'Provide balanced positive and constructive feedback',
+        'Avoid giving feedback to maintain harmony',
+        'Let others handle feedback'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to team development and communication.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Feedback',
+      tags: ['Leadership', 'Feedback', 'Communication']
+    },
+    {
+      id: '9-4',
+      question: 'My approach to delegating tasks is:',
+      options: [
+        'To do everything myself to ensure quality',
+        'To assign tasks based on team members\' strengths',
+        'To let team members choose their tasks',
+        'To avoid delegation altogether'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your trust in team members and your delegation style.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Delegation',
+      tags: ['Leadership', 'Delegation', 'Trust']
+    },
+    {
+      id: '9-5',
+      question: 'When a team member makes a mistake, I:',
+      options: [
+        'Immediately replace them',
+        'Use it as a learning opportunity for the whole team',
+        'Ignore it to avoid conflict',
+        'Blame the individual'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to handling mistakes and team development.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Mistake Handling',
+      tags: ['Leadership', 'Learning', 'Team Development']
+    },
+    {
+      id: '9-6',
+      question: 'When making important decisions, I typically:',
+      options: [
+        'Rely on my intuition and experience',
+        'Gather data and analyze options thoroughly',
+        'Seek consensus from the team',
+        'Follow established procedures'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your decision-making style and approach to problem-solving.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Decision Making',
+      tags: ['Leadership', 'Decision Making', 'Problem Solving']
+    },
+    {
+      id: '9-7',
+      question: 'In team meetings, I usually:',
+      options: [
+        'Take control and direct the discussion',
+        'Facilitate discussion and ensure everyone participates',
+        'Listen quietly and contribute when asked',
+        'Avoid speaking unless necessary'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your communication style and meeting participation approach.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Communication',
+      tags: ['Leadership', 'Communication', 'Meetings']
+    },
+    {
+      id: '9-8',
+      question: 'When team members disagree, I:',
+      options: [
+        'Choose the best option and move forward',
+        'Help find common ground and build consensus',
+        'Let them resolve it themselves',
+        'Avoid getting involved'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your conflict resolution style and team management approach.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Conflict Resolution',
+      tags: ['Leadership', 'Conflict Resolution', 'Team Management']
+    },
+    {
+      id: '9-9',
+      question: 'My approach to innovation is:',
+      options: [
+        'To encourage experimentation and new ideas',
+        'To carefully evaluate risks before trying new approaches',
+        'To stick with proven methods',
+        'To avoid change when possible'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your attitude toward innovation and change management.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Innovation',
+      tags: ['Leadership', 'Innovation', 'Change Management']
+    },
+    {
+      id: '9-10',
+      question: 'When setting team goals, I:',
+      options: [
+        'Set ambitious targets to push the team',
+        'Collaborate with the team to set realistic goals',
+        'Let the team set their own goals',
+        'Follow organizational guidelines'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your goal-setting approach and team motivation style.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Goal Setting',
+      tags: ['Leadership', 'Goal Setting', 'Motivation']
+    },
+    {
+      id: '9-11',
+      question: 'When team members need help, I typically:',
+      options: [
+        'Let them figure it out themselves',
+        'Provide guidance while encouraging independence',
+        'Take over the task completely',
+        'Refer them to someone else'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to mentoring and developing team members.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Mentoring',
+      tags: ['Leadership', 'Mentoring', 'Team Development']
+    },
+    {
+      id: '9-12',
+      question: 'In team meetings, I prefer to:',
+      options: [
+        'Control the agenda completely',
+        'Facilitate discussion and encourage participation',
+        'Let others lead the discussion',
+        'Keep meetings as short as possible'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your meeting facilitation style and leadership approach.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Meeting Facilitation',
+      tags: ['Leadership', 'Meetings', 'Facilitation']
+    },
+    {
+      id: '9-13',
+      question: 'When recognizing team achievements, I:',
+      options: [
+        'Focus on individual accomplishments',
+        'Recognize both individual and team contributions',
+        'Keep recognition minimal',
+        'Let others handle recognition'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to team recognition and motivation.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Recognition',
+      tags: ['Leadership', 'Recognition', 'Motivation']
+    },
+    {
+      id: '9-14',
+      question: 'My approach to team development is:',
+      options: [
+        'To focus on immediate results',
+        'To invest in long-term growth and skill development',
+        'To let team members develop on their own',
+        'To avoid development activities'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your commitment to team growth and development.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Team Development',
+      tags: ['Leadership', 'Development', 'Growth']
+    },
+    {
+      id: '9-15',
+      question: 'When making unpopular decisions, I:',
+      options: [
+        'Make the decision and move forward',
+        'Explain the reasoning and address concerns',
+        'Avoid making unpopular decisions',
+        'Let the team decide'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your approach to difficult decisions and communication.',
+      category: 'Personality',
+      difficulty: 'easy',
+      skill: 'Decision Making',
+      tags: ['Leadership', 'Decisions', 'Communication']
+    }
+  ],
 
-// Personality Assessment - Leadership Style
-'9': [
-  {
-    id: '9-1',
-    question: 'When working with a team, I prefer to:',
-    options: [
-      'Take charge and make decisions',
-      'Collaborate and build consensus',
-      'Let others lead while I support',
-      'Work independently'
-    ],
-    correctAnswer: 1,
-    explanation: 'This question helps identify your leadership style and team collaboration preferences.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Leadership',
-    tags: ['Leadership', 'Teamwork', 'Personality']
-  },
-  {
-    id: '9-2',
-    question: 'In a crisis situation, I typically:',
-    options: [
-      'Act quickly and decisively',
-      'Analyze the situation thoroughly first',
-      'Seek input from others',
-      'Wait for instructions'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals how you handle pressure and make decisions in challenging situations.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Crisis Management',
-    tags: ['Leadership', 'Crisis', 'Decision Making']
-  },
-  {
-    id: '9-3',
-    question: 'When giving feedback to team members, I:',
-    options: [
-      'Focus only on what needs improvement',
-      'Provide balanced positive and constructive feedback',
-      'Avoid giving feedback to maintain harmony',
-      'Let others handle feedback'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your approach to team development and communication.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Feedback',
-    tags: ['Leadership', 'Feedback', 'Communication']
-  },
-  {
-    id: '9-4',
-    question: 'My approach to delegating tasks is:',
-    options: [
-      'To do everything myself to ensure quality',
-      'To assign tasks based on team members\' strengths',
-      'To let team members choose their tasks',
-      'To avoid delegation altogether'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your trust in team members and your delegation style.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Delegation',
-    tags: ['Leadership', 'Delegation', 'Trust']
-  },
-  {
-    id: '9-5',
-    question: 'When a team member makes a mistake, I:',
-    options: [
-      'Immediately replace them',
-      'Use it as a learning opportunity for the whole team',
-      'Ignore it to avoid conflict',
-      'Blame the individual'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your approach to handling mistakes and team development.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Mistake Handling',
-    tags: ['Leadership', 'Learning', 'Team Development']
-  },
-  {
-    id: '9-6',
-    question: 'When making important decisions, I typically:',
-    options: [
-      'Rely on my intuition and experience',
-      'Gather data and analyze options thoroughly',
-      'Seek consensus from the team',
-      'Follow established procedures'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your decision-making style and approach to problem-solving.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Decision Making',
-    tags: ['Leadership', 'Decision Making', 'Problem Solving']
-  },
-  {
-    id: '9-7',
-    question: 'In team meetings, I usually:',
-    options: [
-      'Take control and direct the discussion',
-      'Facilitate discussion and ensure everyone participates',
-      'Listen quietly and contribute when asked',
-      'Avoid speaking unless necessary'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your communication style and meeting participation approach.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Communication',
-    tags: ['Leadership', 'Communication', 'Meetings']
-  },
-  {
-    id: '9-8',
-    question: 'When team members disagree, I:',
-    options: [
-      'Choose the best option and move forward',
-      'Help find common ground and build consensus',
-      'Let them resolve it themselves',
-      'Avoid getting involved'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your conflict resolution style and team management approach.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Conflict Resolution',
-    tags: ['Leadership', 'Conflict Resolution', 'Team Management']
-  },
-  {
-    id: '9-9',
-    question: 'My approach to innovation is:',
-    options: [
-      'To encourage experimentation and new ideas',
-      'To carefully evaluate risks before trying new approaches',
-      'To stick with proven methods',
-      'To avoid change when possible'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your attitude toward innovation and change management.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Innovation',
-    tags: ['Leadership', 'Innovation', 'Change Management']
-  },
-  {
-    id: '9-10',
-    question: 'When setting team goals, I:',
-    options: [
-      'Set ambitious targets to push the team',
-      'Collaborate with the team to set realistic goals',
-      'Let the team set their own goals',
-      'Follow organizational guidelines'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your goal-setting approach and team motivation style.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Goal Setting',
-    tags: ['Leadership', 'Goal Setting', 'Motivation']
-  },
-  {
-    id: '9-11',
-    question: 'My approach to team development is:',
-    options: [
-      'To focus on individual strengths and growth',
-      'To balance individual and team development needs',
-      'To prioritize team performance over individual growth',
-      'To let team members develop on their own'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your approach to team development and individual growth.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Team Development',
-    tags: ['Leadership', 'Team Development', 'Individual Growth']
-  },
-  {
-    id: '9-12',
-    question: 'When communicating with stakeholders, I:',
-    options: [
-      'Provide detailed technical information',
-      'Adapt my communication style to their needs',
-      'Keep communication minimal and formal',
-      'Let others handle stakeholder communication'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your stakeholder communication approach and adaptability.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Stakeholder Communication',
-    tags: ['Leadership', 'Communication', 'Stakeholders']
-  },
-  {
-    id: '9-13',
-    question: 'My approach to risk management is:',
-    options: [
-      'To take calculated risks for potential rewards',
-      'To carefully assess and mitigate risks',
-      'To avoid risks whenever possible',
-      'To follow established risk protocols'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your risk tolerance and management approach.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Risk Management',
-    tags: ['Leadership', 'Risk Management', 'Decision Making']
-  },
-  {
-    id: '9-14',
-    question: 'When mentoring team members, I:',
-    options: [
-      'Provide direct guidance and solutions',
-      'Ask questions to help them find their own solutions',
-      'Let them learn through experience',
-      'Refer them to formal training programs'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your mentoring style and approach to developing others.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Mentoring',
-    tags: ['Leadership', 'Mentoring', 'Development']
-  },
-  {
-    id: '9-15',
-    question: 'My leadership philosophy is:',
-    options: [
-      'To lead by example and inspire others',
-      'To empower others to lead and grow',
-      'To maintain control and ensure compliance',
-      'To support the team from behind the scenes'
-    ],
-    correctAnswer: 1,
-    explanation: 'This question helps identify your core leadership values and approach.',
-    category: 'Personality',
-    difficulty: 'easy',
-    skill: 'Leadership Philosophy',
-    tags: ['Leadership', 'Values', 'Approach']
-  }
-],
+  '11': [ // Aptitude Assessment - Problem Solving
+    {
+      id: '11-1',
+      question: 'If a train travels 120 miles in 2 hours, how fast is it traveling?',
+      options: [
+        '40 mph',
+        '60 mph',
+        '80 mph',
+        '100 mph'
+      ],
+      correctAnswer: 1,
+      explanation: 'Speed = Distance ÷ Time = 120 miles ÷ 2 hours = 60 mph',
+      category: 'Problem Solving',
+      difficulty: 'easy',
+      skill: 'Mathematical Reasoning',
+      tags: ['Math', 'Speed', 'Problem Solving']
+    },
+    {
+      id: '11-2',
+      question: 'A sequence follows the pattern: 2, 4, 8, 16, 32. What comes next?',
+      options: [
+        '48',
+        '64',
+        '56',
+        '40'
+      ],
+      correctAnswer: 1,
+      explanation: 'Each number is multiplied by 2: 2×2=4, 4×2=8, 8×2=16, 16×2=32, 32×2=64',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Pattern Recognition',
+      tags: ['Math', 'Patterns', 'Sequences']
+    },
+    {
+      id: '11-3',
+      question: 'If 3 workers can complete a task in 6 days, how many days would 2 workers take?',
+      options: [
+        '4 days',
+        '6 days',
+        '9 days',
+        '12 days'
+      ],
+      correctAnswer: 2,
+      explanation: 'More workers = fewer days. 3 workers × 6 days = 18 worker-days. 18 ÷ 2 workers = 9 days',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Work Rate Problems',
+      tags: ['Math', 'Work Rate', 'Proportions']
+    },
+    {
+      id: '11-4',
+      question: 'What is the missing number: 1, 3, 6, 10, 15, ?',
+      options: [
+        '18',
+        '20',
+        '21',
+        '25'
+      ],
+      correctAnswer: 2,
+      explanation: 'The difference between consecutive terms increases by 1: +2, +3, +4, +5, +6. So 15 + 6 = 21',
+      category: 'Problem Solving',
+      difficulty: 'hard',
+      skill: 'Number Sequences',
+      tags: ['Math', 'Sequences', 'Patterns']
+    },
+    {
+      id: '11-5',
+      question: 'A rectangle has a perimeter of 24 units and an area of 35 square units. What are its dimensions?',
+      options: [
+        '5 × 7',
+        '6 × 6',
+        '4 × 8',
+        '3 × 9'
+      ],
+      correctAnswer: 0,
+      explanation: 'Perimeter = 2(l+w) = 24, so l+w = 12. Area = l×w = 35. 5×7 = 35 and 5+7 = 12',
+      category: 'Problem Solving',
+      difficulty: 'hard',
+      skill: 'Geometry',
+      tags: ['Math', 'Geometry', 'Algebra']
+    },
+    {
+      id: '11-6',
+      question: 'If a car travels at 60 mph for 2.5 hours, how far does it go?',
+      options: [
+        '120 miles',
+        '150 miles',
+        '180 miles',
+        '200 miles'
+      ],
+      correctAnswer: 1,
+      explanation: 'Distance = Speed × Time = 60 mph × 2.5 hours = 150 miles',
+      category: 'Problem Solving',
+      difficulty: 'easy',
+      skill: 'Distance Problems',
+      tags: ['Math', 'Distance', 'Speed', 'Time']
+    },
+    {
+      id: '11-7',
+      question: 'What is the next number: 3, 6, 11, 18, 27, ?',
+      options: [
+        '36',
+        '38',
+        '40',
+        '42'
+      ],
+      correctAnswer: 1,
+      explanation: 'The difference increases by 2: +3, +5, +7, +9, +11. So 27 + 11 = 38',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Number Sequences',
+      tags: ['Math', 'Sequences', 'Patterns']
+    },
+    {
+      id: '11-8',
+      question: 'If 4 machines can produce 100 widgets in 5 hours, how many widgets can 6 machines produce in 3 hours?',
+      options: [
+        '60 widgets',
+        '90 widgets',
+        '120 widgets',
+        '150 widgets'
+      ],
+      correctAnswer: 1,
+      explanation: 'Rate: 4 machines × 5 hours = 100 widgets, so 1 machine-hour = 5 widgets. 6 machines × 3 hours × 5 = 90 widgets',
+      category: 'Problem Solving',
+      difficulty: 'hard',
+      skill: 'Work Rate Problems',
+      tags: ['Math', 'Work Rate', 'Proportions']
+    },
+    {
+      id: '11-9',
+      question: 'What is the sum of the first 10 even numbers?',
+      options: [
+        '90',
+        '100',
+        '110',
+        '120'
+      ],
+      correctAnswer: 2,
+      explanation: 'First 10 even numbers: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. Sum = 110',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Number Series',
+      tags: ['Math', 'Series', 'Even Numbers']
+    },
+    {
+      id: '11-10',
+      question: 'A triangle has angles measuring 45°, 60°, and x°. What is x?',
+      options: [
+        '65°',
+        '70°',
+        '75°',
+        '80°'
+      ],
+      correctAnswer: 2,
+      explanation: 'Sum of angles in a triangle = 180°. 45° + 60° + x° = 180°. x° = 75°',
+      category: 'Problem Solving',
+      difficulty: 'easy',
+      skill: 'Geometry',
+      tags: ['Math', 'Geometry', 'Angles', 'Triangles']
+    },
+    {
+      id: '11-11',
+      question: 'What is the next number: 2, 6, 12, 20, 30, ?',
+      options: [
+        '40',
+        '42',
+        '44',
+        '46'
+      ],
+      correctAnswer: 1,
+      explanation: 'The difference increases by 2: +4, +6, +8, +10, +12. So 30 + 12 = 42',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Number Sequences',
+      tags: ['Math', 'Sequences', 'Patterns']
+    },
+    {
+      id: '11-12',
+      question: 'If 5 workers can build a wall in 8 days, how many days would 10 workers take?',
+      options: [
+        '2 days',
+        '4 days',
+        '6 days',
+        '8 days'
+      ],
+      correctAnswer: 1,
+      explanation: 'More workers = fewer days. 5 workers × 8 days = 40 worker-days. 40 ÷ 10 workers = 4 days',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Work Rate Problems',
+      tags: ['Math', 'Work Rate', 'Proportions']
+    },
+    {
+      id: '11-13',
+      question: 'What is the area of a circle with radius 7 units?',
+      options: [
+        '49π square units',
+        '98π square units',
+        '147π square units',
+        '196π square units'
+      ],
+      correctAnswer: 0,
+      explanation: 'Area of circle = πr² = π × 7² = π × 49 = 49π square units',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Geometry',
+      tags: ['Math', 'Geometry', 'Circles', 'Area']
+    },
+    {
+      id: '11-14',
+      question: 'What is the sum of the first 15 odd numbers?',
+      options: [
+        '200',
+        '225',
+        '250',
+        '275'
+      ],
+      correctAnswer: 1,
+      explanation: 'First 15 odd numbers: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29. Sum = 225',
+      category: 'Problem Solving',
+      difficulty: 'medium',
+      skill: 'Number Series',
+      tags: ['Math', 'Series', 'Odd Numbers']
+    },
+    {
+      id: '11-15',
+      question: 'A rectangle has a perimeter of 30 units and an area of 50 square units. What are its dimensions?',
+      options: [
+        '5 × 10',
+        '6 × 9',
+        '7 × 8',
+        '4 × 11'
+      ],
+      correctAnswer: 0,
+      explanation: 'Perimeter = 2(l+w) = 30, so l+w = 15. Area = l×w = 50. 5×10 = 50 and 5+10 = 15',
+      category: 'Problem Solving',
+      difficulty: 'hard',
+      skill: 'Geometry',
+      tags: ['Math', 'Geometry', 'Rectangles', 'Algebra']
+    }
+  ],
 
-// Aptitude Assessment - Problem Solving
-'11': [
-  {
-    id: '11-1',
-    question: 'If a train travels 120 miles in 2 hours, how fast is it traveling?',
-    options: [
-      '40 mph',
-      '60 mph',
-      '80 mph',
-      '100 mph'
-    ],
-    correctAnswer: 1,
-    explanation: 'Speed = Distance ÷ Time = 120 miles ÷ 2 hours = 60 mph',
-    category: 'Problem Solving',
-    difficulty: 'easy',
-    skill: 'Mathematical Reasoning',
-    tags: ['Math', 'Speed', 'Problem Solving']
-  },
-  {
-    id: '11-2',
-    question: 'A sequence follows the pattern: 2, 4, 8, 16, 32. What comes next?',
-    options: [
-      '48',
-      '64',
-      '56',
-      '40'
-    ],
-    correctAnswer: 1,
-    explanation: 'Each number is multiplied by 2: 2×2=4, 4×2=8, 8×2=16, 16×2=32, 32×2=64',
-    category: 'Problem Solving',
-    difficulty: 'medium',
-    skill: 'Pattern Recognition',
-    tags: ['Math', 'Patterns', 'Sequences']
-  },
-  {
-    id: '11-3',
-    question: 'If 3 workers can complete a task in 6 days, how many days would 2 workers take?',
-    options: [
-      '4 days',
-      '6 days',
-      '9 days',
-      '12 days'
-    ],
-    correctAnswer: 2,
-    explanation: 'More workers = fewer days. 3 workers × 6 days = 18 worker-days. 18 ÷ 2 workers = 9 days',
-    category: 'Problem Solving',
-    difficulty: 'medium',
-    skill: 'Work Rate Problems',
-    tags: ['Math', 'Work Rate', 'Proportions']
-  },
-  {
-    id: '11-4',
-    question: 'What is the missing number: 1, 3, 6, 10, 15, ?',
-    options: [
-      '18',
-      '20',
-      '21',
-      '25'
-    ],
-    correctAnswer: 2,
-    explanation: 'The difference between consecutive terms increases by 1: +2, +3, +4, +5, +6. So 15 + 6 = 21',
-    category: 'Problem Solving',
-    difficulty: 'hard',
-    skill: 'Number Sequences',
-    tags: ['Math', 'Sequences', 'Patterns']
-  },
-  {
-    id: '11-5',
-    question: 'A rectangle has a perimeter of 24 units and an area of 35 square units. What are its dimensions?',
-    options: [
-      '5 × 7',
-      '6 × 6',
-      '4 × 8',
-      '3 × 9'
-    ],
-    correctAnswer: 0,
-    explanation: 'Perimeter = 2(l+w) = 24, so l+w = 12. Area = l×w = 35. 5×7 = 35 and 5+7 = 12',
-    category: 'Problem Solving',
-    difficulty: 'hard',
-    skill: 'Geometry',
-    tags: ['Math', 'Geometry', 'Algebra']
-  },
-  {
-    id: '11-6',
-    question: 'If a car travels at 60 mph for 2.5 hours, how far does it go?',
-    options: [
-      '120 miles',
-      '150 miles',
-      '180 miles',
-      '200 miles'
-    ],
-    correctAnswer: 1,
-    explanation: 'Distance = Speed × Time = 60 mph × 2.5 hours = 150 miles',
-    category: 'Problem Solving',
-    difficulty: 'easy',
-    skill: 'Distance Problems',
-    tags: ['Math', 'Distance', 'Speed', 'Time']
-  },
-  {
-    id: '11-7',
-    question: 'What is the next number: 3, 6, 11, 18, 27, ?',
-    options: [
-      '36',
-      '38',
-      '40',
-      '42'
-    ],
-    correctAnswer: 1,
-    explanation: 'The difference increases by 2: +3, +5, +7, +9, +11. So 27 + 11 = 38',
-    category: 'Problem Solving',
-    difficulty: 'medium',
-    skill: 'Number Sequences',
-    tags: ['Math', 'Sequences', 'Patterns']
-  },
-  {
-    id: '11-8',
-    question: 'If 4 machines can produce 100 widgets in 5 hours, how many widgets can 6 machines produce in 3 hours?',
-    options: [
-      '60 widgets',
-      '90 widgets',
-      '120 widgets',
-      '150 widgets'
-    ],
-    correctAnswer: 1,
-    explanation: 'Rate: 4 machines × 5 hours = 100 widgets, so 1 machine-hour = 5 widgets. 6 machines × 3 hours × 5 = 90 widgets',
-    category: 'Problem Solving',
-    difficulty: 'hard',
-    skill: 'Work Rate Problems',
-    tags: ['Math', 'Work Rate', 'Proportions']
-  },
-  {
-    id: '11-9',
-    question: 'What is the sum of the first 10 even numbers?',
-    options: [
-      '90',
-      '100',
-      '110',
-      '120'
-    ],
-    correctAnswer: 2,
-    explanation: 'First 10 even numbers: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20. Sum = 110',
-    category: 'Problem Solving',
-    difficulty: 'medium',
-    skill: 'Number Series',
-    tags: ['Math', 'Series', 'Even Numbers']
-  },
-  {
-    id: '11-10',
-    question: 'A triangle has angles measuring 45°, 60°, and x°. What is x?',
-    options: [
-      '65°',
-      '70°',
-      '75°',
-      '80°'
-    ],
-    correctAnswer: 2,
-    explanation: 'Sum of angles in a triangle = 180°. 45° + 60° + x° = 180°. x° = 75°',
-    category: 'Problem Solving',
-    difficulty: 'easy',
-    skill: 'Geometry',
-    tags: ['Math', 'Geometry', 'Angles', 'Triangles']
-  },
-  {
-    id: '11-11',
-    question: 'If a number is increased by 20% and then decreased by 20%, what is the net change?',
-    options: [
-      'No change',
-      '4% decrease',
-      '4% increase',
-      '20% decrease'
-    ],
-    correctAnswer: 1,
-    explanation: 'Let x be the original number. After 20% increase: 1.2x. After 20% decrease: 0.8 × 1.2x = 0.96x. Net change: 4% decrease',
-    category: 'Problem Solving',
-    difficulty: 'hard',
-    skill: 'Percentage Problems',
-    tags: ['Math', 'Percentages', 'Calculations']
-  },
-  {
-    id: '11-12',
-    question: 'What is the area of a circle with radius 6 units?',
-    options: [
-      '36π square units',
-      '72π square units',
-      '108π square units',
-      '144π square units'
-    ],
-    correctAnswer: 0,
-    explanation: 'Area of circle = πr² = π × 6² = π × 36 = 36π square units',
-    category: 'Problem Solving',
-    difficulty: 'medium',
-    skill: 'Geometry',
-    tags: ['Math', 'Geometry', 'Circles', 'Area']
-  },
-  {
-    id: '11-13',
-    question: 'If 2x + 3y = 12 and x - y = 2, what is the value of x?',
-    options: [
-      '3',
-      '4',
-      '5',
-      '6'
-    ],
-    correctAnswer: 1,
-    explanation: 'From x - y = 2, we get y = x - 2. Substitute: 2x + 3(x-2) = 12. 2x + 3x - 6 = 12. 5x = 18. x = 3.6, closest to 4',
-    category: 'Problem Solving',
-    difficulty: 'hard',
-    skill: 'Algebra',
-    tags: ['Math', 'Algebra', 'Equations', 'Substitution']
-  },
-  {
-    id: '11-14',
-    question: 'What is the probability of rolling a 6 on a fair six-sided die?',
-    options: [
-      '1/3',
-      '1/6',
-      '1/4',
-      '1/2'
-    ],
-    correctAnswer: 1,
-    explanation: 'Probability = Number of favorable outcomes / Total outcomes = 1/6',
-    category: 'Problem Solving',
-    difficulty: 'easy',
-    skill: 'Probability',
-    tags: ['Math', 'Probability', 'Dice']
-  },
-  {
-    id: '11-15',
-    question: 'If a square has an area of 64 square units, what is its perimeter?',
-    options: [
-      '24 units',
-      '32 units',
-      '48 units',
-      '64 units'
-    ],
-    correctAnswer: 1,
-    explanation: 'Area = side² = 64, so side = 8. Perimeter = 4 × side = 4 × 8 = 32 units',
-    category: 'Problem Solving',
-    difficulty: 'medium',
-    skill: 'Geometry',
-    tags: ['Math', 'Geometry', 'Squares', 'Area', 'Perimeter']
-  }
-],
+  '13': [ // Career Assessment
+    {
+      id: '13-1',
+      question: 'I enjoy working with:',
+      options: [
+        'People and teams',
+        'Data and analysis',
+        'Creative projects',
+        'Technical systems'
+      ],
+      correctAnswer: 1,
+      explanation: 'This helps identify your preferred work environment and type of tasks.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Work Preferences',
+      tags: ['Career', 'Work Style', 'Preferences']
+    },
+    {
+      id: '13-2',
+      question: 'In my ideal job, I would:',
+      options: [
+        'Have a structured routine',
+        'Face new challenges regularly',
+        'Work independently',
+        'Lead others'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your preference for job variety and challenge level.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Job Characteristics',
+      tags: ['Career', 'Job Satisfaction', 'Motivation']
+    },
+    {
+      id: '13-3',
+      question: 'I am most motivated by:',
+      options: [
+        'Financial rewards',
+        'Helping others',
+        'Recognition',
+        'Learning new skills'
+      ],
+      correctAnswer: 1,
+      explanation: 'This helps identify what drives you professionally and personally.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Motivation',
+      tags: ['Career', 'Motivation', 'Values']
+    },
+    {
+      id: '13-4',
+      question: 'When making career decisions, I prioritize:',
+      options: [
+        'Job security',
+        'Growth opportunities',
+        'Work-life balance',
+        'Salary and benefits'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your career values and decision-making priorities.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Career Planning',
+      tags: ['Career', 'Planning', 'Values']
+    },
+    {
+      id: '13-5',
+      question: 'I see myself in 5 years:',
+      options: [
+        'In the same role',
+        'In a leadership position',
+        'Running my own business',
+        'In a different field entirely'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your career aspirations and long-term goals.',
+      category: 'Career', 
+      difficulty: 'easy',
+      skill: 'Career Goals',
+      tags: ['Career', 'Goals', 'Aspirations']
+    },
+    {
+      id: '13-6',
+      question: 'I prefer work environments that are:',
+      options: [
+        'Fast-paced and dynamic',
+        'Stable and predictable',
+        'Creative and flexible',
+        'Technical and structured'
+      ],
+      correctAnswer: 1,
+      explanation: 'This helps identify your preferred work environment characteristics.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Work Environment',
+      tags: ['Career', 'Work Environment', 'Preferences']
+    },
+    {
+      id: '13-7',
+      question: 'When learning new skills, I prefer:',
+      options: [
+        'Hands-on practice',
+        'Reading and research',
+        'Group learning',
+        'One-on-one mentoring'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your preferred learning style and approach.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Learning Style',
+      tags: ['Career', 'Learning', 'Development']
+    },
+    {
+      id: '13-8',
+      question: 'I work best when:',
+      options: [
+        'I have clear deadlines',
+        'I can work at my own pace',
+        'I collaborate with others',
+        'I work independently'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your preferred work conditions and productivity factors.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Work Conditions',
+      tags: ['Career', 'Productivity', 'Work Style']
+    },
+    {
+      id: '13-9',
+      question: 'My ideal manager would:',
+      options: [
+        'Give me clear direction',
+        'Provide guidance and support',
+        'Give me autonomy',
+        'Focus on results only'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your preferred management style and leadership preferences.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Management Style',
+      tags: ['Career', 'Management', 'Leadership']
+    },
+    {
+      id: '13-10',
+      question: 'I am most satisfied when my work:',
+      options: [
+        'Pays well',
+        'Makes a positive impact',
+        'Is intellectually challenging',
+        'Provides work-life balance'
+      ],
+      correctAnswer: 1,
+      explanation: 'This helps identify what brings you job satisfaction and fulfillment.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Job Satisfaction',
+      tags: ['Career', 'Satisfaction', 'Fulfillment']
+    },
+    {
+      id: '13-11',
+      question: 'When faced with a difficult challenge at work, I:',
+      options: [
+        'Avoid it if possible',
+        'Break it down into manageable steps',
+        'Ask someone else to handle it',
+        'Wait for it to resolve itself'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your problem-solving approach and resilience in the workplace.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Problem Solving',
+      tags: ['Career', 'Problem Solving', 'Resilience']
+    },
+    {
+      id: '13-12',
+      question: 'I prefer work environments that offer:',
+      options: [
+        'High salaries only',
+        'Opportunities for growth and learning',
+        'Minimal stress',
+        'Flexible schedules only'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your priorities in a work environment and career development goals.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Work Environment',
+      tags: ['Career', 'Growth', 'Learning']
+    },
+    {
+      id: '13-13',
+      question: 'When working on team projects, I typically:',
+      options: [
+        'Prefer to work alone',
+        'Collaborate and contribute to team success',
+        'Let others do most of the work',
+        'Focus only on my assigned tasks'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your teamwork style and collaboration preferences.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Teamwork',
+      tags: ['Career', 'Teamwork', 'Collaboration']
+    },
+    {
+      id: '13-14',
+      question: 'My approach to professional development is:',
+      options: [
+        'To wait for employer training',
+        'To actively seek learning opportunities',
+        'To focus only on current skills',
+        'To avoid additional training'
+      ],
+      correctAnswer: 1,
+      explanation: 'This shows your commitment to continuous learning and professional growth.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Professional Development',
+      tags: ['Career', 'Development', 'Learning']
+    },
+    {
+      id: '13-15',
+      question: 'I see my ideal career path as:',
+      options: [
+        'Staying in one role',
+        'Progressive advancement and skill development',
+        'Minimal change and stability',
+        'Frequent job changes'
+      ],
+      correctAnswer: 1,
+      explanation: 'This reveals your career aspirations and long-term professional goals.',
+      category: 'Career',
+      difficulty: 'easy',
+      skill: 'Career Path',
+      tags: ['Career', 'Advancement', 'Goals']
+    }
+  ],
 
-// Career Assessment
-'13': [
-  {
-    id: '13-1',
-    question: 'I enjoy working with:',
-    options: [
-      'People and teams',
-      'Data and analysis',
-      'Creative projects',
-      'Technical systems'
-    ],
-    correctAnswer: 1,
-    explanation: 'This helps identify your preferred work environment and type of tasks.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Work Preferences',
-    tags: ['Career', 'Work Style', 'Preferences']
-  },
-  {
-    id: '13-2',
-    question: 'In my ideal job, I would:',
-    options: [
-      'Have a structured routine',
-      'Face new challenges regularly',
-      'Work independently',
-      'Lead others'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your preference for job variety and challenge level.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Job Characteristics',
-    tags: ['Career', 'Job Satisfaction', 'Motivation']
-  },
-  {
-    id: '13-3',
-    question: 'I am most motivated by:',
-    options: [
-      'Financial rewards',
-      'Helping others',
-      'Recognition',
-      'Learning new skills'
-    ],
-    correctAnswer: 1,
-    explanation: 'This helps identify what drives you professionally and personally.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Motivation',
-    tags: ['Career', 'Motivation', 'Values']
-  },
-  {
-    id: '13-4',
-    question: 'When making career decisions, I prioritize:',
-    options: [
-      'Job security',
-      'Growth opportunities',
-      'Work-life balance',
-      'Salary and benefits'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your career values and decision-making priorities.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Career Planning',
-    tags: ['Career', 'Planning', 'Values']
-  },
-  {
-    id: '13-5',
-    question: 'I see myself in 5 years:',
-    options: [
-      'In the same role',
-      'In a leadership position',
-      'Running my own business',
-      'In a different field entirely'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your career aspirations and long-term goals.',
-    category: 'Career', 
-    difficulty: 'easy',
-    skill: 'Career Goals',
-    tags: ['Career', 'Goals', 'Aspirations']
-  },
-  {
-    id: '13-6',
-    question: 'I prefer work environments that are:',
-    options: [
-      'Fast-paced and dynamic',
-      'Stable and predictable',
-      'Creative and flexible',
-      'Technical and structured'
-    ],
-    correctAnswer: 1,
-    explanation: 'This helps identify your preferred work environment characteristics.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Work Environment',
-    tags: ['Career', 'Work Environment', 'Preferences']
-  },
-  {
-    id: '13-7',
-    question: 'When learning new skills, I prefer:',
-    options: [
-      'Hands-on practice',
-      'Reading and research',
-      'Group learning',
-      'One-on-one mentoring'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your preferred learning style and approach.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Learning Style',
-    tags: ['Career', 'Learning', 'Development']
-  },
-  {
-    id: '13-8',
-    question: 'I work best when:',
-    options: [
-      'I have clear deadlines',
-      'I can work at my own pace',
-      'I collaborate with others',
-      'I work independently'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your preferred work conditions and productivity factors.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Work Conditions',
-    tags: ['Career', 'Productivity', 'Work Style']
-  },
-  {
-    id: '13-9',
-    question: 'My ideal manager would:',
-    options: [
-      'Give me clear direction',
-      'Provide guidance and support',
-      'Give me autonomy',
-      'Focus on results only'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your preferred management style and leadership preferences.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Management Style',
-    tags: ['Career', 'Management', 'Leadership']
-  },
-  {
-    id: '13-10',
-    question: 'I am most satisfied when my work:',
-    options: [
-      'Pays well',
-      'Makes a positive impact',
-      'Is intellectually challenging',
-      'Provides work-life balance'
-    ],
-    correctAnswer: 1,
-    explanation: 'This helps identify what brings you job satisfaction and fulfillment.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Job Satisfaction',
-    tags: ['Career', 'Satisfaction', 'Fulfillment']
-  },
-  {
-    id: '13-11',
-    question: 'When facing a difficult problem at work, I:',
-    options: [
-      'Tackle it immediately',
-      'Analyze it thoroughly first',
-      'Seek help from colleagues',
-      'Follow established procedures'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your problem-solving approach and work style.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Problem Solving',
-    tags: ['Career', 'Problem Solving', 'Work Style']
-  },
-  {
-    id: '13-12',
-    question: 'I prefer to receive feedback:',
-    options: [
-      'Immediately and directly',
-      'In private and constructively',
-      'In group settings',
-      'Only when I ask for it'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your feedback preferences and communication style.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Feedback Preferences',
-    tags: ['Career', 'Feedback', 'Communication']
-  },
-  {
-    id: '13-13',
-    question: 'My ideal work schedule would be:',
-    options: [
-      'Fixed 9-5 hours',
-      'Flexible with core hours',
-      'Results-based (no set hours)',
-      'Part-time or reduced hours'
-    ],
-    correctAnswer: 1,
-    explanation: 'This shows your work schedule preferences and lifestyle needs.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Work Schedule',
-    tags: ['Career', 'Work Schedule', 'Lifestyle']
-  },
-  {
-    id: '13-14',
-    question: 'I am most productive when I:',
-    options: [
-      'Have multiple projects',
-      'Focus on one task at a time',
-      'Work under pressure',
-      'Have plenty of time'
-    ],
-    correctAnswer: 1,
-    explanation: 'This reveals your productivity patterns and work preferences.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Productivity',
-    tags: ['Career', 'Productivity', 'Work Style']
-  },
-  {
-    id: '13-15',
-    question: 'My career success is measured by:',
-    options: [
-      'Salary and promotions',
-      'Personal growth and impact',
-      'Work-life balance',
-      'Recognition and awards'
-    ],
-    correctAnswer: 1,
-    explanation: 'This helps identify your definition of career success and values.',
-    category: 'Career',
-    difficulty: 'easy',
-    skill: 'Career Success',
-    tags: ['Career', 'Success', 'Values']
-  }
-]
+  '14': [ // Cybersecurity Assessment
+    {
+      id: '14-1',
+      question: 'What is the primary goal of cybersecurity?',
+      options: [
+        'To make systems faster',
+        'To protect information systems from theft, damage, or unauthorized access',
+        'To reduce costs',
+        'To improve performance'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cybersecurity aims to protect information systems, networks, and data from cyber threats and unauthorized access.',
+      category: 'Cybersecurity',
+      difficulty: 'easy',
+      skill: 'Security Fundamentals',
+      tags: ['Security', 'Protection', 'Cyber Threats']
+    },
+    {
+      id: '14-2',
+      question: 'What is a vulnerability in cybersecurity?',
+      options: [
+        'A type of virus',
+        'A weakness in a system that can be exploited by attackers',
+        'A security tool',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'A vulnerability is a weakness or flaw in a system that can be exploited by attackers to gain unauthorized access.',
+      category: 'Cybersecurity',
+      difficulty: 'easy',
+      skill: 'Vulnerability Management',
+      tags: ['Security', 'Vulnerabilities', 'Risk Assessment']
+    },
+    {
+      id: '14-3',
+      question: 'What is the purpose of encryption?',
+      options: [
+        'To make data faster',
+        'To convert data into a format that cannot be read without a key',
+        'To compress data',
+        'To backup data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Encryption converts data into an unreadable format that can only be decrypted with the appropriate key.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Cryptography',
+      tags: ['Security', 'Encryption', 'Data Protection']
+    },
+    {
+      id: '14-4',
+      question: 'What is a firewall?',
+      options: [
+        'A type of virus',
+        'A network security device that monitors and controls incoming/outgoing traffic',
+        'A backup system',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'A firewall is a network security device that monitors and controls network traffic based on security rules.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Network Security',
+      tags: ['Security', 'Firewalls', 'Network Protection']
+    },
+    {
+      id: '14-5',
+      question: 'What is social engineering?',
+      options: [
+        'A type of software engineering',
+        'Manipulating people into revealing confidential information',
+        'A security protocol',
+        'A type of encryption'
+      ],
+      correctAnswer: 1,
+      explanation: 'Social engineering manipulates human psychology to trick people into revealing sensitive information or performing actions.',
+      category: 'Cybersecurity',
+      difficulty: 'medium',
+      skill: 'Social Engineering',
+      tags: ['Security', 'Human Factors', 'Social Manipulation']
+    }
+  ],
+
+  '15': [ // Database Management Assessment
+    {
+      id: '15-1',
+      question: 'What is a database?',
+      options: [
+        'A type of computer',
+        'An organized collection of structured information or data',
+        'A programming language',
+        'A type of software'
+      ],
+      correctAnswer: 1,
+      explanation: 'A database is an organized collection of structured information or data, typically stored electronically.',
+      category: 'Database Management',
+      difficulty: 'easy',
+      skill: 'Database Fundamentals',
+      tags: ['Database', 'Data Storage', 'Information Management']
+    },
+    {
+      id: '15-2',
+      question: 'What is SQL?',
+      options: [
+        'A programming language',
+        'Structured Query Language used to manage and manipulate databases',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'SQL (Structured Query Language) is used to manage and manipulate relational databases.',
+      category: 'Database Management',
+      difficulty: 'easy',
+      skill: 'SQL',
+      tags: ['Database', 'SQL', 'Query Language']
+    },
+    {
+      id: '15-3',
+      question: 'What is normalization in database design?',
+      options: [
+        'Making databases normal',
+        'Organizing data to reduce redundancy and improve data integrity',
+        'Backing up data',
+        'Encrypting data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Normalization organizes data to reduce redundancy and improve data integrity in relational databases.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Design',
+      tags: ['Database', 'Normalization', 'Data Integrity']
+    },
+    {
+      id: '15-4',
+      question: 'What is a primary key?',
+      options: [
+        'A type of encryption key',
+        'A unique identifier for each record in a database table',
+        'A backup key',
+        'A security key'
+      ],
+      correctAnswer: 1,
+      explanation: 'A primary key is a unique identifier for each record in a database table, ensuring data integrity.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Design',
+      tags: ['Database', 'Primary Keys', 'Data Integrity']
+    },
+    {
+      id: '15-5',
+      question: 'What is the purpose of indexing in databases?',
+      options: [
+        'To make databases smaller',
+        'To improve query performance by creating data access paths',
+        'To backup data',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Indexing improves query performance by creating efficient data access paths for faster data retrieval.',
+      category: 'Database Management',
+      difficulty: 'medium',
+      skill: 'Database Performance',
+      tags: ['Database', 'Indexing', 'Performance Optimization']
+    }
+  ],
+
+  '16': [ // Cloud Computing Assessment
+    {
+      id: '16-1',
+      question: 'What is cloud computing?',
+      options: [
+        'Computing in the clouds',
+        'Delivery of computing services over the internet on-demand',
+        'A type of computer',
+        'A programming language'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud computing delivers computing services over the internet on-demand, including storage, processing, and applications.',
+      category: 'Cloud Computing',
+      difficulty: 'easy',
+      skill: 'Cloud Fundamentals',
+      tags: ['Cloud', 'Internet Services', 'On-demand Computing']
+    },
+    {
+      id: '16-2',
+      question: 'What is virtualization in cloud computing?',
+      options: [
+        'Making things virtual',
+        'Creating virtual versions of computing resources',
+        'A type of cloud service',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Virtualization creates virtual versions of computing resources, allowing multiple systems to run on one physical machine.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Virtualization',
+      tags: ['Cloud', 'Virtualization', 'Resource Management']
+    },
+    {
+      id: '16-3',
+      question: 'What is auto-scaling in cloud computing?',
+      options: [
+        'Making things scale automatically',
+        'Automatically adjusting resources based on demand',
+        'A type of cloud service',
+        'A security feature'
+      ],
+      correctAnswer: 1,
+      explanation: 'Auto-scaling automatically adjusts computing resources based on demand, ensuring optimal performance and cost efficiency.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Auto-scaling',
+      tags: ['Cloud', 'Auto-scaling', 'Resource Management']
+    },
+    {
+      id: '16-4',
+      question: 'What is a load balancer in cloud computing?',
+      options: [
+        'A type of database',
+        'A device that distributes network traffic across multiple servers',
+        'A security tool',
+        'A backup system'
+      ],
+      correctAnswer: 1,
+      explanation: 'A load balancer distributes network traffic across multiple servers to ensure no single server becomes overwhelmed.',
+      category: 'Cloud Computing',
+      difficulty: 'medium',
+      skill: 'Load Balancing',
+      tags: ['Cloud', 'Load Balancing', 'Traffic Distribution']
+    },
+    {
+      id: '16-5',
+      question: 'What is the purpose of cloud storage?',
+      options: [
+        'To store clouds',
+        'To provide scalable and accessible data storage over the internet',
+        'To make data faster',
+        'To encrypt data'
+      ],
+      correctAnswer: 1,
+      explanation: 'Cloud storage provides scalable and accessible data storage over the internet, eliminating the need for local storage.',
+      category: 'Cloud Computing',
+      difficulty: 'easy',
+      skill: 'Cloud Storage',
+      tags: ['Cloud', 'Storage', 'Data Accessibility']
+    }
+  ],
+
+  '17': [ // Artificial Intelligence Assessment
+    {
+      id: '17-1',
+      question: 'What is artificial intelligence (AI)?',
+      options: [
+        'Making computers artificial',
+        'Simulation of human intelligence in machines',
+        'A type of computer',
+        'A programming language'
+      ],
+      correctAnswer: 1,
+      explanation: 'Artificial intelligence simulates human intelligence in machines, enabling them to learn, reason, and make decisions.',
+      category: 'Artificial Intelligence',
+      difficulty: 'easy',
+      skill: 'AI Fundamentals',
+      tags: ['AI', 'Machine Intelligence', 'Human Simulation']
+    },
+    {
+      id: '17-2',
+      question: 'What is machine learning?',
+      options: [
+        'Teaching machines to learn',
+        'A subset of AI that enables systems to learn from data',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'Machine learning is a subset of AI that enables systems to learn and improve from experience without explicit programming.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Machine Learning',
+      tags: ['AI', 'Machine Learning', 'Data Learning']
+    },
+    {
+      id: '17-3',
+      question: 'What is deep learning?',
+      options: [
+        'Learning deeply',
+        'A subset of machine learning using neural networks with multiple layers',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Deep learning uses neural networks with multiple layers to learn complex patterns in data.',
+      category: 'Artificial Intelligence',
+      difficulty: 'hard',
+      skill: 'Deep Learning',
+      tags: ['AI', 'Deep Learning', 'Neural Networks']
+    },
+    {
+      id: '17-4',
+      question: 'What is natural language processing (NLP)?',
+      options: [
+        'Processing natural language',
+        'AI technology that enables computers to understand human language',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'NLP enables computers to understand, interpret, and generate human language naturally.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Natural Language Processing',
+      tags: ['AI', 'NLP', 'Language Understanding']
+    },
+    {
+      id: '17-5',
+      question: 'What is computer vision?',
+      options: [
+        'Computer eyesight',
+        'AI technology that enables computers to interpret visual information',
+        'A type of database',
+        'A security tool'
+      ],
+      correctAnswer: 1,
+      explanation: 'Computer vision enables computers to interpret and understand visual information from images and videos.',
+      category: 'Artificial Intelligence',
+      difficulty: 'medium',
+      skill: 'Computer Vision',
+      tags: ['AI', 'Computer Vision', 'Visual Processing']
+    }
+  ],
+
+  '18': [ // Web Development Assessment
+    {
+      id: '18-1',
+      question: 'What is HTML?',
+      options: [
+        'A programming language',
+        'HyperText Markup Language used to structure web content',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'HTML (HyperText Markup Language) is used to structure and present content on the web.',
+      category: 'Web Development',
+      difficulty: 'easy',
+      skill: 'HTML',
+      tags: ['Web', 'HTML', 'Markup Language']
+    },
+    {
+      id: '18-2',
+      question: 'What is CSS?',
+      options: [
+        'A programming language',
+        'Cascading Style Sheets used to style web pages',
+        'A type of database',
+        'A security protocol'
+      ],
+      correctAnswer: 1,
+      explanation: 'CSS (Cascading Style Sheets) is used to style and layout web pages.',
+      category: 'Web Development',
+      difficulty: 'easy',
+      skill: 'CSS',
+      tags: ['Web', 'CSS', 'Styling']
+    },
+    {
+      id: '18-3',
+      question: 'What is the purpose of JavaScript in web development?',
+      options: [
+        'To make websites look good',
+        'To add interactivity and dynamic behavior to web pages',
+        'To store data',
+        'To secure websites'
+      ],
+      correctAnswer: 1,
+      explanation: 'JavaScript adds interactivity and dynamic behavior to web pages, making them responsive and engaging.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'JavaScript',
+      tags: ['Web', 'JavaScript', 'Interactivity']
+    },
+    {
+      id: '18-4',
+      question: 'What is responsive web design?',
+      options: [
+        'Making websites responsive',
+        'Designing websites to work well on all devices and screen sizes',
+        'Making websites faster',
+        'Making websites secure'
+      ],
+      correctAnswer: 1,
+      explanation: 'Responsive web design ensures websites work well on all devices and screen sizes.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'Responsive Design',
+      tags: ['Web', 'Responsive Design', 'Mobile-First']
+    },
+    {
+      id: '18-5',
+      question: 'What is the purpose of APIs in web development?',
+      options: [
+        'To make websites faster',
+        'To enable communication between different software systems',
+        'To store data',
+        'To secure websites'
+      ],
+      correctAnswer: 1,
+      explanation: 'APIs enable communication between different software systems, allowing web applications to integrate with external services.',
+      category: 'Web Development',
+      difficulty: 'medium',
+      skill: 'APIs',
+      tags: ['Web', 'APIs', 'System Integration']
+    }
+  ]
 };
 
 // Enhanced function to get questions with better shuffling
